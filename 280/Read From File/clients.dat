@@ -6,3 +6,8 @@ delete myfile
  
      
 copy file1 file2 
+ 
+       
+print myfile 
+   
+% terminate script 
