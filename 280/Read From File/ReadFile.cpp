@@ -21,7 +21,6 @@ int main() {
    int copyCount = 0;
    int deleteCount = 0;
 
-    
    cout << "Enter the name of a file to read from:" << endl;
    cin >> fileName;
    cout << endl;
