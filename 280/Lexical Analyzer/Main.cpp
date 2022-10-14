@@ -43,6 +43,26 @@ int main(int argc, char **argv)
                 cout << "ERROR ON LINE " << token.GetLinenum() << " " << token.GetLexeme() << endl;
                 exit(1);
             }
+
+            cout << endl;
+            cout << "Lines: " << lineNumber << endl;
+
+            if (tokenCount != 0){
+                cout << "Tokens: " << tokenCount << endl;
+            }
+            cout << endl;
+            if (tokens.size() > 0){
+                if (arguments[4] == "true"){
+                    cout << "STRINGS:" << endl;
+                }else if (arguments[2] == "true"){
+                    cout << "INTEGERS:" << endl;
+                }else if (arguments[3] == "true"){
+                    cout << "REALS:" << endl;
+                }else if (arguments[5] == "true"){
+                    cout << "IDENTIFIERS: ";
+                }
+            }
+            
         }
     }
 }
