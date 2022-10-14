@@ -62,8 +62,58 @@ int main(int argc, char **argv)
                     cout << "IDENTIFIERS: ";
                 }
             }
-            
+            if (tokens.size() != 0){
+                if (tokens.size() == 1){
+                    return;
+                }
+                for (int i = 0; i < tokens.size() - 1; i++){
+                    for (int j = i + 1; j < tokens.size(); j++){
+                        if (tokens.at(i).GetLexeme() == tokens.at(j).GetLexeme()){
+                            tokens.erase(tokens.begin() + j);
+                            i--;
+                            break;
+                        }
+                    }
+                }
+                for (int i = 0; i < tokens.size(); i++){
+                    for (int j = i; j < tokens.size(); j++){
+                        LexItem remove = tokens.at(j);
+                        bool erase = false;
+                        if (tokens.at(i).GetToken() == ICONST){
+                            int alpha = stoi(tokens.at(j).GetLexeme());
+                            int beta = stoi(tokens.at(i).GetLexeme());
+                            if (alpha < beta){
+                                erase = true;
+                            }
+                        }else if (tokens.at(i).GetToken() == RCONST){
+                            int alpha = stof(tokens.at(j).GetLexeme());
+                            int beta = stof(tokens.at(i).GetLexeme());
+                            if (alpha < beta){
+                                erase = true;
+                            }
+                        }else if (tokens.at(j).GetLexeme() < tokens.at(i).GetLexeme()){
+                            erase = true;
+                        }
+                        if (erase){
+                            tokens.erase(tokens.begin() + j);
+                            tokens.insert(tokens.begin() + i, remove);
+                        }
+                    }
+                }
+                if (tokens[0].GetToken() != IDENT){
+                    for (int i = 0; i < tokens.size(); i++){
+                        cout << tokens.at(i).GetLexeme() << endl;
+                    }
+                }else{
+                    for (int i = 0; i < tokens.size() - 1; i++){
+                        cout << tokens.at(i).GetLexeme() << ", ";
+                    }
+                    cout << tokens.at(tokens.size() - 1).GetLexeme() << endl;
+                }
+            }
         }
+    }else{
+        cout << "CANNOT OPEN THE FILE " << arguments[0] << endl;
     }
 }
 
