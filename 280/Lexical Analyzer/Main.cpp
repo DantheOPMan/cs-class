@@ -7,6 +7,9 @@
 
 using namespace std;
 
+vector<string> CommandArg(int argc, char **argv);
+void BoolArgs(vector<string> &arguments, int index);
+
 int main(int argc, char **argv)
 {
     vector<string> arguments = CommandArg(argc, argv);
