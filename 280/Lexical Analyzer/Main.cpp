@@ -9,7 +9,7 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    vector<string> arguments = CommandArguments(argc, argv);
+    vector<string> arguments = CommandArg(argc, argv);
     LexItem token;
     ifstream file;
 
@@ -47,33 +47,30 @@ int main(int argc, char **argv)
     }
 }
 
-void DetermineArgument(std::vector<std::string> &arguments, int index){
+void BoolArgs(std::vector<std::string> &arguments, int index){
      for (int i = 1; i < arguments.size(); i++){
         arguments[i] = i == index ? "true" : "false";
      }
 }
-vector<string> CommandArguments(int argc, char **argv){
+vector<string> CommandArg(int argc, char **argv){
     vector<string> properties{"file", "false", "false", "false", "false", "false"};
     for (int i = 1; i < argc; i++){
         string arg = argv[i];
         if (arg == "-v"){
-            DetermineArgument(properties, 1);
-        }
-        else if (arg == "-iconsts"){
-            DetermineArgument(properties, 2);
+            BoolArgs(properties, 1);
+        }else if (arg == "-iconsts"){
+            BoolArgs(properties, 2);
         }else if (arg == "-rconsts"){
-            DetermineArgument(properties, 3);
+            BoolArgs(properties, 3);
         }else if (arg == "-sconsts"){
-            DetermineArgument(properties, 4);
+            BoolArgs(properties, 4);
         }else if (arg == "-ids"){
-            DetermineArgument(properties, 5);
+            BoolArgs(properties, 5);
         }else if (arg.find(".txt") != -1){
             if (properties[0] != "file"){
                 cout << "ONLY ONE FILE NAME ALLOWED" << endl;
-
                 exit(1);
             }
-
             properties[0] = arg;
         }else{
             cout << "UNRECOGNIZED FLAG " << arg << endl;
