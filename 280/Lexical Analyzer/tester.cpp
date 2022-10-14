@@ -287,7 +287,7 @@ void OrganizeTokens(std::vector<LexItem> &tokens)
 void DetermineArgument(std::vector<std::string> &arguments, int index)
 {
 
-    for (int i = 1; i < arguments.size(); i++)
+     for (int i = 1; i < arguments.size(); i++)
 
         arguments[i] = i == index ? "true" : "false";
 }
