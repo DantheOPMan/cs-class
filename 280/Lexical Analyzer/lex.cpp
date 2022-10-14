@@ -75,7 +75,6 @@ LexItem getNextToken(istream& in, int& linenum){
     while(in.get(ch)) {
         switch(lexstate){
         case START:
-
             if( ch == '\n' ){
                 linenum++;
             }
@@ -92,7 +91,7 @@ LexItem getNextToken(istream& in, int& linenum){
             }
             lexeme = ch;
 
-            if(ch == '/' && char(in.peek()) == '/'){
+            if(ch == '/' && char(in.peek()) == '*'){
                 lexstate = INCOMMENT;
                 continue;
             }
@@ -219,9 +218,9 @@ LexItem getNextToken(istream& in, int& linenum){
                 }else if (lexeme == "else"){
                     currentToken = LexItem(ELSE, lexeme, linenum);
                 }else if (lexeme == "true"){
-                    currentToken = LexItem(THEN, lexeme, linenum);
+                    currentToken = LexItem(TRUE, lexeme, linenum);
                 }else if (lexeme == "false"){
-                    currentToken = LexItem(THEN, lexeme, linenum);
+                    currentToken = LexItem(FALSE, lexeme, linenum);
                 }else {
                     if (previousToken.GetToken() == IDENT){
                         return LexItem(ERR, lexeme, linenum);
@@ -237,7 +236,95 @@ LexItem getNextToken(istream& in, int& linenum){
             }
         break;
         case INSTRING:
-        
+            if (previousToken == ERR){
+                return LexItem(ERR, "No Begin Token", linenum);
+            }
+
+            if (ch == 10){
+                return LexItem(ERR, lexeme, linenum);
+            }
+
+            if (regex_match(lexeme + ch, regex("\"[ -~]*")))
+            {
+                if (ch == '\\' && in.peek() == '\"')
+                {
+                    lexeme += ch;
+                    in.get(ch);
+                    lexeme += ch;
+                    continue;
+                }else{
+                    lexeme += ch;
+                }
+            }
+    
+            if (regex_match(lexeme + ch, regex("\"[ -~]*\"")))
+            {
+
+                lexstate = START;
+
+                currentToken = LexItem(SCONST, lexeme, linenum);
+
+                previousToken = currentToken;
+
+                return currentToken;
+            }
+            break;
+        case ININT:
+            if(previousToken == ERR){
+                return LexItem(ERR, lexeme + ch, linenum);
+            }
+            if(isalpha(ch)){
+                return LexItem(ERR, lexeme + ch, linenum);
+            }
+            if(regex_match(lexeme+ch, regex("[0-9]+"))){
+                lexeme += ch;
+            }else if(ch =='.'){
+                lexstate = INREAL;
+                in.putback(ch);
+                continue;
+            }else{
+                lexstate = START;
+                //in.putback(ch);
+                currentToken = LexItem(ICONST, lexeme, linenum);
+                previousToken = currentToken;
+                return currentToken;
+            }
+        break;
+        case INREAL:
+            if (previousToken == ERR){
+                return LexItem(ERR, "No Begin Token", linenum);
+            }
+            if (isalpha(ch)){
+                return LexItem(ERR, lexeme + ch, linenum);
+            }
+            if (regex_match(lexeme + ch, regex("[0-9]*\\.[0-9]+"))){
+                lexeme += ch;
+            }else if (regex_match(lexeme + ch, regex("[0-9]*\\.[0-9]*"))){
+                lexeme += ch;
+            }else{
+                if (lexeme[lexeme.length() - 1] == '.')
+
+                    return LexItem(ERR, lexeme, linenum);
+
+                lexstate = START;
+
+                in.putback(ch);
+
+                currentToken = LexItem(RCONST, lexeme, linenum);
+
+                previousToken = currentToken;
+
+                return currentToken;
+            }
+            break;
+        case INCOMMENT:
+            if (ch == '\n'){
+                linenum++;
+            }
+            if(ch == '*' && in.peek() == '/'){
+                lexstate = START;
+            }
+            continue;
         }
     }
 }
