@@ -52,15 +52,15 @@ static map<Token, string> tokenPrint{
 };
 
 ostream& operator<<(ostream& out, const LexItem& tok){
-    string *token = &tokenPrint[tok.GetToken()];
-    cout << *token;
+    string token = &tokenPrint[tok.GetToken()];
+    cout << token;
     bool eval = 
         (tok.GetToken() == ICONST) || (tok.GetToken() == RCONST) || 
         (tok.GetToken() == SCONST) || (tok.GetToken() == BCONST) || 
-        (tok.GetToken() == IDENT) || (tok.GetToken() == ERR);
-    if (eval)
+        (tok.GetToken() == IDENT);
+    if (eval){
         cout << " (" << tok.GetLexeme() << ")";
-
+    }
     return out;
 }
 

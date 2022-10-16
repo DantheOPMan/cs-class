@@ -7,148 +7,110 @@
 
 using namespace std;
 
-vector<string> CommandArg(int argc, char **argv);
-void BoolArgs(vector<string> &arguments, int index);
+int main(int argc, char **argv){
+    string fileName = "";
 
-int main(int argc, char **argv)
-{
-    vector<string> arguments = CommandArg(argc, argv);
+    bool vbool = false;
+
+    bool sconst = false;
+    vector<string> sconsts;
+
+    bool iconst = false;
+    vector<string> iconsts;
+
+    bool rconst = false;
+    vector<string> rconsts;  
+    
+    bool bconst = false;
+    vector<string> bconsts;
+
+    bool ident = false;
+    vector<string> idents;
+    
+    for (int i = 1; i < argc; i++){
+        string arg = argv[i];
+        if(arg.find("-") != -1){
+            if (arg == "-v"){
+                vbool = true;
+            }else if (arg == "-iconsts"){
+                iconst = true;
+            }else if (arg == "-rconsts"){
+                rconst = true;
+            }else if (arg == "-sconsts"){
+                sconst = true;
+            }else if (arg == "-bconst"){
+                bconst = true;
+            }else if (arg == "-ident"){
+                ident = true;
+            }else{
+                cout << "UNRECOGNIZED FLAG " << arg << endl;
+                exit(1);
+            }
+        }else if (fileName != ""){
+            cout << "ONLY ONE FILE NAME ALLOWED" << endl;
+            exit(1);
+        }
+    }
+    if(fileName == ""){
+        cout << "NO SPECIFIED INPUT FILE NAME FOUND" << endl;
+        exit(1);
+    }
     LexItem token;
     ifstream file;
 
     file.open(argv[0]);
 
-    vector<LexItem> tokens;
     int lineNumber = 0;
     int tokenCount = 0;
 
-    if (file.is_open()){
+    if (!file.is_open()){
+        cout << "CANNOT OPEN THE FILE " << arguments[0] << endl;
+        exit(1);
+    }else{
         while (true){
             token = getNextToken(file, lineNumber);
             if (token == DONE){
                 break;
             }
-
             tokenCount++;
 
-            if (arguments[1] == "true"){
-                cout << token << endl;
-            }else if (arguments[2] == "true" && token.GetToken() == ICONST){
-                tokens.push_back(token);
-            }else if (arguments[3] == "true" && token.GetToken() == RCONST){
-                tokens.push_back(token);
-            }else if (arguments[4] == "true" && token.GetToken() == SCONST){
-                tokens.push_back(token);
-            }else if (arguments[5] == "true" && token.GetToken() == IDENT){
-                tokens.push_back(token);
-            }
             if (token == ERR){
-                cout << "ERROR ON LINE " << token.GetLinenum() << " " << token.GetLexeme() << endl;
+                cout << "Error in line " << token.GetLinenum() << " " << token.GetLexeme() << endl;
                 exit(1);
             }
-
-            cout << endl;
+            if (vbool){
+                token.operator(cout, token);
+            }
+            if (sconst && token.GetToken() == SCONST && find(sconsts.begin(), sconsts.end(), token.GetLexeme()) != vec.end()){
+                sconsts.push_back(token.GetLexeme());
+            }else if (iconst && token.GetToken() == ICONST){
+                iconsts.push_back(token.GetLexeme());
+            }else if (rconst && token.GetToken() == RCONST){
+                rconsts.push_back(token.GetLexeme());
+            }else if (bconst && token.GetToken() == IDENT){
+                bconsts.push_back(token.GetLexeme());
+            }else if (ident && token.GetToken() == IDENT){
+                idents.push_back(token.GetLexeme());
+            }
+        
             cout << "Lines: " << lineNumber << endl;
-
-            if (tokenCount != 0){
+            if(lineNumber != 0){
                 cout << "Tokens: " << tokenCount << endl;
-            }
-            cout << endl;
-            if (tokens.size() > 0){
-                if (arguments[4] == "true"){
-                    cout << "STRINGS:" << endl;
-                }else if (arguments[2] == "true"){
-                    cout << "INTEGERS:" << endl;
-                }else if (arguments[3] == "true"){
-                    cout << "REALS:" << endl;
-                }else if (arguments[5] == "true"){
-                    cout << "IDENTIFIERS: ";
-                }
-            }
-            if (tokens.size() != 0){
-                if (tokens.size() == 1){
-                    return;
-                }
-                for (int i = 0; i < tokens.size() - 1; i++){
-                    for (int j = i + 1; j < tokens.size(); j++){
-                        if (tokens.at(i).GetLexeme() == tokens.at(j).GetLexeme()){
-                            tokens.erase(tokens.begin() + j);
-                            i--;
-                            break;
-                        }
+                if (tokens.size() > 0){
+                    if (sconst == "true" && sconsts.size() > 0){
+                        cout << "STRINGS:" << endl;
+                    }else if (iconst == "true" && iconsts.size() > 0){
+                        cout << "INTEGERS:" << endl;
+                    }else if (rconst == "true" && rconsts.size() > 0){
+                        cout << "REALS:" << endl;
+                    }else if (bconst == "true" && bconsts.size() > 0){
+                        cout << "Boolean:" << endl;
+                    }else if (idents == "true" && idents.size() > 0){
+                        cout << "IDENTIFIERS: "<<endl;
                     }
-                }
-                for (int i = 0; i < tokens.size(); i++){
-                    for (int j = i; j < tokens.size(); j++){
-                        LexItem remove = tokens.at(j);
-                        bool erase = false;
-                        if (tokens.at(i).GetToken() == ICONST){
-                            int alpha = stoi(tokens.at(j).GetLexeme());
-                            int beta = stoi(tokens.at(i).GetLexeme());
-                            if (alpha < beta){
-                                erase = true;
-                            }
-                        }else if (tokens.at(i).GetToken() == RCONST){
-                            int alpha = stof(tokens.at(j).GetLexeme());
-                            int beta = stof(tokens.at(i).GetLexeme());
-                            if (alpha < beta){
-                                erase = true;
-                            }
-                        }else if (tokens.at(j).GetLexeme() < tokens.at(i).GetLexeme()){
-                            erase = true;
-                        }
-                        if (erase){
-                            tokens.erase(tokens.begin() + j);
-                            tokens.insert(tokens.begin() + i, remove);
-                        }
-                    }
-                }
-                if (tokens[0].GetToken() != IDENT){
-                    for (int i = 0; i < tokens.size(); i++){
-                        cout << tokens.at(i).GetLexeme() << endl;
-                    }
-                }else{
-                    for (int i = 0; i < tokens.size() - 1; i++){
-                        cout << tokens.at(i).GetLexeme() << ", ";
-                    }
-                    cout << tokens.at(tokens.size() - 1).GetLexeme() << endl;
                 }
             }
         }
-    }else{
-        cout << "CANNOT OPEN THE FILE " << arguments[0] << endl;
     }
-}
-
-void BoolArgs(std::vector<std::string> &arguments, int index){
-     for (int i = 1; i < arguments.size(); i++){
-        arguments[i] = i == index ? "true" : "false";
-     }
-}
-vector<string> CommandArg(int argc, char **argv){
-    vector<string> properties{"file", "false", "false", "false", "false", "false"};
-    for (int i = 1; i < argc; i++){
-        string arg = argv[i];
-        if (arg == "-v"){
-            BoolArgs(properties, 1);
-        }else if (arg == "-iconsts"){
-            BoolArgs(properties, 2);
-        }else if (arg == "-rconsts"){
-            BoolArgs(properties, 3);
-        }else if (arg == "-sconsts"){
-            BoolArgs(properties, 4);
-        }else if (arg == "-ids"){
-            BoolArgs(properties, 5);
-        }else if (arg.find(".txt") != -1){
-            if (properties[0] != "file"){
-                cout << "ONLY ONE FILE NAME ALLOWED" << endl;
-                exit(1);
-            }
-            properties[0] = arg;
-        }else{
-            cout << "UNRECOGNIZED FLAG " << arg << endl;
-            exit(1);
-        }
-    }
-    return properties;
+    return 1;
 }
