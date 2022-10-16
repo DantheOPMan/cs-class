@@ -81,9 +81,9 @@ int main(int argc, char **argv){
             if (vbool){
                 token.operator(cout, token);
             }
-            if (sconst && token.GetToken() == SCONST && find(sconsts.begin(), sconsts.end(), token.GetLexeme()) != vec.end()){
+            if (sconst && token.GetToken() == SCONST && !(find(sconsts.begin(), sconsts.end(), token.GetLexeme()) != sconsts.end())){
                 sconsts.push_back(token.GetLexeme());
-            }else if (iconst && token.GetToken() == ICONST){
+            }else if (iconst && token.GetToken() == ICONST && !find(iconsts.begin(), iconsts.end(), token.GetLexeme()) != iconsts.end()){
                 iconsts.push_back(token.GetLexeme());
             }else if (rconst && token.GetToken() == RCONST){
                 rconsts.push_back(token.GetLexeme());

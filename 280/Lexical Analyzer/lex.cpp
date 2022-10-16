@@ -78,7 +78,7 @@ LexItem getNextToken(istream& in, int& linenum){
             if( ch == '\n' ){
                 linenum++;
             }
-
+ 
             if(in.peek() == -1){
                 if(previousToken.GetToken() == END){
                     return(LexItem(DONE,lexeme,linenum));
