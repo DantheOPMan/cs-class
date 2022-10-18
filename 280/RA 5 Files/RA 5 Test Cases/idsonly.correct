@@ -1,0 +1,26 @@
+Identifiers and Keywords:
+KEYWORD: PROGRAM at Line # 0
+IDENT: PROG1 at Line # 0
+IDENT: Y_1 at Line # 2
+IDENT: Z at Line # 2
+IDENT: W234 at Line # 2
+KEYWORD: FLOAT at Line # 3
+IDENT: Z at Line # 3
+KEYWORD: BOOL at Line # 4
+IDENT: FLAG at Line # 4
+KEYWORD: FALSE at Line # 4
+IDENT: R at Line # 6
+IDENT: FLAG at Line # 7
+KEYWORD: TRUE at Line # 7
+KEYWORD: IF at Line # 8
+IDENT: FLAG at Line # 8
+KEYWORD: THEN at Line # 8
+IDENT: Y_1 at Line # 9
+KEYWORD: ELSE at Line # 10
+IDENT: Y_1 at Line # 11
+KEYWORD: END at Line # 12
+KEYWORD: PRINT at Line # 13
+IDENT: R at Line # 13
+IDENT: Z at Line # 13
+KEYWORD: END at Line # 14
+KEYWORD: PROGRAM at Line # 14
