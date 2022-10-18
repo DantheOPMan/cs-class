@@ -8,51 +8,50 @@ using namespace std;
 LexItem currentToken;
 LexItem previousToken;
 
-static map<Token, string> tokenPrint{
-    
-    {PROGRAM, "PROGRAM"},
-    {PRINT, "PRINT"}, 
-    {INT,"INT"},
-    {END, "END"},
-    {IF, "IF"},
-    {FLOAT,"FLOAT"},
-    {BOOL,"BOOL"},
-    {ELSE,"ELSE"},
-    {THEN,"THEN"},
-    {TRUE,"TRUE"},
-    {FALSE,"FALSE"},
 
-    {IDENT, "IDENT"},
-
-    {ICONST, "ICONST"},
-    {RCONST, "RCONST"},
-    {SCONST, "SCONST"},
-    {BCONST,"BCONST"},
-    
-    {PLUS, "PLUS"},
-    {MINUS, "MINUS"},
-    {MULT, "MULT"},
-    {DIV, "DIV"},
-    {ASSOP, "ASSOP"},
-    {LPAREN, "LPAREN"},
-    {RPAREN, "RPAREN"},
-    {COMMA, "COMMA"},
-    {EQUAL, "EQUAL"},
-    {GTHAN, "GTHAN"},
-    {LTHAN, "LTHAN"},
-    {SEMICOL, "SEMICOL"},
-    {AND, "AND"},
-    {OR, "OR"},
-    {NOT, "NOT"},
-
-    {ERR, "ERR"},
-
-    {DONE, "DONE"}
-
-};
 
 ostream& operator<<(ostream& out, const LexItem& tok){
-    string token = &tokenPrint[tok.GetToken()];
+    static map<Token, string> tokenPrint{
+        {PROGRAM, "PROGRAM"},
+        {PRINT, "PRINT"}, 
+        {INT,"INT"},
+        {END, "END"},
+        {IF, "IF"},
+        {FLOAT,"FLOAT"},
+        {BOOL,"BOOL"},
+        {ELSE,"ELSE"},
+        {THEN,"THEN"},
+        {TRUE,"TRUE"},
+        {FALSE,"FALSE"},
+
+        {IDENT, "IDENT"},
+
+        {ICONST, "ICONST"},
+        {RCONST, "RCONST"},
+        {SCONST, "SCONST"},
+        {BCONST,"BCONST"},
+    
+        {PLUS, "PLUS"},
+        {MINUS, "MINUS"},
+        {MULT, "MULT"},
+        {DIV, "DIV"},
+        {ASSOP, "ASSOP"},
+        {LPAREN, "LPAREN"},
+        {RPAREN, "RPAREN"},
+        {COMMA, "COMMA"},
+        {EQUAL, "EQUAL"},
+        {GTHAN, "GTHAN"},
+        {LTHAN, "LTHAN"},
+        {SEMICOL, "SEMICOL"},
+        {AND, "AND"},
+        {OR, "OR"},
+        {NOT, "NOT"},
+
+        {ERR, "ERR"},
+
+        {DONE, "DONE"}
+    };
+    string token = tokenPrint[tok.GetToken()];
     cout << token;
     bool eval = 
         (tok.GetToken() == ICONST) || (tok.GetToken() == RCONST) || 
@@ -65,7 +64,7 @@ ostream& operator<<(ostream& out, const LexItem& tok){
 }
 
 LexItem id_or_kw(const string& lexeme, int linenum){
-
+    return LexItem();
 }
 
 LexItem getNextToken(istream& in, int& linenum){

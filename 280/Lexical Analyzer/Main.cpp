@@ -3,7 +3,8 @@
 #include <vector>
 #include <sstream>
 #include <map>
-#include "lex.cpp"
+#include <algorithm>
+#include "lex.h"
 
 using namespace std;
 
@@ -58,17 +59,17 @@ int main(int argc, char **argv){
     LexItem token;
     ifstream file;
 
-    file.open(argv[0]);
+    file.open(fileName);
 
     int lineNumber = 0;
     int tokenCount = 0;
 
     if (!file.is_open()){
-        cout << "CANNOT OPEN THE FILE " << arguments[0] << endl;
+        cout << "CANNOT OPEN THE FILE " << fileName << endl;
         exit(1);
     }else{
         while (true){
-            token = getNextToken(file, lineNumber);
+            LexItem token = getNextToken(file, lineNumber);
             if (token == DONE){
                 break;
             }
@@ -79,36 +80,35 @@ int main(int argc, char **argv){
                 exit(1);
             }
             if (vbool){
-                token.operator(cout, token);
+                cout << token << endl;
             }
-            if (sconst && token.GetToken() == SCONST && !(find(sconsts.begin(), sconsts.end(), token.GetLexeme()) != sconsts.end())){
+            if (sconst && token.GetToken() == SCONST && find(sconsts.begin(), sconsts.end(), token.GetLexeme()) != sconsts.end()){
                 sconsts.push_back(token.GetLexeme());
-            }else if (iconst && token.GetToken() == ICONST && !find(iconsts.begin(), iconsts.end(), token.GetLexeme()) != iconsts.end()){
+            }else if (iconst && token.GetToken() == ICONST && find(iconsts.begin(), iconsts.end(), token.GetLexeme()) != iconsts.end()){
                 iconsts.push_back(token.GetLexeme());
-            }else if (rconst && token.GetToken() == RCONST){
+            }else if (rconst && token.GetToken() == RCONST  && find(rconsts.begin(), rconsts.end(), token.GetLexeme()) != rconsts.end()){
                 rconsts.push_back(token.GetLexeme());
-            }else if (bconst && token.GetToken() == IDENT){
+            }else if (bconst && token.GetToken() == IDENT && find(bconsts.begin(), bconsts.end(), token.GetLexeme()) != bconsts.end()){
                 bconsts.push_back(token.GetLexeme());
-            }else if (ident && token.GetToken() == IDENT){
+            }else if (ident && token.GetToken() == IDENT && find(idents.begin(), idents.end(), token.GetLexeme()) != idents.end()){
                 idents.push_back(token.GetLexeme());
             }
         
             cout << "Lines: " << lineNumber << endl;
             if(lineNumber != 0){
                 cout << "Tokens: " << tokenCount << endl;
-                if (tokens.size() > 0){
-                    if (sconst == "true" && sconsts.size() > 0){
-                        cout << "STRINGS:" << endl;
-                    }else if (iconst == "true" && iconsts.size() > 0){
-                        cout << "INTEGERS:" << endl;
-                    }else if (rconst == "true" && rconsts.size() > 0){
-                        cout << "REALS:" << endl;
-                    }else if (bconst == "true" && bconsts.size() > 0){
-                        cout << "Boolean:" << endl;
-                    }else if (idents == "true" && idents.size() > 0){
-                        cout << "IDENTIFIERS: "<<endl;
-                    }
+                if (sconst == true && sconsts.size() > 0){
+                    cout << "STRINGS:" << endl;
+                }else if (iconst == true && iconsts.size() > 0){
+                    cout << "INTEGERS:" << endl;
+                }else if (rconst == true && rconsts.size() > 0){
+                    cout << "REALS:" << endl;
+                }else if (bconst == true && bconsts.size() > 0){
+                    cout << "Boolean:" << endl;
+                }else if (ident == true && idents.size() > 0){
+                    cout << "IDENTIFIERS: "<<endl;
                 }
+                
             }
         }
     }

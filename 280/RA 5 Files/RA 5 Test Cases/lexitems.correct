@@ -1,0 +1,56 @@
+All tokens:
+KEYWORD: PROGRAM at Line 0
+IDENT: PROG1 at Line 0
+KEYWORD: INT at Line 2
+IDENT: _X1 at Line 2
+COMMA: ',' at Line 2
+IDENT: Y_1 at Line 2
+COMMA: ',' at Line 2
+IDENT: Z at Line 2
+MINUS: '-' at Line 2
+COMMA: ',' at Line 2
+IDENT: W234 at Line 2
+SEMICOL: ';' at Line 2
+KEYWORD: FLOAT at Line 3
+IDENT: Z at Line 3
+ASSOP: '=' at Line 3
+RCONST: (0.75) at Line 3
+SEMICOL: ';' at Line 3
+KEYWORD: BOOL at Line 4
+IDENT: FLAG at Line 4
+ASSOP: '=' at Line 4
+BCONST: (FALSE) at Line 4
+SEMICOL: ';' at Line 4
+IDENT: R at Line 6
+Error: : "$" at Line 6
+IDENT: FLAG at Line 7
+ASSOP: '=' at Line 7
+BCONST: (TRUE) at Line 7
+SEMICOL: ';' at Line 7
+KEYWORD: IF at Line 8
+LPAREN: '(' at Line 8
+IDENT: FLAG at Line 8
+RPAREN: ')' at Line 8
+KEYWORD: THEN at Line 8
+IDENT: Y_1 at Line 9
+ASSOP: '=' at Line 9
+ICONST: (5) at Line 9
+SEMICOL: ';' at Line 9
+KEYWORD: ELSE at Line 10
+IDENT: Y_1 at Line 11
+ASSOP: '=' at Line 11
+RCONST: (7.5) at Line 11
+SEMICOL: ';' at Line 11
+KEYWORD: END at Line 12
+KEYWORD: IF at Line 12
+KEYWORD: PRINT at Line 13
+SCONST: " Value =" at Line 13
+COMMA: ',' at Line 13
+IDENT: R at Line 13
+COMMA: ',' at Line 13
+SCONST: " z =" at Line 13
+COMMA: ',' at Line 13
+IDENT: Z at Line 13
+SEMICOL: ';' at Line 13
+KEYWORD: END at Line 14
+KEYWORD: PROGRAM at Line 14
