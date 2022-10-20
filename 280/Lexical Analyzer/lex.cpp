@@ -6,9 +6,6 @@
 using namespace std;
 
 LexItem currentToken;
-LexItem previousToken;
-
-
 
 ostream& operator<<(ostream& out, const LexItem& tok){
     static map<Token, string> tokenPrint{
@@ -52,18 +49,64 @@ ostream& operator<<(ostream& out, const LexItem& tok){
         {DONE, "DONE"}
     };
     string token = tokenPrint[tok.GetToken()];
-    cout << token;
+    out << token;
     bool eval = 
         (tok.GetToken() == ICONST) || (tok.GetToken() == RCONST) || 
         (tok.GetToken() == SCONST) || (tok.GetToken() == BCONST) || 
         (tok.GetToken() == IDENT);
     if (eval){
-        cout << " (" << tok.GetLexeme() << ")";
+        out << " (" << tok.GetLexeme() << ")";
     }
     return out;
 }
 
 LexItem id_or_kw(const string& lexeme, int linenum){
+    map <string, Token> tokString {
+		{"PROGRAM", PROGRAM},
+		{"PRINT", PRINT},
+		{"INT", INT},
+		{ "END", END },
+		{ "FLOAT", FLOAT},
+		{ "BOOL", BOOL },
+		
+		{ "ELSE", ELSE },
+		{ "IF", IF },
+		
+		{"THEN", THEN},
+		{ "TRUE", TRUE },
+		{ "FALSE", FALSE },
+		
+		{ "IDENT", IDENT },
+
+		{ "ICONST", ICONST },
+		{ "RCONST", RCONST },
+		{ "SCONST", SCONST },
+		{ "BCONST", BCONST },
+		
+		{ "PLUS", PLUS },
+		{ "MINUS", MINUS },
+		{ "MULT", MULT },
+		{ "DIV", DIV },
+		{ "ASSOP", ASSOP},
+		{ "EQUAL", EQUAL },
+		{ "GTHAN", GTHAN },
+		{ "LTHAN", LTHAN },
+		{ "AND", AND },
+		{ "OR", OR },
+		{ "NOT", NOT },
+            
+		{ "COMMA", COMMA},
+		{ "LPAREN", LPAREN },
+		{ "RPAREN", RPAREN },
+		
+		
+		{ "SEMICOL", SEMICOL },
+		
+		{ "ERR", ERR },
+
+		{ "DONE", DONE },
+	};
+
     return LexItem();
 }
 
@@ -77,13 +120,6 @@ LexItem getNextToken(istream& in, int& linenum){
             if( ch == '\n' ){
                 linenum++;
             }
- 
-            if(in.peek() == -1){
-                if(previousToken.GetToken() == END){
-                    return(LexItem(DONE,lexeme,linenum));
-                }
-                return LexItem(ERR, "No END Token", previousToken.GetLinenum());
-            }
 
             if( isspace(ch)){
                 continue;
@@ -92,81 +128,67 @@ LexItem getNextToken(istream& in, int& linenum){
 
             if(ch == '/' && char(in.peek()) == '*'){
                 lexstate = INCOMMENT;
+                lexeme += in.get(ch);
                 continue;
             }
             if(ch == '+' ){
                 currentToken = LexItem(PLUS, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
-            }
+            } 
             if(ch =='-'){
                 currentToken = LexItem(MINUS, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch =='*'){
                 currentToken = LexItem(MULT, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch =='/'){
                 currentToken = LexItem(DIV, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch =='=' && char(in.peek()) == '='){
                 currentToken = LexItem(EQUAL, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch =='='){
                 currentToken = LexItem(ASSOP, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch =='('){
                 currentToken = LexItem(LPAREN, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch ==')'){
                 currentToken = LexItem(RPAREN, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch =='>'){
                 currentToken = LexItem(GTHAN, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch =='<'){
                 currentToken = LexItem(LTHAN, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch =='&' && char(in.peek()) == '&'){
                 currentToken = LexItem(AND, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch =='|' && char(in.peek()) == '|'){
                 currentToken = LexItem(OR, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch =='!'){
                 currentToken = LexItem(NOT, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch ==';'){
                 currentToken = LexItem(SEMICOL, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
             if(ch ==','){
                 currentToken = LexItem(COMMA, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
 
@@ -196,9 +218,6 @@ LexItem getNextToken(istream& in, int& linenum){
                 lexstate = START;
                 in.putback(ch);
                 if(lexeme=="PROGRAM"){
-                    if (previousToken.GetToken() != ERR){
-                        return LexItem(ERR, lexeme, linenum);
-                    }
                     currentToken = LexItem(PROGRAM, lexeme, linenum);
                 }else if (lexeme == "print"){
                     currentToken = LexItem(PRINT, lexeme, linenum);
@@ -221,24 +240,12 @@ LexItem getNextToken(istream& in, int& linenum){
                 }else if (lexeme == "false"){
                     currentToken = LexItem(FALSE, lexeme, linenum);
                 }else {
-                    if (previousToken.GetToken() == IDENT){
-                        return LexItem(ERR, lexeme, linenum);
-                    }
                     currentToken = LexItem(IDENT, lexeme, linenum);
                 }
-                
-                if (currentToken != PROGRAM && previousToken == ERR){
-                    return LexItem(ERR, "No BEGIN Token", currentToken.GetLinenum());
-                }
-                previousToken = currentToken;
                 return currentToken;
             }
         break;
-        case INSTRING:
-            if (previousToken == ERR){
-                return LexItem(ERR, "No Begin Token", linenum);
-            }
-
+        case INSTRING: 
             if (ch == 10){
                 return LexItem(ERR, lexeme, linenum);
             }
@@ -263,15 +270,13 @@ LexItem getNextToken(istream& in, int& linenum){
 
                 currentToken = LexItem(SCONST, lexeme, linenum);
 
-                previousToken = currentToken;
+                
 
                 return currentToken;
             }
             break;
         case ININT:
-            if(previousToken == ERR){
-                return LexItem(ERR, lexeme + ch, linenum);
-            }
+            
             if(isalpha(ch)){
                 return LexItem(ERR, lexeme + ch, linenum);
             }
@@ -285,14 +290,10 @@ LexItem getNextToken(istream& in, int& linenum){
                 lexstate = START;
                 //in.putback(ch);
                 currentToken = LexItem(ICONST, lexeme, linenum);
-                previousToken = currentToken;
                 return currentToken;
             }
         break;
         case INREAL:
-            if (previousToken == ERR){
-                return LexItem(ERR, "No Begin Token", linenum);
-            }
             if (isalpha(ch)){
                 return LexItem(ERR, lexeme + ch, linenum);
             }
@@ -311,7 +312,6 @@ LexItem getNextToken(istream& in, int& linenum){
 
                 currentToken = LexItem(RCONST, lexeme, linenum);
 
-                previousToken = currentToken;
 
                 return currentToken;
             }

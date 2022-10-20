@@ -50,12 +50,12 @@ int main(int argc, char **argv){
         }else if (fileName == ""){
             fileName = arg;
         }else{
-            cout << "ONLY ONE FILE NAME ALLOWED" << endl;
+            cout << "ONLY ONE FILE NAME ALLOWED." << endl;
         exit(1);
         }
     }
     if(fileName == ""){
-        cout << "NO SPECIFIED INPUT FILE NAME" << endl;
+        cout << "NO SPECIFIED INPUT FILE NAME." << endl;
         exit(1);
     }
     LexItem token;
@@ -71,11 +71,6 @@ int main(int argc, char **argv){
         exit(1);
     }else{
         int count = 0;
-        string noWhitespace = get(file);
-        noWhitespace.erase(std::remove_if(noWhitespace.begin(), noWhitespace.end(), ::isspace), noWhitespace.end());
-        if(noWhitespace.length() > 0){
-
-        
         while (count < 40){
             count++;
             LexItem token = getNextToken(file, lineNumber);
@@ -85,7 +80,11 @@ int main(int argc, char **argv){
             tokenCount++;
 
             if (token == ERR){
-                cout << "Error in line " << token.GetLinenum() << " " << token.GetLexeme() << endl;
+                if(token.GetLinenum() == -1){
+                    cout << "Lines: " << lineNumber << endl;
+                }else{
+                    cout << "Error in line " << token.GetLinenum() << " " << token.GetLexeme() << endl;
+                }
                 exit(1);
             }
             if (vbool){
@@ -102,7 +101,6 @@ int main(int argc, char **argv){
             }else if (ident && token.GetToken() == IDENT && find(idents.begin(), idents.end(), token.GetLexeme()) != idents.end()){
                 idents.push_back(token.GetLexeme());
             }
-        }
         }
         cout << "Lines: " << lineNumber << endl;
         if(lineNumber != 0){
