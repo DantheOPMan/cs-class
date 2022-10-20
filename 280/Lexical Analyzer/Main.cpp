@@ -33,11 +33,11 @@ int main(int argc, char **argv){
         if(arg.find("-") != -1){
             if (arg == "-v"){
                 vbool = true;
-            }else if (arg == "-iconsts"){
+            }else if (arg == "-iconst"){
                 iconst = true;
-            }else if (arg == "-rconsts"){
+            }else if (arg == "-rconst"){
                 rconst = true;
-            }else if (arg == "-sconsts"){
+            }else if (arg == "-sconst"){
                 sconst = true;
             }else if (arg == "-bconst"){
                 bconst = true;
@@ -47,13 +47,15 @@ int main(int argc, char **argv){
                 cout << "UNRECOGNIZED FLAG " << arg << endl;
                 exit(1);
             }
-        }else if (fileName != ""){
+        }else if (fileName == ""){
+            fileName = arg;
+        }else{
             cout << "ONLY ONE FILE NAME ALLOWED" << endl;
-            exit(1);
+        exit(1);
         }
     }
     if(fileName == ""){
-        cout << "NO SPECIFIED INPUT FILE NAME FOUND" << endl;
+        cout << "NO SPECIFIED INPUT FILE NAME" << endl;
         exit(1);
     }
     LexItem token;
@@ -68,7 +70,14 @@ int main(int argc, char **argv){
         cout << "CANNOT OPEN THE FILE " << fileName << endl;
         exit(1);
     }else{
-        while (true){
+        int count = 0;
+        string noWhitespace = get(file);
+        noWhitespace.erase(std::remove_if(noWhitespace.begin(), noWhitespace.end(), ::isspace), noWhitespace.end());
+        if(noWhitespace.length() > 0){
+
+        
+        while (count < 40){
+            count++;
             LexItem token = getNextToken(file, lineNumber);
             if (token == DONE){
                 break;
@@ -93,23 +102,22 @@ int main(int argc, char **argv){
             }else if (ident && token.GetToken() == IDENT && find(idents.begin(), idents.end(), token.GetLexeme()) != idents.end()){
                 idents.push_back(token.GetLexeme());
             }
-        
-            cout << "Lines: " << lineNumber << endl;
-            if(lineNumber != 0){
-                cout << "Tokens: " << tokenCount << endl;
-                if (sconst == true && sconsts.size() > 0){
-                    cout << "STRINGS:" << endl;
-                }else if (iconst == true && iconsts.size() > 0){
-                    cout << "INTEGERS:" << endl;
-                }else if (rconst == true && rconsts.size() > 0){
-                    cout << "REALS:" << endl;
-                }else if (bconst == true && bconsts.size() > 0){
-                    cout << "Boolean:" << endl;
-                }else if (ident == true && idents.size() > 0){
-                    cout << "IDENTIFIERS: "<<endl;
-                }
-                
-            }
+        }
+        }
+        cout << "Lines: " << lineNumber << endl;
+        if(lineNumber != 0){
+            cout << "Tokens: " << tokenCount << endl;
+            if (sconst == true && sconsts.size() > 0){
+                cout << "STRINGS:" << endl;
+            }else if (iconst == true && iconsts.size() > 0){
+                cout << "INTEGERS:" << endl;
+            }else if (rconst == true && rconsts.size() > 0){
+                cout << "REALS:" << endl;
+            }else if (bconst == true && bconsts.size() > 0){
+                cout << "Boolean:" << endl;
+            }else if (ident == true && idents.size() > 0){
+                cout << "IDENTIFIERS: "<<endl;
+            }      
         }
     }
     return 1;

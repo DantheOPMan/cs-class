@@ -326,4 +326,5 @@ LexItem getNextToken(istream& in, int& linenum){
             continue;
         }
     }
+    return currentToken;
 }
