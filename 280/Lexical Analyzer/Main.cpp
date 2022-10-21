@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
-#include <map>
+#include <cctype>
 #include <algorithm>
 #include "lex.h"
 
@@ -17,7 +17,7 @@ int main(int argc, char **argv){
     vector<string> sconsts;
 
     bool iconst = false;
-    vector<string> iconsts;
+    vector<int> iconsts;
 
     bool rconst = false;
     vector<string> rconsts;  
@@ -71,35 +71,54 @@ int main(int argc, char **argv){
         exit(1);
     }else{
         int count = 0;
-        while (count < 40){
+        lineNumber = 1;
+        LexItem token;
+        while ((token = getNextToken(file, lineNumber)).GetToken() != DONE && token != ERR){
             count++;
-            LexItem token = getNextToken(file, lineNumber);
             if (token == DONE){
                 break;
             }
             tokenCount++;
 
-            if (token == ERR){
-                if(token.GetLinenum() == -1){
-                    cout << "Lines: " << lineNumber << endl;
-                }else{
-                    cout << "Error in line " << token.GetLinenum() << " " << token.GetLexeme() << endl;
-                }
-                exit(1);
-            }
             if (vbool){
                 cout << token << endl;
             }
-            if (sconst && token.GetToken() == SCONST && find(sconsts.begin(), sconsts.end(), token.GetLexeme()) != sconsts.end()){
+            if (sconst && token.GetToken() == SCONST && find(sconsts.begin(), sconsts.end(), token.GetLexeme()) == sconsts.end()){
                 sconsts.push_back(token.GetLexeme());
-            }else if (iconst && token.GetToken() == ICONST && find(iconsts.begin(), iconsts.end(), token.GetLexeme()) != iconsts.end()){
-                iconsts.push_back(token.GetLexeme());
-            }else if (rconst && token.GetToken() == RCONST  && find(rconsts.begin(), rconsts.end(), token.GetLexeme()) != rconsts.end()){
+            }
+            if (iconst && token.GetToken() == ICONST){
+                int input = 0;
+                if(token.GetLexeme().substr(0,1) == "0"){
+                    input = stoi(token.GetLexeme().substr(1,token.GetLexeme().length()));
+                }else{
+                    input = stoi(token.GetLexeme());
+                }
+                if(find(iconsts.begin(), iconsts.end(), input) == iconsts.end()){
+                    iconsts.push_back(input);
+                }
+            }
+            if (rconst && token.GetToken() == RCONST  && find(rconsts.begin(), rconsts.end(), token.GetLexeme()) == rconsts.end()){
                 rconsts.push_back(token.GetLexeme());
-            }else if (bconst && token.GetToken() == IDENT && find(bconsts.begin(), bconsts.end(), token.GetLexeme()) != bconsts.end()){
+            }
+            if (bconst && token.GetToken() == BCONST && find(bconsts.begin(), bconsts.end(), token.GetLexeme()) == bconsts.end()){
                 bconsts.push_back(token.GetLexeme());
-            }else if (ident && token.GetToken() == IDENT && find(idents.begin(), idents.end(), token.GetLexeme()) != idents.end()){
+            }
+            if (ident && token.GetToken() == IDENT && find(idents.begin(), idents.end(), token.GetLexeme()) == idents.end()){
                 idents.push_back(token.GetLexeme());
+            }
+        }
+        if (token == ERR){
+            if(token.GetLexeme() == "/"){
+                lineNumber--;
+                cout << "\nMissing a comment end delimiters '*/' at line " << lineNumber << endl;
+            }else if(token.GetLexeme() == ""){
+                lineNumber--;
+            }else if(token.GetLinenum() == 1 && tokenCount == 0){
+                cout << "Lines: " << 0 << endl;
+                exit(1);
+            }else{
+                cout << "Error in line " << token.GetLinenum() << " (" << token.GetLexeme() << ")" << endl;
+                exit(1);
             }
         }
         cout << "Lines: " << lineNumber << endl;
@@ -107,15 +126,36 @@ int main(int argc, char **argv){
             cout << "Tokens: " << tokenCount << endl;
             if (sconst == true && sconsts.size() > 0){
                 cout << "STRINGS:" << endl;
-            }else if (iconst == true && iconsts.size() > 0){
+                sort(sconsts.begin(), sconsts.end());
+                for(string v : sconsts) 
+                    cout << "\"" << v.substr(1, v.length() -1)  << "\"" << endl;
+            }
+            if (iconst == true && iconsts.size() > 0){
                 cout << "INTEGERS:" << endl;
-            }else if (rconst == true && rconsts.size() > 0){
+                sort(iconsts.begin(), iconsts.end());
+                for(int v : iconsts) 
+                    cout << v << endl;
+            }
+            if (rconst == true && rconsts.size() > 0){
                 cout << "REALS:" << endl;
-            }else if (bconst == true && bconsts.size() > 0){
-                cout << "Boolean:" << endl;
-            }else if (ident == true && idents.size() > 0){
-                cout << "IDENTIFIERS: "<<endl;
-            }      
+                sort(rconsts.begin(), rconsts.end());
+                for(string v : rconsts) 
+                    cout << v << endl;
+            }
+            if (bconst == true && bconsts.size() > 0){
+                cout << "Booleans:" << endl;
+                sort(bconsts.begin(), bconsts.end());
+                for(string v : bconsts) 
+                    cout << v << endl;
+            }
+            if (ident == true && idents.size() > 0){
+                cout << "IDENTIFIERS:"<<endl;
+                sort(idents.begin(), idents.end());
+                cout << idents[0] ;
+                for(int v = 1; v < idents.size(); v++) 
+                    cout << ", " << idents[v];
+                cout << endl;
+            }     
         }
     }
     return 1;

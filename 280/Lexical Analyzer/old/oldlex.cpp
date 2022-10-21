@@ -1,12 +1,11 @@
 #include <iostream>
 #include <regex>
 #include <map>
-#include <stdio.h>
-#include <ctype.h>
 #include "lex.h"
 
 using namespace std;
 
+LexItem currentToken;
 
 ostream& operator<<(ostream& out, const LexItem& tok){
     static map<Token, string> tokenPrint{
@@ -108,75 +107,92 @@ LexItem id_or_kw(const string& lexeme, int linenum){
 		{ "DONE", DONE },
 	};
 
-    LexItem output = LexItem(ERR, lexeme,linenum);
-    if(lexeme == "+"){
-        output = LexItem(PLUS, lexeme, linenum);
-    }else if(lexeme == "-"){
-        output = LexItem(MINUS, lexeme, linenum);
-    }else if(lexeme == "*"){
-        output = LexItem(MULT, lexeme, linenum);
-    }else if(lexeme == "/"){
-        output = LexItem(DIV, lexeme, linenum);
-    }else if(lexeme == "="){
-        output = LexItem(ASSOP, lexeme, linenum);
-    }else if(lexeme == "("){
-        output = LexItem(LPAREN, lexeme, linenum);
-    }else if(lexeme == ")"){
-        output = LexItem(RPAREN, lexeme, linenum);
-    }else if(lexeme == ">"){
-        output = LexItem(GTHAN, lexeme, linenum);
-    }else if(lexeme == "<"){
-        output = LexItem(LTHAN, lexeme, linenum);
-    }else if(lexeme == "!"){
-        output = LexItem(NOT, lexeme, linenum);
-    }else if(lexeme == ";"){
-        output = LexItem(SEMICOL, lexeme, linenum);
-    }else if(lexeme == ","){
-        output = LexItem(COMMA, lexeme, linenum);
-    }
-    return output;
+    return LexItem();
 }
 
 LexItem getNextToken(istream& in, int& linenum){
     enum TokState { START, INID, INSTRING, ININT, INREAL, INCOMMENT}lexstate = START;
-    string lexeme = "";
+    string lexeme;
     char ch;
-    char nextChar;
     while(in.get(ch)) {
-        nextChar = in.peek();
         switch(lexstate){
         case START:
-            if(ch == -1){
-                return LexItem(DONE, lexeme, linenum);
-            }
             if( ch == '\n' ){
                 linenum++;
             }
-            if(isspace(ch)){
+
+            if( isspace(ch)){
                 continue;
             }
             lexeme = ch;
-            
-            if(ch == '/' && nextChar == '*'){
+
+            if(ch == '/' && char(in.peek()) == '*'){
                 lexstate = INCOMMENT;
+                lexeme += in.get(ch);
                 continue;
             }
-            if(lexeme =="=" && nextChar == '='){
-                in.get(ch);
-                lexeme += ch;
-                return LexItem(EQUAL, lexeme, linenum);
+            if(ch == '+' ){
+                currentToken = LexItem(PLUS, lexeme, linenum);
+                return currentToken;
+            } 
+            if(ch =='-'){
+                currentToken = LexItem(MINUS, lexeme, linenum);
+                return currentToken;
             }
-            if(lexeme =="&" && nextChar == '&'){
-                in.get(ch);
-                lexeme += ch;
-                return LexItem(AND, lexeme, linenum);
+            if(ch =='*'){
+                currentToken = LexItem(MULT, lexeme, linenum);
+                return currentToken;
             }
-            if(lexeme =="|" && nextChar == '|'){
-                in.get(ch);
-                lexeme += ch;
-                return LexItem(OR, lexeme, linenum);
+            if(ch =='/'){
+                currentToken = LexItem(DIV, lexeme, linenum);
+                return currentToken;
             }
-            if (lexeme == "\""){
+            if(ch =='=' && char(in.peek()) == '='){
+                currentToken = LexItem(EQUAL, lexeme, linenum);
+                return currentToken;
+            }
+            if(ch =='='){
+                currentToken = LexItem(ASSOP, lexeme, linenum);
+                return currentToken;
+            }
+            if(ch =='('){
+                currentToken = LexItem(LPAREN, lexeme, linenum);
+                return currentToken;
+            }
+            if(ch ==')'){
+                currentToken = LexItem(RPAREN, lexeme, linenum);
+                return currentToken;
+            }
+            if(ch =='>'){
+                currentToken = LexItem(GTHAN, lexeme, linenum);
+                return currentToken;
+            }
+            if(ch =='<'){
+                currentToken = LexItem(LTHAN, lexeme, linenum);
+                return currentToken;
+            }
+            if(ch =='&' && char(in.peek()) == '&'){
+                currentToken = LexItem(AND, lexeme, linenum);
+                return currentToken;
+            }
+            if(ch =='|' && char(in.peek()) == '|'){
+                currentToken = LexItem(OR, lexeme, linenum);
+                return currentToken;
+            }
+            if(ch =='!'){
+                currentToken = LexItem(NOT, lexeme, linenum);
+                return currentToken;
+            }
+            if(ch ==';'){
+                currentToken = LexItem(SEMICOL, lexeme, linenum);
+                return currentToken;
+            }
+            if(ch ==','){
+                currentToken = LexItem(COMMA, lexeme, linenum);
+                return currentToken;
+            }
+
+            if (ch == '\"'){
                 lexstate = INSTRING;
                 continue;
             }
@@ -184,7 +200,7 @@ LexItem getNextToken(istream& in, int& linenum){
                 lexstate = ININT;
                 continue;
             }
-            if(lexeme == "."){
+            if(ch == '.'){
                 lexstate=INREAL;
                 continue;
             }
@@ -192,59 +208,75 @@ LexItem getNextToken(istream& in, int& linenum){
                 lexstate = INID;
                 continue;
             }
-            return id_or_kw(lexeme,linenum);
+            return LexItem(ERR, lexeme, linenum);
         
         case INID:
-            if(isalnum(ch) || ch == '_'){
+            if(regex_match(lexeme + ch, regex("[a-zA-Z][a-zA-Z0-9]*"))){
                 lexeme += ch;
             }
-            if (nextChar == -1 || isspace(nextChar) || (!isalnum(ch) || ch != '_')) {
+            if (in.peek() == -1 || !regex_match(lexeme + ch, regex("[a-zA-Z][a-zA-Z0-9]*"))) {
                 lexstate = START;
-                //in.putback(ch);
-                if(lexeme =="PROGRAM"){
-                    return LexItem(PROGRAM, lexeme, linenum);
+                in.putback(ch);
+                if(lexeme=="PROGRAM"){
+                    currentToken = LexItem(PROGRAM, lexeme, linenum);
                 }else if (lexeme == "print"){
-                    return LexItem(PRINT, lexeme, linenum);
+                    currentToken = LexItem(PRINT, lexeme, linenum);
                 }else if (lexeme == "end"){
-                    return LexItem(END, lexeme, linenum);
+                    currentToken = LexItem(END, lexeme, linenum);
                 }else if (lexeme == "if"){
-                    return LexItem(IF, lexeme, linenum);
+                    currentToken = LexItem(IF, lexeme, linenum);
                 }else if (lexeme == "then"){
-                    return LexItem(THEN, lexeme, linenum);
+                    currentToken = LexItem(THEN, lexeme, linenum);
                 }else if (lexeme == "float"){
-                    return LexItem(FLOAT, lexeme, linenum);
+                    currentToken = LexItem(FLOAT, lexeme, linenum);
                 }else if (lexeme == "int"){
-                    return LexItem(INT, lexeme, linenum);
+                    currentToken = LexItem(INT, lexeme, linenum);
                 }else if (lexeme == "bool"){
-                    return LexItem(BOOL, lexeme, linenum);
+                    currentToken = LexItem(BOOL, lexeme, linenum);
                 }else if (lexeme == "else"){
-                    return LexItem(ELSE, lexeme, linenum);
+                    currentToken = LexItem(ELSE, lexeme, linenum);
                 }else if (lexeme == "true"){
-                    return LexItem(TRUE, lexeme, linenum);
+                    currentToken = LexItem(TRUE, lexeme, linenum);
                 }else if (lexeme == "false"){
-                    return LexItem(FALSE, lexeme, linenum);
-                }else{
-                    return LexItem(IDENT, lexeme, linenum);
+                    currentToken = LexItem(FALSE, lexeme, linenum);
+                }else {
+                    currentToken = LexItem(IDENT, lexeme, linenum);
                 }
+                return currentToken;
             }
         break;
         case INSTRING: 
-            if (nextChar == -1){
+            if (ch == 10){
                 return LexItem(ERR, lexeme, linenum);
             }
-            lexeme += ch;
-            if (ch == '\"'){
-                lexeme += ch;
-                in.get(ch);
-                lexeme += ch;
+
+            if (regex_match(lexeme + ch, regex("\"[ -~]*")))
+            {
+                if (ch == '\\' && in.peek() == '\"')
+                {
+                    lexeme += ch;
+                    in.get(ch);
+                    lexeme += ch;
+                    continue;
+                }else{
+                    lexeme += ch;
+                }
+            }
+    
+            if (regex_match(lexeme + ch, regex("\"[ -~]*\"")))
+            {
+
                 lexstate = START;
-                return LexItem(SCONST, lexeme, linenum);
-            }else{
-                lexeme += ch;
-                continue;
+
+                currentToken = LexItem(SCONST, lexeme, linenum);
+
+                
+
+                return currentToken;
             }
             break;
         case ININT:
+            
             if(isalpha(ch)){
                 return LexItem(ERR, lexeme + ch, linenum);
             }
@@ -257,7 +289,8 @@ LexItem getNextToken(istream& in, int& linenum){
             }else{
                 lexstate = START;
                 //in.putback(ch);
-                return LexItem(ICONST, lexeme, linenum);   
+                currentToken = LexItem(ICONST, lexeme, linenum);
+                return currentToken;
             }
         break;
         case INREAL:
@@ -277,18 +310,21 @@ LexItem getNextToken(istream& in, int& linenum){
 
                 in.putback(ch);
 
-                return LexItem(RCONST, lexeme, linenum);
+                currentToken = LexItem(RCONST, lexeme, linenum);
+
+
+                return currentToken;
             }
             break;
         case INCOMMENT:
             if (ch == '\n'){
                 linenum++;
             }
-            if(ch == '*' && nextChar == '/'){
+            if(ch == '*' && in.peek() == '/'){
                 lexstate = START;
             }
             continue;
         }
     }
-    return LexItem(ERR, "", 0);
+    return currentToken;
 }
