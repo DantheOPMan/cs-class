@@ -1,7 +1,3 @@
-#Daniel Yankovich
-#CS 100 2021F Section H01 
-#HW 02, September 9, 2021
-
 grades = ['A', 'F', 'C', 'F', 'A', 'B', 'A', 'C', 'A', 'B']
 double = [grades[0]]
 frequency = [0]

@@ -1,7 +1,3 @@
-#Daniel Yankovich
-#CS 100 2021F Section H01 
-#HW 09, November 14, 2021
-
 def initialLetterCount(wordList):
     wordDictionary = {}
     for word in wordList:

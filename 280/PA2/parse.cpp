@@ -45,6 +45,10 @@ void ParseError(int line, string msg)
 
 bool IdentList(istream& in, int& line);
 
+//Prog ::= PROGRAM IDENT StmtList END PROGRAM
+bool Prog(istream& in, int& line){
+
+}
 
 //ControlStmt ::= AssigStmt | IfStmt | PrintStmt 
 bool ControlStmt(istream& in, int& line) {

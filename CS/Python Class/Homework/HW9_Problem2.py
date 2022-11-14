@@ -1,6 +1,4 @@
-#Daniel Yankovich
-#CS 100 2021F Section H01 
-#HW 09, November 11, 2021
+
 def file_stats(fileName):
     f = open(fileName, 'r')
     text = f.read()

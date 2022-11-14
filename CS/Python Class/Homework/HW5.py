@@ -1,7 +1,3 @@
-#Daniel Yankovich
-#CS 100 2021F Section H01 
-#HW 05, October 4, 2021
-
 months = ["January", "February", "March", "April", "May", "June", "July", "August","September", "October", "November", "December"]
 for i in months:
     if i[0] == "J":

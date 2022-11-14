@@ -1,6 +1,4 @@
-#Daniel Yankovich
-#CS 100 2021F Section H01 
-#HW 09, November 11, 2021
+
 def repeatWords(in_file, out_file):
     inputText = open(in_file)
     lines = inputText.read()

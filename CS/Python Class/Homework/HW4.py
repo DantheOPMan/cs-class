@@ -1,6 +1,3 @@
-    #Daniel Yankovich
-#CS 100 2021F Section H01 
-#HW 04, October 4, 2021
 import time
 import turtle
 

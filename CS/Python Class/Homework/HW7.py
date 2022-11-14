@@ -1,7 +1,3 @@
-#Daniel Yankovich
-#CS 100 2021F Section H01 
-#HW 07, November 1, 2021
-
 # The Bells
 # Edgar Allen Poe
 heBells = '''

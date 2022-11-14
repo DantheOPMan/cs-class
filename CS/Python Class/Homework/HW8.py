@@ -1,8 +1,3 @@
-#Daniel Yankovich
-#CS 100 2021F Section H01 
-#HW 08, November 8, 2021
-
-
 def twoWords(wordLength,firstLetter):
     wordOne = ""
     wordTwo = ""

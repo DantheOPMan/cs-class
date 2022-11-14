@@ -1,7 +1,3 @@
-#Daniel Yankovich
-#CS 100 2021F Section H01 
-#HW 01, September 9, 2021
-
 import math
 days = 365
 months = 12
