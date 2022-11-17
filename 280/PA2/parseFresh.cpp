@@ -58,7 +58,7 @@ bool Prog(istream& in, int& line){
             return false;
         }
         Parser::PushBackToken(t);
-        ParseError(line, "Missing PROGRAM.");
+        ParseError(line, "Missing PROGRAM");
         return false;
     }
     t = Parser::GetNextToken(in, line);
@@ -94,22 +94,28 @@ bool Prog(istream& in, int& line){
 //StmtList ::= Stmt; { Stmt; }
 bool StmtList(istream& in, int& line){
     bool status = Stmt(in, line);
+    
     if (!status)
     {
         ParseError(line, "Invalid Statement List");
         return false;
     }
     LexItem t = Parser::GetNextToken(in, line);
+    
+    if(t.GetToken() == PROGRAM){
+        ParseError(line, "Syntactic error in Program Body.");
+        return false;
+    }
     if (t.GetToken() == END)
     {
         Parser::PushBackToken(t);
         return status;
     }
-    if (t.GetToken() != SEMICOL)
+    if (t.GetToken() != SEMICOL && t.GetToken() != ELSE)
     {
         if (t.GetToken() == PROGRAM)
         {
-            ParseError(line, "Missing semicolon at end of Statement.");
+            ParseError(line, "Missing semicolon at end of Program Statement.");
             return false;
         }
         ParseError(line, "Missing a semicolon.");
@@ -143,7 +149,7 @@ bool Stmt(istream& in, int& line){
         status = ControlStmt(in, line);
         if (!status)
         {
-            ParseError(line, "Incorrect control Statement.");
+            ParseError(line, "Incorrect control Statement");
             return status;
         }
         break;
@@ -156,12 +162,10 @@ bool Stmt(istream& in, int& line){
 //DeclStmt ::= ( INT | FLOAT | BOOL ) VarList
 bool DeclStmt(istream& in, int& line){
     bool status = false;
-    // cout << "in Decl" << endl;
     LexItem t = Parser::GetNextToken(in, line);
     if (t == INT || t == FLOAT || t==BOOL)
     {
         status = VarList(in, line);
-        // cout<< "returning from IdentList" << " " << (status? 1: 0) << endl;
         if (!status)
         {
             ParseError(line, "Incorrect variable in Declaration Statement.");
@@ -229,7 +233,6 @@ bool ControlStmt(istream& in, int& line) {
 		Parser::PushBackToken(t);
 		return false;
 	}
-
 	return status;
 }//End of ControlStmt
 
@@ -240,7 +243,6 @@ bool PrintStmt(istream& in, int& line) {
 	
 	t = Parser::GetNextToken(in, line);
 	if( t != LPAREN ) {
-		
 		ParseError(line, "Missing Left Parenthesis");
 		return false;
 	}
@@ -265,12 +267,6 @@ bool PrintStmt(istream& in, int& line) {
 bool IfStmt(istream& in, int& line){
     LexItem t = Parser::GetNextToken(in, line);
     bool status = false;
-    if (t.GetToken() != IF)
-    {
-        ParseError(line, "missing IF");
-        return false;
-    }
-    t = Parser::GetNextToken(in, line);
     if (t.GetToken() != LPAREN)
     {
         ParseError(line, "Missing left paren in IF");
@@ -302,10 +298,13 @@ bool IfStmt(istream& in, int& line){
 	t = Parser::GetNextToken(in, line);
 	if(t.GetToken() == ELSE){
 		status = StmtList(in, line);
-	}else{
-		Parser::PushBackToken(t);
+        if (!status)
+        {
+            ParseError(line, "Incorrect Statement in program");
+            return false;
+        }
+        t = Parser::GetNextToken(in, line);
 	}
-	t = Parser::GetNextToken(in, line);
 	if(t.GetToken() != END){
 		ParseError(line, "Missing END to end if");
         Parser::PushBackToken(t);
@@ -323,10 +322,15 @@ bool IfStmt(istream& in, int& line){
 //AssignStmt ::= Var = Expr
 bool AssignStmt(istream& in, int& line){
     bool status = Var(in, line);
+    if(!status){
+        ParseError(line, "Missing Left-Hand Side Variable in Assignment statement");
+        return false;
+    }
     LexItem t = Parser::GetNextToken(in, line);
     if (t.GetToken() != ASSOP)
     {
         Parser::PushBackToken(t);
+        
         ParseError(line, "Missing assignment op");
         return false;
     }
@@ -337,13 +341,14 @@ bool AssignStmt(istream& in, int& line){
         ParseError(line, "Invalid assignment var");
         return false;
     }
+    
     return true;
 }
 
 //Var ::= IDENT
 bool Var(istream& in, int& line){
     LexItem t = Parser::GetNextToken(in, line);
-    if (t.GetToken() == IDENT)
+    if (t.GetToken() == IDENT && defVar.find(t.GetLexeme()) != defVar.end())
     {
         return true;
     }
@@ -367,6 +372,7 @@ bool ExprList(istream& in, int& line) {
 	
 	if (tok == COMMA) {
 		status = ExprList(in, line);
+        
 	}
 	else if(tok.GetToken() == ERR){
 		ParseError(line, "Unrecognized Input Pattern");
@@ -390,6 +396,7 @@ bool Expr(istream& in, int& line){
     }
 	LexItem t = Parser::GetNextToken(in, line);
 	if(t.GetToken() == OR){
+        
 		status = LogANDExpr(in, line);
     	if (!status)
     	{
@@ -420,11 +427,12 @@ bool LogANDExpr(istream& in, int& line){
         }
         return status;
     }
-    /*else 
+    else 
     {
-        ParseError(line, "invalid operator Error");
-        return false;
-    }*/
+        Parser::PushBackToken(t);
+        //ParseError(line, "invalid operator Error");
+        //return false;
+    }
     return status;
 }
 
@@ -448,8 +456,7 @@ bool EqualExpr(istream& in, int& line){
     }
     else
     {
-        ParseError(line, "invalid operator Error");
-        return false;
+        Parser::PushBackToken(t);
     }
     return status;
 }
@@ -469,8 +476,7 @@ bool RelExpr(istream& in, int& line){
     }
     else
     {
-        ParseError(line, "invalid gthan lthan operator Error");//might just need to pushback instead
-        return false;
+        Parser::PushBackToken(t);
     }
     return status;
 }
