@@ -512,7 +512,7 @@ bool MultExpr(istream& in, int& line){
     LexItem t = Parser::GetNextToken(in, line);
     if (t.GetToken() == MULT || t.GetToken() == DIV )
     {
-        status = MultExpr(in, line); //might need to change to unaryexpr
+        status = MultExpr(in, line); //might need to change to UnaryExpr
     }
     else
     {
