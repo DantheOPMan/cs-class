@@ -62,6 +62,16 @@ Value Value::operator/(const Value& op) const{
 
 }
 
+//this == op
+Value Value::operator==(const Value& op) const{
+
+}
+
+//this > op
+Value Value::operator>(const Value& op) const{
+
+}
+
 // this < op
 Value Value::operator<(const Value& op) const{
     if(op.GetType() == VERR || this->GetType() == VERR){
@@ -91,7 +101,7 @@ Value Value::operator<(const Value& op) const{
     return Value();
 }
 
-// AND between two bools
+//this && op
 Value Value::operator&&(const Value& op) const{
     if(op.GetType() == VERR || this->GetType() == VERR){
         return Value();
@@ -101,4 +111,14 @@ Value Value::operator&&(const Value& op) const{
         return Value(ans);
     }
     return Value();
+}
+
+//this || op
+Value Value::operator||(const Value& op) const{
+
+}
+
+//not this
+Value Value::operator!() const{
+
 }

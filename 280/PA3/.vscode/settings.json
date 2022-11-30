@@ -1,5 +1,13 @@
 {
     "files.associations": {
-        "queue": "cpp"
+        "queue": "cpp",
+        "bit": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "xtr1common": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp"
     }
 }
