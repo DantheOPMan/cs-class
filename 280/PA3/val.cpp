@@ -8,7 +8,25 @@ using namespace std;
 
 // add op to this
 Value Value::operator+(const Value& op) const{
-
+    if(op.GetType() == VERR || this->GetType() == VERR){
+        return Value();
+    }
+    if(op.GetType() == this->GetType()){
+        if(op.GetType() == VINT){
+            int ans = this->GetInt() + op.GetInt();
+            return Value(ans);
+        }else if(op.GetType() == VREAL){
+            float ans = this->GetReal() + op.GetReal();
+            return Value(ans);
+        }
+    }else if(op.GetType() == VINT && this->GetType() == VREAL){
+        float ans = this->GetReal() + op.GetInt();
+        return Value(ans);
+    }else if(op.GetType() == VREAL && this->GetType() == VINT){
+        float ans = this->GetInt() + op.GetReal();
+        return Value(ans);
+    }
+    return Value();
 }
 
 // subtract op from this between floats or ints
@@ -59,7 +77,25 @@ Value Value::operator*(const Value& op) const{
 
 // divide this by op
 Value Value::operator/(const Value& op) const{
-
+    if(op.GetType() == VERR || this->GetType() == VERR){
+        return Value();
+    }
+    if(op.GetType() == this->GetType()){
+        if(op.GetType() == VINT){
+            int ans = this->GetInt() / op.GetInt();
+            return Value(ans);
+        }else if(op.GetType() == VREAL){
+            float ans = this->GetReal() / op.GetReal();
+            return Value(ans);
+        }
+    }else if(op.GetType() == VINT && this->GetType() == VREAL){
+        float ans = this->GetReal() / op.GetInt();
+        return Value(ans);
+    }else if(op.GetType() == VREAL && this->GetType() == VINT){
+        float ans = this->GetInt() / op.GetReal();
+        return Value(ans);
+    }
+    return Value();
 }
 
 //this == op
