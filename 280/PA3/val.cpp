@@ -100,12 +100,60 @@ Value Value::operator/(const Value& op) const{
 
 //this == op
 Value Value::operator==(const Value& op) const{
-
+    if(op.GetType() == VERR || this->GetType() == VERR){
+        return Value();
+    }
+    if(op.GetType() == this->GetType()){
+        if(op.GetType() == VBOOL){
+            bool ans = this->GetBool() == op.GetBool();
+            return ans;
+        }/*else if(op.GetType() == VSTRING){
+            bool ans = this->GetString() == op.GetString();
+            return ans;
+        }*/else if(op.GetType() == VINT){
+            bool ans = this->GetInt() == op.GetInt();
+            return ans;
+        }else if(op.GetType() == VREAL){
+            bool ans = this->GetReal() == op.GetReal();
+            return ans;
+        } 
+    }else if(op.GetType() == VINT && this->GetType() == VREAL){
+        bool ans = this->GetReal() == op.GetInt();
+        return Value(ans);
+    }else if(op.GetType() == VREAL && this->GetType() == VINT){
+        bool ans = this->GetInt() == op.GetReal();
+        return Value(ans);
+    }
+    return Value();
 }
 
 //this > op
 Value Value::operator>(const Value& op) const{
-
+    if(op.GetType() == VERR || this->GetType() == VERR){
+        return Value();
+    }
+    if(op.GetType() == this->GetType()){
+        if(op.GetType() == VBOOL){
+            bool ans = this->GetBool() > op.GetBool();
+            return ans;
+        }/*else if(op.GetType() == VSTRING){
+            bool ans = this->GetString() > op.GetString();
+            return ans;
+        }*/else if(op.GetType() == VINT){
+            bool ans = this->GetInt() > op.GetInt();
+            return ans;
+        }else if(op.GetType() == VREAL){
+            bool ans = this->GetReal() > op.GetReal();
+            return ans;
+        } 
+    }else if(op.GetType() == VINT && this->GetType() == VREAL){
+        bool ans = this->GetReal() > op.GetInt();
+        return Value(ans);
+    }else if(op.GetType() == VREAL && this->GetType() == VINT){
+        bool ans = this->GetInt() > op.GetReal();
+        return Value(ans);
+    }
+    return Value();
 }
 
 // this < op
@@ -151,10 +199,24 @@ Value Value::operator&&(const Value& op) const{
 
 //this || op
 Value Value::operator||(const Value& op) const{
-
+    if(op.GetType() == VERR || this->GetType() == VERR){
+        return Value();
+    }
+    if(op.GetType() == VBOOL && this->GetType() == VBOOL){
+        bool ans = op.GetBool() || this->GetBool();
+        return Value(ans);
+    }
+    return Value();
 }
 
 //not this
 Value Value::operator!() const{
-
+    if(this->GetType() == VERR){
+        return Value();
+    }
+    if(this->GetType() == VBOOL){
+        bool ans = !this->GetBool();
+        return Value(ans);
+    }
+    return Value();
 }
