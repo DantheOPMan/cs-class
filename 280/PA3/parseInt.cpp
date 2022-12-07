@@ -183,7 +183,7 @@ bool DeclStmt(istream& in, int& line)
 	t = Parser::GetNextToken(in, line);
 	if(t == INT || t == FLOAT || t == BOOL)
 	{
-		status = VarList(in, line);
+		status = VarList(in, line, LexItem());
 		
 		if (!status)
 		{
@@ -202,7 +202,7 @@ bool DeclStmt(istream& in, int& line)
 }//End of DeclStmt
 
 //VarList:= Var {,Var}
-bool VarList(istream& in, int& line) {
+bool VarList(istream& in, int& line, LexItem& type) {
 	bool status = false;
 	string identstr;
 	
@@ -231,7 +231,7 @@ bool VarList(istream& in, int& line) {
 	tok = Parser::GetNextToken(in, line);
 	
 	if (tok == COMMA) {
-		status = VarList(in, line);
+		status = VarList(in, line, type);
 	}
 	else {
 		Parser::PushBackToken(tok);
