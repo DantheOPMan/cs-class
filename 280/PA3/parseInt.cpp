@@ -183,7 +183,7 @@ bool DeclStmt(istream& in, int& line)
 	t = Parser::GetNextToken(in, line);
 	if(t == INT || t == FLOAT || t == BOOL)
 	{
-		status = VarList(in, line, LexItem());
+		status = VarList(in, line, t);
 		
 		if (!status)
 		{
@@ -382,7 +382,7 @@ bool IfStmt(istream& in, int& line) {
 }//End of IfStmt function
 
 //Var:= ident
-bool Var(istream& in, int& line)
+bool Var(istream& in, int& line, LexItem & idtok)
 {
 	string identstr;
 	
@@ -413,7 +413,7 @@ bool AssignStmt(istream& in, int& line) {
 	bool varstatus = false, status = false;
 	LexItem t;
 	
-	varstatus = Var( in, line);
+	varstatus = Var( in, line, t);
 	
 	if (varstatus){
 		t = Parser::GetNextToken(in, line);
@@ -474,15 +474,16 @@ bool ExprList(istream& in, int& line) {
 }//End of ExprList
 
 //Expr ::= LogORExpr ::= LogANDExpr { || LogANDRxpr }
-bool Expr(istream& in, int& line) {
+bool Expr(istream& in, int& line, Value & retVal) {
 	
 	LexItem tok;
-	bool t1 = LogANDExpr(in, line);
+	Value val1, val2;
+	bool t1 = LogANDExpr(in, line,val1);
 		
 	if( !t1 ) {
 		return false;
 	}
-	
+	retVal = val1;
 	tok = Parser::GetNextToken(in, line);
 	if(tok.GetToken() == ERR){
 		ParseError(line, "Unrecognized Input Pattern");
@@ -491,13 +492,19 @@ bool Expr(istream& in, int& line) {
 	}
 	while ( tok == OR ) 
 	{
-		t1 = LogANDExpr(in, line);
+		t1 = LogANDExpr(in, line, val2);
 		if( !t1 ) 
 		{
 			ParseError(line, "Missing operand after operator");
 			return false;
 		}
-		
+		retVal = retVal || val2;
+		if(retVal.IsErr())
+		{
+			ParseError(line, "Illegal OR operation.");
+			//cout << "(" << tok.GetLexeme() << ")" << endl;		
+			return false;
+		}
 		tok = Parser::GetNextToken(in, line);
 		if(tok.GetToken() == ERR){
 			ParseError(line, "Unrecognized Input Pattern");
@@ -513,7 +520,7 @@ bool Expr(istream& in, int& line) {
 bool LogANDExpr(istream& in, int& line, Value & retVal) {
 	LexItem tok;
     Value val1, val2;
-	bool t1 = EqualExpr(in, line);
+	bool t1 = EqualExpr(in, line, val1);
 		
 	if( !t1 ) {
 		return false;
@@ -528,7 +535,7 @@ bool LogANDExpr(istream& in, int& line, Value & retVal) {
 	}
 	while ( tok == AND ) 
 	{
-		t1 = EqualExpr(in, line);
+		t1 = EqualExpr(in, line, val2);
 		if( !t1 ) 
 		{
 			ParseError(line, "Missing operand after operator");
@@ -554,9 +561,10 @@ bool LogANDExpr(istream& in, int& line, Value & retVal) {
 }//End of LogANDExpr
 
 //EqualExpr ::= RelExpr [ == RelExpr ]
-bool EqualExpr(istream& in, int& line) {
+bool EqualExpr(istream& in, int& line, Value & retVal) {
 	LexItem tok;
-	bool t1 = RelExpr(in, line);
+	Value val1, val2;
+	bool t1 = RelExpr(in, line, val1);
 		
 	if( !t1 ) {
 		return false;
@@ -570,13 +578,19 @@ bool EqualExpr(istream& in, int& line) {
 	}
 	if ( tok == EQUAL ) 
 	{
-		t1 = RelExpr(in, line);
+		t1 = RelExpr(in, line, val2);
 		if( !t1 ) 
 		{
 			ParseError(line, "Missing operand after operator");
 			return false;
 		}
-		
+		retVal = retVal == val2;
+		if(retVal.IsErr())
+		{
+			ParseError(line, "Illegal EQUAL operation.");
+			//cout << "(" << tok.GetLexeme() << ")" << endl;		
+			return false;
+		}
 		tok = Parser::GetNextToken(in, line);
 		if(tok == EQUAL)
 		{
@@ -594,14 +608,15 @@ bool EqualExpr(istream& in, int& line) {
 }//End of EqualExpr
 
 //RelExpr ::= AddExpr [ ( < | > ) AddExpr ]
-bool RelExpr(istream& in, int& line) {
+bool RelExpr(istream& in, int& line, Value & retVal) {
 	LexItem tok;
-	bool t1 = AddExpr(in, line);
+	Value val1, val2;
+	bool t1 = AddExpr(in, line, val1);
 		
 	if( !t1 ) {
 		return false;
 	}
-	
+	retVal = val1;
 	tok = Parser::GetNextToken(in, line);
 	if(tok.GetToken() == ERR){
 		ParseError(line, "Unrecognized Input Pattern");
@@ -610,13 +625,23 @@ bool RelExpr(istream& in, int& line) {
 	}
 	if ( tok == LTHAN || tok == GTHAN) 
 	{
-		t1 = AddExpr(in, line);
+		t1 = AddExpr(in, line, val2);
 		if( !t1 ) 
 		{
 			ParseError(line, "Missing operand after operator");
 			return false;
 		}
-		
+		if(tok == LTHAN){
+			retVal = retVal < val2;
+		}else if(tok == GTHAN){
+			retVal = retVal > val2;
+		}	
+		if(retVal.IsErr())
+		{
+			ParseError(line, "Illegal AND operation.");
+			//cout << "(" << tok.GetLexeme() << ")" << endl;		
+			return false;
+		}
 		tok = Parser::GetNextToken(in, line);
 		
 		if(tok == LTHAN || tok == GTHAN)
@@ -635,10 +660,10 @@ bool RelExpr(istream& in, int& line) {
 }//End of RelExpr
 
 //AddExpr :: MultExpr { ( + | - ) MultExpr }
-bool AddExpr(istream& in, int& line) {
-	
-	bool t1 = MultExpr(in, line);
+bool AddExpr(istream& in, int& line, Value & retVal) {
 	LexItem tok;
+	Value val1, val2;
+	bool t1 = MultExpr(in, line, val1);
 	
 	if( !t1 ) {
 		return false;
@@ -652,13 +677,23 @@ bool AddExpr(istream& in, int& line) {
 	}
 	while ( tok == PLUS || tok == MINUS ) 
 	{
-		t1 = MultExpr(in, line);
+		t1 = MultExpr(in, line, val2);
 		if( !t1 ) 
 		{
 			ParseError(line, "Missing operand after operator");
 			return false;
 		}
-		
+		if(tok == PLUS){
+			retVal = retVal + val2;
+		}else if(tok == MINUS){
+			retVal = retVal - val2;
+		}	
+		if(retVal.IsErr())
+		{
+			ParseError(line, "Illegal AND operation.");
+			//cout << "(" << tok.GetLexeme() << ")" << endl;		
+			return false;
+		}
 		tok = Parser::GetNextToken(in, line);
 		if(tok.GetToken() == ERR){
 			ParseError(line, "Unrecognized Input Pattern");
@@ -671,7 +706,7 @@ bool AddExpr(istream& in, int& line) {
 }//End of MultExpr
 
 //MultExpr ::= UnaryExpr { ( * | / ) UnaryExpr }
-bool MultExpr(istream& in, int& line) {
+bool MultExpr(istream& in, int& line, Value & retVal) {
 	
 	bool t1 = UnaryExpr(in, line);
 	LexItem tok;
@@ -707,7 +742,7 @@ bool MultExpr(istream& in, int& line) {
 }//End of MultExpr
 
 //UnaryExpr ::= ( - | + | ! ) PrimaryExpr | PrimaryExpr
-bool UnaryExpr(istream& in, int& line)
+bool UnaryExpr(istream& in, int& line, Value & retVal)
 {
 	LexItem t = Parser::GetNextToken(in, line);
 	bool status;
@@ -730,7 +765,7 @@ bool UnaryExpr(istream& in, int& line)
 
 
 //PrimaryExpr ::= IDENT | ICONST | RCONST | SCONST | BCONST | ( Expr )
-bool PrimaryExpr(istream& in, int& line, int sign) {
+bool PrimaryExpr(istream& in, int& line, int sign, Value & retVal) {
 	
 	LexItem tok = Parser::GetNextToken(in, line);
 	
