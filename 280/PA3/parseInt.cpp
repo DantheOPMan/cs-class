@@ -316,7 +316,7 @@ bool PrintStmt(istream& in, int& line) {
 bool IfStmt(istream& in, int& line) {
 	bool ex = false, status ; 
 	LexItem t;
-	
+	Value retVal;
 	t = Parser::GetNextToken(in, line);
 	if( t != LPAREN ) {
 		
@@ -324,9 +324,14 @@ bool IfStmt(istream& in, int& line) {
 		return false;
 	}
 	
-	ex = Expr(in, line);
+	ex = Expr(in, line, retVal);
 	if( !ex ) {
 		ParseError(line, "Missing if statement Logic Expression");
+		return false;
+	}
+	if(retVal.IsErr())
+	{
+		ParseError(line, "Illegal logic operation.");
 		return false;
 	}
 	
@@ -412,19 +417,25 @@ bool AssignStmt(istream& in, int& line) {
 	
 	bool varstatus = false, status = false;
 	LexItem t;
-	
+	Value retVal;
 	varstatus = Var( in, line, t);
 	
 	if (varstatus){
 		t = Parser::GetNextToken(in, line);
 		
 		if (t == ASSOP){
-			status = Expr(in, line);
+			status = Expr(in, line, retVal);
 			
 			if(!status) {
 				ParseError(line, "Missing Expression in Assignment Statment");
 				return status;
 			}
+			if(retVal.IsErr())
+			{
+				ParseError(line, "Illegal logic operation.");
+				return false;
+			}
+			
 			
 		}
 		else if(t.GetToken() == ERR){
@@ -447,15 +458,19 @@ bool AssignStmt(istream& in, int& line) {
 //ExprList:= Expr {,Expr}
 bool ExprList(istream& in, int& line) {
 	bool status = false;
-	
-	status = Expr(in, line);
+	Value retVal;
+	status = Expr(in, line, retVal);
 	if(!status){
 		ParseError(line, "Missing Expression");
 		return false;
 	}
 	
 	LexItem tok = Parser::GetNextToken(in, line);
-	
+	if(retVal.IsErr())
+	{
+		ParseError(line, "Illegal logic operation.");
+		return false;
+	}
 	if (tok == COMMA) {
 		
 		status = ExprList(in, line);
@@ -707,9 +722,9 @@ bool AddExpr(istream& in, int& line, Value & retVal) {
 
 //MultExpr ::= UnaryExpr { ( * | / ) UnaryExpr }
 bool MultExpr(istream& in, int& line, Value & retVal) {
-	
-	bool t1 = UnaryExpr(in, line);
 	LexItem tok;
+	Value val1, val2;
+	bool t1 = UnaryExpr(in, line,val1);
 	
 	if( !t1 ) {
 		return false;
@@ -723,13 +738,17 @@ bool MultExpr(istream& in, int& line, Value & retVal) {
 	}
 	while ( tok == MULT || tok == DIV  )
 	{
-		t1 = UnaryExpr(in, line);
-		
+		t1 = UnaryExpr(in, line,val2);
 		if( !t1 ) {
 			ParseError(line, "Missing operand after operator");
 			return false;
 		}
-		
+		if(tok == MULT){
+			retVal = retVal * val2;
+		}else if(tok == DIV){
+			retVal = retVal / val2;
+		}	
+
 		tok	= Parser::GetNextToken(in, line);
 		if(tok.GetToken() == ERR){
 			ParseError(line, "Unrecognized Input Pattern");
@@ -745,6 +764,7 @@ bool MultExpr(istream& in, int& line, Value & retVal) {
 bool UnaryExpr(istream& in, int& line, Value & retVal)
 {
 	LexItem t = Parser::GetNextToken(in, line);
+	
 	bool status;
 	int sign = 0;
 	if(t == MINUS )
@@ -758,7 +778,7 @@ bool UnaryExpr(istream& in, int& line, Value & retVal)
 	else
 		Parser::PushBackToken(t);
 		
-	status = PrimaryExpr(in, line, sign);
+	status = PrimaryExpr(in, line, sign, retVal);
 	return status;
 }//End of UnaryExpr
 
@@ -797,7 +817,7 @@ bool PrimaryExpr(istream& in, int& line, int sign, Value & retVal) {
 		return true;
 	}
 	else if( tok == LPAREN ) {
-		bool ex = Expr(in, line);
+		bool ex = Expr(in, line,retVal);
 		if( !ex ) {
 			ParseError(line, "Missing expression after Left Parenthesis");
 			return false;
