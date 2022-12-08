@@ -334,7 +334,7 @@ bool IfStmt(istream& in, int& line) {
 	}
 	if(!retVal.IsBool())
 	{
-		ParseError(line, "Illegal logic operation.");
+		ParseError(line, "Illegal logic operation in if.");
 		return false;
 	}
 	
@@ -351,7 +351,8 @@ bool IfStmt(istream& in, int& line) {
 		ParseError(line, "If Statement Syntax Error");
 		return false;
 	}
-	if(retVal.GetBool()){
+	Value saveState = retVal;
+	if(saveState.GetBool()){
 		status = StmtList(in, line);
 		if(!status)
 		{
@@ -359,29 +360,29 @@ bool IfStmt(istream& in, int& line) {
 			return false;
 		}
 		t = Parser::GetNextToken(in, line);
-	}else{
-		//need to save all var state before running stmtList so changes dont go into effect
-		map<string, bool> tempdefVar = defVar;
-		map<string, Token> tempSymTable = SymTable;
-		map<string, Value> tempTempsResults = TempsResults;
-		status = StmtList(in, line);
-		//bring back old var state now
-		defVar = tempdefVar;
-		SymTable = tempSymTable;
-		TempsResults = tempTempsResults;
-		if( t == ELSE ) {
+	}
+	while((t.GetToken() != ELSE || t.GetToken()!=END || t.GetToken()!= DONE) && !saveState.GetBool()){
+		t = Parser::GetNextToken(in, line);
+	}
+	if( t == ELSE) {
+		if(saveState.GetBool()){
+			cout << "loop till end" << endl;
+			while(t.GetToken() != END || t.GetToken() !=DONE){
+				t = Parser::GetNextToken(in, line);
+			}
+		}else{
 			status = StmtList(in, line);
 			if(!status)
 			{
 				ParseError(line, "Missing Statement for If-Stmt Else-Part");
 				return false;
-			}
-			else
-			{
+			}else{
 				t = Parser::GetNextToken(in, line);
 			}
 		}
+		
 	}
+	
 	if( t == END){
 		t = Parser::GetNextToken(in, line);
 		if(t != IF){
@@ -436,25 +437,28 @@ bool AssignStmt(istream& in, int& line) {
 		t = Parser::GetNextToken(in, line);
 		if (t == ASSOP){
 			status = Expr(in, line, retVal);
+			//cout << retVal << endl;
 			if(!status) {
 				ParseError(line, "Missing Expression in Assignment Statment");
 				return status;
 			}
 			if(retVal.IsErr())
 			{
-				ParseError(line, "Illegal logic operation.");
+				ParseError(line, "Illegal logic operation in assign.");
 				return false;
 			}else if(retVal.IsBool() && SymTable[identstr] == BOOL){
 				TempsResults[identstr] = retVal;
 			}else if(retVal.IsInt() && SymTable[identstr] == INT){ 
 				TempsResults[identstr] = retVal;
-			}else if((retVal.IsReal() || retVal.IsInt()) && SymTable[identstr] == FLOAT){ 
+			}else if(retVal.IsReal() && SymTable[identstr] == FLOAT){ 
 				TempsResults[identstr] = retVal;
+			}else if(retVal.IsReal() && SymTable[identstr] == INT){ 
+				TempsResults[identstr] = (int)retVal.GetReal();
+			}else if(retVal.IsInt() && SymTable[identstr] == FLOAT){ 
+				TempsResults[identstr] = Value(static_cast< float >(retVal.GetInt())) ;
 			}else if(retVal.IsString() && SymTable[identstr] == SCONST){ 
 				TempsResults[identstr] = retVal;
 			}else{
-				cout << retVal.GetType() << endl;
-				cout << SymTable[identstr] << endl;
 				ParseError(line, "Value type do not match.");
 				return false;
 			}
@@ -488,7 +492,7 @@ bool ExprList(istream& in, int& line) {
 	LexItem tok = Parser::GetNextToken(in, line);
 	if(retVal.IsErr())
 	{
-		ParseError(line, "Illegal logic operation.");
+		ParseError(line, "Illegal logic operation in exprlist.");
 		return false;
 	}
 	ValQue->push(retVal);
@@ -513,7 +517,7 @@ bool Expr(istream& in, int& line, Value & retVal) {
 	LexItem tok;
 	Value val1, val2;
 	bool t1 = LogANDExpr(in, line,val1);
-		
+	//cout << val1 << endl;
 	if( !t1 ) {
 		return false;
 	}
@@ -555,11 +559,13 @@ bool LogANDExpr(istream& in, int& line, Value & retVal) {
 	LexItem tok;
     Value val1, val2;
 	bool t1 = EqualExpr(in, line, val1);
+	//cout << val1 << endl;
 	if( !t1 ) {
 		return false;
 	}
 	
     retVal = val1;
+	
 	tok = Parser::GetNextToken(in, line);
 	if(tok.GetToken() == ERR){
 		ParseError(line, "Unrecognized Input Pattern");
@@ -574,7 +580,6 @@ bool LogANDExpr(istream& in, int& line, Value & retVal) {
 			ParseError(line, "Missing operand after operator");
 			return false;
 		}
-        
 		retVal = retVal && val2;
 		if(retVal.IsErr())
 		{
@@ -671,7 +676,7 @@ bool RelExpr(istream& in, int& line, Value & retVal) {
 		}	
 		if(retVal.IsErr())
 		{
-			ParseError(line, "Illegal AND operation.");
+			ParseError(line, "Illegal GTHAN LTHAN operation.");
 			//cout << "(" << tok.GetLexeme() << ")" << endl;		
 			return false;
 		}
@@ -723,7 +728,7 @@ bool AddExpr(istream& in, int& line, Value & retVal) {
 		}	
 		if(retVal.IsErr())
 		{
-			ParseError(line, "Illegal AND operation.");
+			ParseError(line, "Illegal PLUS MINUS operation.");
 			//cout << "(" << tok.GetLexeme() << ")" << endl;		
 			return false;
 		}
@@ -765,6 +770,17 @@ bool MultExpr(istream& in, int& line, Value & retVal) {
 		if(tok == MULT){
 			retVal = retVal * val2;
 		}else if(tok == DIV){
+			if(val2.IsInt()){
+				if(val2.GetInt() == 0){
+					ParseError(line, "Run-Time Error-Illegal Division by Zero");
+					return false;
+				}
+			}else if(val2.IsReal()){
+				if(val2.GetReal() == 0){
+					ParseError(line, "Run-Time Error-Illegal Division by Zero");
+					return false;
+				}
+			}
 			retVal = retVal / val2;
 		}	
 
@@ -793,6 +809,8 @@ bool UnaryExpr(istream& in, int& line, Value & retVal)
 	else if(t == PLUS)
 	{
 		sign = 1;
+	}else if(t == NOT){
+		sign = 2;
 	}
 	else
 		Parser::PushBackToken(t);
@@ -817,6 +835,34 @@ bool PrimaryExpr(istream& in, int& line, int sign, Value & retVal) {
 			ParseError(line, "Using Undeclared Variable");
 			return false;	
 		}
+		retVal = TempsResults[lexeme];
+		if(sign == 2){
+			if((TempsResults[lexeme]).IsBool()){
+				retVal = Value(!TempsResults[lexeme]);	
+			}else{
+				retVal = Value();	
+			}
+		}else if(sign == 1){
+			if(TempsResults[lexeme].IsReal() || TempsResults[lexeme].IsInt()){
+				if (TempsResults[lexeme].GetInt()<0 || TempsResults[lexeme].GetReal() < 0){
+					retVal = Value(TempsResults[lexeme] *-1);
+				}
+			}else{
+				retVal = Value();
+			}			
+		}else if(sign == -1){
+			if(TempsResults[lexeme].IsReal() || TempsResults[lexeme].IsInt()){
+				if (TempsResults[lexeme].GetInt()>0 || TempsResults[lexeme].GetReal() > 0){
+					retVal = Value(TempsResults[lexeme] *-1);
+				}
+			}else{
+				retVal = Value();
+			}
+		}
+		if(retVal.IsErr()){
+			ParseError(line, "Illegal Operand Type for Sign Operator");
+			return false;	
+		}		
 		return true;
 	}
 	else if( tok == ICONST ) {
@@ -832,12 +878,12 @@ bool PrimaryExpr(istream& in, int& line, int sign, Value & retVal) {
 		return true;
 	}
 	else if( tok == SCONST ) {
-		cout << tok.GetLexeme() << endl;
+		//cout << tok.GetLexeme() << endl;
 		retVal = Value(tok.GetLexeme());
 		return true;
 	}
 	else if( tok == RCONST ) {
-		cout << tok.GetLexeme() << endl;
+		//cout << tok.GetLexeme() << endl;
 		if(sign == 0){
 			retVal = Value(stof(tok.GetLexeme()));
 		}else if(sign == 1){
@@ -848,7 +894,7 @@ bool PrimaryExpr(istream& in, int& line, int sign, Value & retVal) {
 		return true;
 	}
 	else if( tok == BCONST ) {
-		cout << tok.GetLexeme() << endl;
+		//cout << tok.GetLexeme() << endl;
 		if(tok.GetLexeme() == "TRUE"){
 			retVal = Value(true);
 		}else{
