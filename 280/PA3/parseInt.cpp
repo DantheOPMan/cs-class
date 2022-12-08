@@ -352,6 +352,7 @@ bool IfStmt(istream& in, int& line) {
 		return false;
 	}
 	Value saveState = retVal;
+	
 	if(saveState.GetBool()){
 		status = StmtList(in, line);
 		if(!status)
@@ -363,12 +364,17 @@ bool IfStmt(istream& in, int& line) {
 	}
 	while((t.GetToken() != ELSE || t.GetToken()!=END || t.GetToken()!= DONE) && !saveState.GetBool()){
 		t = Parser::GetNextToken(in, line);
+		if(t.GetToken() == ELSE || t.GetToken()==END || t.GetToken()== DONE){
+			break;
+		}
 	}
 	if( t == ELSE) {
 		if(saveState.GetBool()){
-			cout << "loop till end" << endl;
 			while(t.GetToken() != END || t.GetToken() !=DONE){
 				t = Parser::GetNextToken(in, line);
+				if(t.GetToken() == END){
+					break;
+				}
 			}
 		}else{
 			status = StmtList(in, line);
@@ -380,7 +386,6 @@ bool IfStmt(istream& in, int& line) {
 				t = Parser::GetNextToken(in, line);
 			}
 		}
-		
 	}
 	
 	if( t == END){
