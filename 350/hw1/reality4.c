@@ -25,8 +25,8 @@ int main(int argc,char **argv) {
   gettimeofday(&tv_e, NULL); 
 
   /* fill here to compute elapsed time */
-
-  printf("copyji(): dim=%d: elapsed=%ld.%03ld secs\n",NNN,del_sec,del_msec/1000);
+  del_sec = tv_e - tv_s;
+  printf("copyij(): dim=%d: elapsed=%ld.%03ld secs\n",NNN,del_sec,del_msec/1000);
 
 
   init_mat();
