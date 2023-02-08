@@ -1,7 +1,6 @@
 /* Print a float in binary: ftob.c */
 #include <stdio.h>
-#include <std
-lib.h>
+#include <stdlib.h>
 
 //void float_to_string(float f, char *s, int n);
 void float_to_string(float,char *,int);
@@ -45,13 +44,11 @@ void print_float(char *s, int n) {
   /* fill here */
   printf("%c ", s[0]);
 
-  /* print exponent */
   for (i=1; i<=EXP_32; i++) {
     printf("%c", s[i]);
   }
   printf(" ");
-
-  /* print significand */
+b 
   for (i=MAN_32; i<n; i++) {
     printf("%c", s[i]);
   }
