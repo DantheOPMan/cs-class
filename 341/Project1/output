@@ -1,0 +1,108 @@
+Project 1 for CS 341
+Section number: 006
+Semester: Spring 2023
+Written by: Daniel Yankovich, dy27
+Instructor: Marvin Nakayama, marvin@njit.edu
+
+Do you want to enter a string?
+Enter a string over Σ:
+f8o9o@ab32cdef.edu
+q0 f q1 8 q1 o q1 9 q1 o q1 @ q4 a q5 b q5 3 q5 2 q5 c q5 d q5 e q5 f q5 . q6 e q8 d q9 u q10 Accepted
+
+Do you want to enter a string?
+Enter a string over Σ:
+z@e.edu
+q0 z q1 @ q4 e q5 . q6 e q8 d q9 u q10 Accepted
+
+Do you want to enter a string?
+Enter a string over Σ:
+ba@ba.ed
+q0 b q1 a q1 @ q4 b q5 a q5 . q6 e q8 d q9 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+edfg@.edu
+q0 e q1 d q1 f q1 g q1 @ q4 . q11 e q11 d q11 u q11 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+web2web.a.c97c.edu@j.k68c42.educate.edu
+q0 w q1 e q1 b q1 2 q1 w q1 e q1 b q1 . q2 a q3 . q2 c q3 9 q3 7 q3 c q3 . q2 e q3 d q3 u q3 @ q4 j q5 . q6 k q7 6 q7 8 q7 c q7 4 q7 2 q7 . q6 e q8 d q9 u q10 c q7 a q7 t q7 e q7 . q6 e q8 d q9 u q10 Accepted
+
+Do you want to enter a string?
+Enter a string over Σ:
+fo8o@goo2.edu..edu
+q0 f q1 o q1 8 q1 o q1 @ q4 g q5 o q5 o q5 2 q5 . q6 e q8 d q9 u q10 . q6 . q11 e q11 d q11 u q11 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+ab67qe.@boom.edu
+q0 a q1 b q1 6 q1 7 q1 q q1 e q1 . q2 @ q11 b q11 o q11 o q11 m q11 . q11 e q11 d q11 u q11 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+edu2c@computer56.educate
+q0 e q1 d q1 u q1 2 q1 c q1 @ q4 c q5 o q5 m q5 p q5 u q5 t q5 e q5 r q5 5 q5 6 q5 . q6 e q8 d q9 u q10 c q7 a q7 t q7 e q7 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+redblue@green..edu
+q0 r q1 e q1 d q1 b q1 l q1 u q1 e q1 @ q4 g q5 r q5 e q5 e q5 n q5 . q6 . q11 e q11 d q11 u q11 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+random6@edu
+q0 r q1 a q1 n q1 d q1 o q1 m q1 6 q1 @ q4 e q5 d q5 u q5 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+p654aa7e@a896.edu.edu
+q0 p q1 6 q1 5 q1 4 q1 a q1 a q1 7 q1 e q1 @ q4 a q5 8 q5 9 q5 6 q5 . q6 e q8 d q9 u q10 . q6 e q8 d q9 u q10 Accepted
+
+Do you want to enter a string?
+Enter a string over Σ:
+www@a89.edu.educ
+q0 w q1 w q1 w q1 @ q4 a q5 8 q5 9 q5 . q6 e q8 d q9 u q10 . q6 e q8 d q9 u q10 c q7 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+wwwb@bb91a.edu.ed
+q0 w q1 w q1 w q1 b q1 @ q4 b q5 b q5 9 q5 1 q5 a q5 . q6 e q8 d q9 u q10 . q6 e q8 d q9 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+34big.edu@bbdef29.edu
+q0 3 q11 4 q11 b q11 i q11 g q11 . q11 e q11 d q11 u q11 @ q11 b q11 b q11 d q11 e q11 f q11 2 q11 9 q11 . q11 e q11 d q11 u q11 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+food@for.edu@
+q0 f q1 o q1 o q1 d q1 @ q4 f q5 o q5 r q5 . q6 e q8 d q9 u q10 @ q11 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+net.a.b.4c@comma3.edu.edu
+q0 n q1 e q1 t q1 . q2 a q3 . q2 b q3 . q2 4 q11 c q11 @ q11 c q11 o q11 m q11 m q11 a q11 3 q11 . q11 e q11 d q11 u q11 . q11 e q11 d q11 u q11 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+net84work.abb@common.6edu.edu
+q0 n q1 e q1 t q1 8 q1 4 q1 w q1 o q1 r q1 k q1 . q2 a q3 b q3 b q3 @ q4 c q5 o q5 m q5 m q5 o q5 n q5 . q6 6 q11 e q11 d q11 u q11 . q11 e q11 d q11 u q11 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+@abcde.edu
+q0 @ q11 a q11 b q11 c q11 d q11 e q11 . q11 e q11 d q11 u q11 Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+people5.d7og.c8at@c.edu3.edu
+q0 p q1 e q1 o q1 p q1 l q1 e q1 5 q1 . q2 d q3 7 q3 o q3 g q3 . q2 c q3 8 q3 a q3 t q3 @ q4 c q5 . q6 e q8 d q9 u q10 3 q7 . q6 e q8 d q9 u q10 Accepted
+
+Do you want to enter a string?
+Enter a string over Σ:
+cable..cord@fort.edu
+q0 c q1 a q1 b q1 l q1 e q1 . q2 . q11 c q11 o q11 r q11 d q11 @ q11 f q11 o q11 r q11 t q11 . q11 e q11 d q11 u q11 Rejected
+
+Do you want to enter a string?
+Terminated
