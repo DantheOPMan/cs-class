@@ -1,4 +1,4 @@
 #!/bin/bash
 echo $0
-echo hello
+echo hello * world
 tac daniel
