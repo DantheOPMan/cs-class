@@ -15,14 +15,19 @@ while read line; do
     fi
 done < $input
 
-tagNumbers=($(echo "${!balances[*]}" | tr ' ' '\n' | cut -d ',' -f 1 | sort -u))
+tagNumbers=($(echo "${!balances[@]}" | tr ' ' '\n' | cut -d ',' -f 1 | sort -u))
 for tagNumber in "${tagNumbers[@]}"; do
     echo -n "" > $tagNumber
-
+    
     dates=($(echo "${!balances[@]}" | tr ' ' '\n' | grep -E "$tagNumber," | cut -d ',' -f 2 | sort -n -t"/" -k3 -k1 -k2))
     balance=0
     for date in "${dates[@]}"; do
         balance=$(echo "$balance + ${balances[$tagNumber,$date]}" | bc)
-        echo "$date,$balance" >> "$tagNumber"
+        if [ ${balance:0:1} = "." ]; then
+            echo "$date,0$balance" >> "$tagNumber"
+        else
+            echo "$date,$balance" >> "$tagNumber"
+        fi
+        
     done
 done

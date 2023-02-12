@@ -23,46 +23,37 @@ int main(int argc, char *argv[]){
     std::cout << "Instructor: Marvin Nakayama, marvin@njit.edu\n" << std::endl;
 
     //setup the states and each character mapping
-    state states[12];
+    state states[9];
 
-    for(int i = 0; i< 12; i++){
+    for(int i = 0; i< 9; i++){
         states[i].stateVal = i;
         if(i==0){
-            states[i].charPointMap['.'] = 11;
-            states[i].charPointMap['@'] = 11;
+            states[i].charPointMap['.'] = 8;
+            states[i].charPointMap['@'] = 8;
         }else if(i==1){
-            states[i].charPointMap['.'] = 2;
-            states[i].charPointMap['@'] = 4;
+            states[i].charPointMap['.'] = 0;
+            states[i].charPointMap['@'] = 2;
         }else if(i==2){
-            states[i].charPointMap['.'] = 11;
-            states[i].charPointMap['@'] = 11;
+            states[i].charPointMap['.'] = 8;
+            states[i].charPointMap['@'] = 8;
         }else if(i==3){
-            states[i].charPointMap['.'] = 2;
-            states[i].charPointMap['@'] = 4;
+            states[i].charPointMap['.'] = 4;
+            states[i].charPointMap['@'] = 8;
         }else if(i==4){
-            states[i].charPointMap['.'] = 11;
-            states[i].charPointMap['@'] = 11;
+            states[i].charPointMap['.'] = 8;
+            states[i].charPointMap['@'] = 8;
         }else if(i==5){
-            states[i].charPointMap['.'] = 6;
-            states[i].charPointMap['@'] = 11;
+            states[i].charPointMap['.'] = 4;
+            states[i].charPointMap['@'] = 8;
         }else if(i==6){
-            states[i].charPointMap['.'] = 11;
-            states[i].charPointMap['@'] = 11;
+            states[i].charPointMap['.'] = 4;
+            states[i].charPointMap['@'] = 8;
         }else if(i==7){
-            states[i].charPointMap['.'] = 6;
-            states[i].charPointMap['@'] = 11;
+            states[i].charPointMap['.'] = 4;
+            states[i].charPointMap['@'] = 8;
         }else if(i==8){
-            states[i].charPointMap['.'] = 11;
-            states[i].charPointMap['@'] = 11;
-        }else if(i==9){
-            states[i].charPointMap['.'] = 11;
-            states[i].charPointMap['@'] = 11;
-        }else if(i==10){
-            states[i].charPointMap['.'] = 6;
-            states[i].charPointMap['@'] = 11;
-        }else if(i==11){
-            states[i].charPointMap['.'] = 11;
-            states[i].charPointMap['@'] = 11;
+            states[i].charPointMap['.'] = 8;
+            states[i].charPointMap['@'] = 8;
         }
         for(char j = 'a'; j <= 'z'; j++){
             if(i==0){
@@ -74,67 +65,55 @@ int main(int argc, char *argv[]){
             }else if(i==3){
                 states[i].charPointMap[j] = 3;
             }else if(i==4){
-                states[i].charPointMap[j] = 5;
-            }else if(i==5){
-                states[i].charPointMap[j] = 5;
-            }else if(i==6){
                 if(j == 'e' ){
-                    states[i].charPointMap[j] = 8;
+                    states[i].charPointMap[j] = 5;
                 }else{
+                    states[i].charPointMap[j] = 3;
+                }
+            }else if(i==5){
+                if(j == 'd'){
+                    states[i].charPointMap[j] = 6;
+                }else{
+                    states[i].charPointMap[j] = 3;
+                }
+            }else if(i==6){
+                if(j == 'u'){
                     states[i].charPointMap[j] = 7;
+                }else{
+                    states[i].charPointMap[j] = 3;
                 }
             }else if(i==7){
-                states[i].charPointMap[j] = 7;
+                states[i].charPointMap[j] = 3;
             }else if(i==8){
-                if(j == 'd'){
-                    states[i].charPointMap[j] = 9;
-                }else{
-                    states[i].charPointMap[j] = 7;
-                }
-            }else if(i==9){
-                if(j == 'u'){
-                    states[i].charPointMap[j] = 10;
-                }else{
-                    states[i].charPointMap[j] = 7;
-                }
-            }else if(i==10){
-                states[i].charPointMap[j] = 7;
-            }else if(i==11){
-                states[i].charPointMap[j] = 11;
+                states[i].charPointMap[j] = 8;
             }
         }
         for(char j = '0'; j <= '9'; j++){
             if(i==0){
-                states[i].charPointMap[j] = 11;
+                states[i].charPointMap[j] = 8;
             }else if(i==1){
                 states[i].charPointMap[j] = 1;
             }else if(i==2){
-                states[i].charPointMap[j] = 11;
+                states[i].charPointMap[j] = 8;
             }else if(i==3){
                 states[i].charPointMap[j] = 3;
             }else if(i==4){
-                states[i].charPointMap[j] = 11;
+                states[i].charPointMap[j] = 8;
             }else if(i==5){
-                states[i].charPointMap[j] = 5;
+                states[i].charPointMap[j] = 4;
             }else if(i==6){
-                states[i].charPointMap[j] = 11;
+                states[i].charPointMap[j] = 4;
             }else if(i==7){
-                states[i].charPointMap[j] = 7;
+                states[i].charPointMap[j] = 4;
             }else if(i==8){
-                states[i].charPointMap[j] = 7;
-            }else if(i==9){
-                states[i].charPointMap[j] = 7;
-            }else if(i==10){
-                states[i].charPointMap[j] = 7;
-            }else if(i==11){
-                states[i].charPointMap[j] = 11;
+                states[i].charPointMap[j] = 8;
             }
         }
     }
     
     //state logic to iterate through all the
     char c = 0;
-    const int endState = 10;
+    const int endState = 7;
     int currentState = 0;
     string input;
     do{
