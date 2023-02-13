@@ -1,7 +1,7 @@
 #!/bin/bash
 
 input=$1
-declare -A balances
+declare -A balances 
 
 while read line; do
     tagNumber=${line:5:6}
