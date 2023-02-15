@@ -48,7 +48,6 @@ void print_float(char *s, int n) {
     printf("%c", s[i]);
   }
   printf(" ");
-b 
   for (i=MAN_32; i<n; i++) {
     printf("%c", s[i]);
   }
