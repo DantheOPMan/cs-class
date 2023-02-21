@@ -1,0 +1,8 @@
+N r0 c0
+H r1 c6
+D r2 c5
+D r0 c8
+M r17 c6
+H     r3    c0
+H r2        c4
+H r2        c3
