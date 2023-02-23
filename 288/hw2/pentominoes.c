@@ -28,18 +28,11 @@ int main(int argc, char *argv[]) {
     FILE *file;
 
     if (argc != 2) {
-        printf("Usage: %s filename\n", argv[0]);
         return 1;
     }
     
     file = fopen(argv[1], "r");
-    if (file == NULL) {
-        printf("Unable to open file: %s\n", argv[1]);
-        return 1;
-    }
-
-    /*File is now open and ready to read or write to.*/
-    
+       
     for(i=0; i < 12; i++){
         for(j=0; j < 10; j++){
             field[i][j] = 0;
@@ -106,7 +99,6 @@ int main(int argc, char *argv[]) {
                 clearLine(field);
                 caseNum = 0;
                 break;
-            
         }
         
     }
