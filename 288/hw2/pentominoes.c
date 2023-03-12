@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
     int h[4][4] = {{0,1,0,0}, {0,1,0,0}, {1,1,0,0}, {1,0,0,0}};
     int m[4][4] = {{0,0,0,0}, {0,0,1,0}, {0,1,1,0}, {1,1,0,0}};
     int n[4][4] = {{0,0,0,0}, {0,1,0,0}, {1,1,1,0}, {0,1,0,0}};
-    char rotationText[100] = "";
+    char rotationText[2048] = "";
     int rotations;
     char position;
     int shape[4][4];
