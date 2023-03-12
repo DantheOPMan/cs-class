@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
     int h[4][4] = {{0,1,0,0}, {0,1,0,0}, {1,1,0,0}, {1,0,0,0}};
     int m[4][4] = {{0,0,0,0}, {0,0,1,0}, {0,1,1,0}, {1,1,0,0}};
     int n[4][4] = {{0,0,0,0}, {0,1,0,0}, {1,1,1,0}, {0,1,0,0}};
-    char rotationText[2048] = "";
+    char rotationText[100] = "";
     int rotations;
     char position;
     int shape[4][4];
@@ -51,10 +51,10 @@ int main(int argc, char *argv[]) {
                     ungetc(c,file);
                     caseNum = 1;
                 }
-                if(c == 'r' ||  c == 'R'){
+                if(c == 'r'){
                     caseNum = 2;
                 }
-                if(c == 'c' ||  c == 'C'){
+                if(c == 'c'){
                     ungetc(c,file);
                     caseNum = 3;
                 }
@@ -123,12 +123,12 @@ void placeShapeOntoField(int field[12][10], int shape[4][4], int position){
     int check;
     for (i=0; i<12; i++){
         check = checkSpace(field, shape, i, position);
-        if(check != -1){
+        if(check != 0){
             for(k=0; k < 4; k++){
                 for(l = 0; l < 4; l++){
                     if(shape[k][l] == 1){
                         if(check-(4-k) < 0){
-                            /*exit(1);*/
+                            exit(1);
                         }
                         field[check+k][position + l] = shape[k][l];
                     }
@@ -153,7 +153,7 @@ int checkSpace(int field[12][10], int shape[4][4], int currentI, int currentJ){
         return currentI;
     }
     
-    return -1;
+    return 0;
 }
 
 
