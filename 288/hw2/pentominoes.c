@@ -51,10 +51,10 @@ int main(int argc, char *argv[]) {
                     ungetc(c,file);
                     caseNum = 1;
                 }
-                if(c == 'r'){
+                if(c == 'r' ||  c == 'R'){
                     caseNum = 2;
                 }
-                if(c == 'c'){
+                if(c == 'c' ||  c == 'C'){
                     ungetc(c,file);
                     caseNum = 3;
                 }
@@ -123,12 +123,12 @@ void placeShapeOntoField(int field[12][10], int shape[4][4], int position){
     int check;
     for (i=0; i<12; i++){
         check = checkSpace(field, shape, i, position);
-        if(check != 0){
+        if(check != -1){
             for(k=0; k < 4; k++){
                 for(l = 0; l < 4; l++){
                     if(shape[k][l] == 1){
                         if(check-(4-k) < 0){
-                            exit(1);
+                            /*exit(1);*/
                         }
                         field[check+k][position + l] = shape[k][l];
                     }
@@ -153,7 +153,7 @@ int checkSpace(int field[12][10], int shape[4][4], int currentI, int currentJ){
         return currentI;
     }
     
-    return 0;
+    return -1;
 }
 
 
