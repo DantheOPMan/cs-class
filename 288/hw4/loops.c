@@ -146,26 +146,32 @@ int main() {
     clock_t startTime, endTime;
     double outputTime;
     
-    for(arrSize = 10; arrSize <= 100000000; arrSize *= 10){
+    for(arrSize = 10; arrSize <= 1000000000; arrSize *= 10){
         arr = calloc(arrSize,sizeof(int));
         inputArray = calloc(arrSize,sizeof(int));
         genArray(arr, arrSize);
 
-        /*Selection Sort
-        setArray(inputArray, arr, arrSize);
-        startTime = clock(); 
-        selection_sort(inputArray, arrSize);
-        endTime = clock();  
-        outputTime = ((double) (endTime - startTime)) / CLOCKS_PER_SEC;
-        printf("Time taken Selection Sort with Arr size %d: %f seconds\n", arrSize,outputTime);*/
+        /*Selection Sort*/
+        if(arrSize <=1000000){
+            setArray(inputArray, arr, arrSize);
+            startTime = clock(); 
+            selection_sort(inputArray, arrSize);
+            endTime = clock();  
+            outputTime = ((double) (endTime - startTime)) / CLOCKS_PER_SEC;
+            printf("Time taken Selection Sort with Arr size %d: %f seconds\n", arrSize,outputTime);
+        }
         
-        /*Merge Sort
-        setArray(inputArray, arr, arrSize);
-        startTime = clock(); 
-        mergeSort(inputArray, 0, arrSize);
-        endTime = clock();  
-        outputTime = ((double) (endTime - startTime)) / CLOCKS_PER_SEC;
-        printf("Time taken Merge Sort with Arr size %d: %f seconds\n", arrSize,outputTime);*/
+        
+        /*Merge Sort*/
+        if(arrSize <=100000000){
+            setArray(inputArray, arr, arrSize);
+            startTime = clock(); 
+            mergeSort(inputArray, 0, arrSize);
+            endTime = clock();  
+            outputTime = ((double) (endTime - startTime)) / CLOCKS_PER_SEC;
+            printf("Time taken Merge Sort with Arr size %d: %f seconds\n", arrSize,outputTime);
+        }
+        
 
         /*Radix Sort*/
         setArray(inputArray, arr, arrSize);
