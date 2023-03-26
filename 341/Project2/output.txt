@@ -1,0 +1,431 @@
+Project 2 for CS 341
+Section number: 006
+Semester: Spring 2023
+Written by: Daniel Yankovich, dy27
+Instructor: Marvin Nakayama, marvin@njit.edu
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$381.5886$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: 3 Popped:  Pushed:  Current State: q3
+Symbol: 8 Popped:  Pushed:  Current State: q3
+Symbol: 1 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 5 Popped:  Pushed:  Current State: q5
+Symbol: 8 Popped:  Pushed:  Current State: q5
+Symbol: 8 Popped:  Pushed:  Current State: q5
+Symbol: 6 Popped:  Pushed:  Current State: q5
+Symbol: $ Popped: $ Pushed:  Current State: q8
+Symbol: $ Popped: $ Pushed:  Current State: q9
+Accepted
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$.8+7.-8.00/90.765+$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 8 Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: 7 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: - Popped:  Pushed:  Current State: q7
+Symbol: 8 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 0 Popped:  Pushed:  Current State: q5
+Symbol: 0 Popped:  Pushed:  Current State: q5
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: 9 Popped:  Pushed:  Current State: q3
+Symbol: 0 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 7 Popped:  Pushed:  Current State: q5
+Symbol: 6 Popped:  Pushed:  Current State: q5
+Symbol: 5 Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: $ Popped:  Pushed:  Current State:
+Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$7956.+.492*341.2/060.10/52581.263-.9+.53/7.$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: 7 Popped:  Pushed:  Current State: q3
+Symbol: 9 Popped:  Pushed:  Current State: q3
+Symbol: 5 Popped:  Pushed:  Current State: q3
+Symbol: 6 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 4 Popped:  Pushed:  Current State: q5
+Symbol: 9 Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: * Popped:  Pushed:  Current State: q7
+Symbol: 3 Popped:  Pushed:  Current State: q3
+Symbol: 4 Popped:  Pushed:  Current State: q3
+Symbol: 1 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: 0 Popped:  Pushed:  Current State: q3
+Symbol: 6 Popped:  Pushed:  Current State: q3
+Symbol: 0 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 1 Popped:  Pushed:  Current State: q5
+Symbol: 0 Popped:  Pushed:  Current State: q5
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: 5 Popped:  Pushed:  Current State: q3
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: 5 Popped:  Pushed:  Current State: q3
+Symbol: 8 Popped:  Pushed:  Current State: q3
+Symbol: 1 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: 6 Popped:  Pushed:  Current State: q5
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: - Popped:  Pushed:  Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 9 Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 5 Popped:  Pushed:  Current State: q5
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: 7 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: $ Popped: $ Pushed:  Current State: q8
+Symbol: $ Popped: $ Pushed:  Current State: q9
+Accepted
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$382.89*34$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: 3 Popped:  Pushed:  Current State: q3
+Symbol: 8 Popped:  Pushed:  Current State: q3
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 8 Popped:  Pushed:  Current State: q5
+Symbol: 9 Popped:  Pushed:  Current State: q5
+Symbol: * Popped:  Pushed:  Current State: q7
+Symbol: 3 Popped:  Pushed:  Current State: q3
+Symbol: 4 Popped:  Pushed:  Current State: q3
+Symbol: $ Popped:  Pushed:  Current State:
+Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$4.239-.*7.29$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: 4 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: 9 Popped:  Pushed:  Current State: q5
+Symbol: - Popped:  Pushed:  Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: * Popped:  Pushed:  Current State:
+Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$6.88.6+32.208$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: 6 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 8 Popped:  Pushed:  Current State: q5
+Symbol: 8 Popped:  Pushed:  Current State: q5
+Symbol: . Popped:  Pushed:  Current State:
+Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$(1.2+(3.4-.9)/39).3$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: ( Popped:  Pushed: ( Current State: q2
+Symbol: 1 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: 3 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 4 Popped:  Pushed:  Current State: q5
+Symbol: - Popped:  Pushed:  Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 9 Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: 3 Popped:  Pushed:  Current State: q3
+Symbol: 9 Popped:  Pushed:  Current State: q3
+Symbol: ) Popped:  Pushed:  Current State:
+Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$(.3)64$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: ( Popped:  Pushed: ( Current State: q2
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: 6 Popped:  Pushed:  Current State:
+Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$((824.23+(9.22-00.0)*21.2))+((.2/7.))$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: ( Popped:  Pushed: ( Current State: q2
+Symbol: ( Popped:  Pushed: ( Current State: q2
+Symbol: 8 Popped:  Pushed:  Current State: q3
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: 4 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: 9 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: - Popped:  Pushed:  Current State: q7
+Symbol: 0 Popped:  Pushed:  Current State: q3
+Symbol: 0 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 0 Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: * Popped:  Pushed:  Current State: q7
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: 1 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: 7 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: $ Popped: $ Pushed:  Current State: q8
+Symbol: $ Popped: $ Pushed:  Current State: q9
+Accepted
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$(())$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: ( Popped:  Pushed: ( Current State: q2
+Symbol: ( Popped:  Pushed: ( Current State: q2
+Symbol: ) Popped:  Pushed:  Current State:
+Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$((14.252+(692.211*(.39+492.1))/49.235)$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: ( Popped:  Pushed: ( Current State: q2
+Symbol: ( Popped:  Pushed: ( Current State: q2
+Symbol: 1 Popped:  Pushed:  Current State: q3
+Symbol: 4 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: 5 Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: 6 Popped:  Pushed:  Current State: q3
+Symbol: 9 Popped:  Pushed:  Current State: q3
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: 1 Popped:  Pushed:  Current State: q5
+Symbol: 1 Popped:  Pushed:  Current State: q5
+Symbol: * Popped:  Pushed:  Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: 9 Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: 4 Popped:  Pushed:  Current State: q3
+Symbol: 9 Popped:  Pushed:  Current State: q3
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 1 Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: 4 Popped:  Pushed:  Current State: q3
+Symbol: 9 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: 5 Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: $ Popped: $ Pushed:  Current State: q8
+Symbol: $ Popped:  Pushed:  Current State:
+Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$+6.5$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: + Popped:  Pushed:  Current State:
+Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$26.0*(.87/((4.+.2)/(23.531)-2.9)+6.)/(((823.*.333-57.*8.0)/.33+.0))$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: 6 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 0 Popped:  Pushed:  Current State: q5
+Symbol: * Popped:  Pushed:  Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 8 Popped:  Pushed:  Current State: q5
+Symbol: 7 Popped:  Pushed:  Current State: q5
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: 4 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: 3 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 5 Popped:  Pushed:  Current State: q5
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: 1 Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: - Popped:  Pushed:  Current State: q7
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 9 Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: 6 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: 8 Popped:  Pushed:  Current State: q3
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: 3 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: * Popped:  Pushed:  Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: - Popped:  Pushed:  Current State: q7
+Symbol: 5 Popped:  Pushed:  Current State: q3
+Symbol: 7 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: * Popped:  Pushed:  Current State: q7
+Symbol: 8 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 0 Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: 3 Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 0 Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: $ Popped: $ Pushed:  Current State: q8
+Symbol: $ Popped: $ Pushed:  Current State: q9
+Accepted
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$.0*(32.922+.7-*9.))$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 0 Popped:  Pushed:  Current State: q5
+Symbol: * Popped:  Pushed:  Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: 3 Popped:  Pushed:  Current State: q3
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: 9 Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: 2 Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 7 Popped:  Pushed:  Current State: q5
+Symbol: - Popped:  Pushed:  Current State: q7
+Symbol: * Popped:  Pushed:  Current State:
+Rejected
+
+Do you want to enter a string?
+Enter a string over Σ:
+$$(4.+(.8-9.))/2.)*3.4+(5.21/34.2$$
+q0
+Symbol: $ Popped:  Pushed: $ Current State: q1
+Symbol: $ Popped:  Pushed: $ Current State: q2
+Symbol: ( Popped:  Pushed: ( Current State: q2
+Symbol: 4 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: + Popped:  Pushed:  Current State: q7
+Symbol: ( Popped:  Pushed: ( Current State: q7
+Symbol: . Popped:  Pushed:  Current State: q4
+Symbol: 8 Popped:  Pushed:  Current State: q5
+Symbol: - Popped:  Pushed:  Current State: q7
+Symbol: 9 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: / Popped:  Pushed:  Current State: q7
+Symbol: 2 Popped:  Pushed:  Current State: q3
+Symbol: . Popped:  Pushed:  Current State: q5
+Symbol: ) Popped: ( Pushed:  Current State: q6
+Symbol: ) Popped:  Pushed:  Current State:
+Rejected
+
+Do you want to enter a string?
+Terminated
