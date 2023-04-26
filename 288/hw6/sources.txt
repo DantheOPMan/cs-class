@@ -1,0 +1,7 @@
+https://forecast.weather.gov/MapClick.php?lat=40.781&lon=-73.97
+https://forecast.weather.gov/MapClick.php?lat=34.02&lon=-118.45
+https://forecast.weather.gov/MapClick.php?lat=41.78&lon=-87.76
+https://forecast.weather.gov/MapClick.php?lat=29.64&lon=-95.28
+https://forecast.weather.gov/MapClick.php?lat=33.69&lon=-112.07
+https://forecast.weather.gov/MapClick.php?lat=40.08&lon=-75.01
+https://forecast.weather.gov/MapClick.php?lat=30.23&lon=-81.67

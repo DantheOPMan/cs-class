@@ -1,0 +1,567 @@
+<?xml version="1.0" standalone="yes"?>
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml"><head><meta name="viewport" content="width=device-width"></meta><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"></link><title>National Weather Service</title><meta name="DC.title" content="National Weather Service"></meta><meta name="DC.description" content="NOAA National Weather Service National Weather Service"></meta><meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service"></meta><meta name="DC.date.created" scheme="ISO8601" content=""></meta><meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US"></meta><meta name="DC.keywords" content="weather, National Weather Service"></meta><meta name="DC.publisher" content="NOAA's National Weather Service"></meta><meta name="DC.contributor" content="National Weather Service"></meta><meta name="DC.rights" content="//www.weather.gov/disclaimer.php"></meta><meta name="rating" content="General"></meta><meta name="robots" content="index,follow"></meta><link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"></link><link rel="stylesheet" href="css/bootstrap-3.2.0.min.css"></link><link rel="stylesheet" href="css/bootstrap-theme-3.2.0.min.css"></link><link rel="stylesheet" href="css/font-awesome-4.3.0.min.css"></link><link rel="stylesheet" href="css/ol-4.6.4.css" type="text/css"></link><link rel="stylesheet" type="text/css" href="css/mapclick.css"></link><link rel="stylesheet" type="text/css" href="css/print.css"></link><link rel="stylesheet" type="text/css" href="css/search.css"></link><script type="text/javascript" src="js/lib/modernizr-2.8.3.js"></script><script type="text/javascript" src="js/lib/json3-3.3.2.min.js"></script><script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script><script type="text/javascript" src="js/lib/jquery.hoverIntent-1.8.1.min.js"></script><script type="text/javascript" src="js/lib/bootstrap-3.2.0.min.js"></script><script type="text/javascript" src="js/lib/ol-4.6.4.js"></script><script type="text/javascript" src="js/jquery.autocomplete.min.js"></script><script type="text/javascript" src="js/cfisurvey/cfi.js?v2"></script><script type="text/javascript" src="js/forecast.esri.js"></script><script type="text/javascript" src="js/forecast.search.js"></script><script type="text/javascript" src="js/forecast.openlayers.js"></script><script type="text/javascript" src="js/browserSniffer.js"></script><script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NOAA"></script><script type="text/javascript">
+            // GoogleAnalyticsObject is defined in the federated analytics script, but PUA option not used as forecast UA needs sampleRate
+            window[window['GoogleAnalyticsObject']]('create', 'UA-40768555-1', 'weather.gov', {'sampleRate': 6});
+            window[window['GoogleAnalyticsObject']]('set', 'anonymizeIp', true);
+            window[window['GoogleAnalyticsObject']]('require', 'linkid');
+            window[window['GoogleAnalyticsObject']]('send', 'pageview');
+        </script><script type="javascript">
+// ForeSee Staging Embed Script v2.01
+// DO NOT MODIFY BELOW THIS LINE *****************************************
+;(function (g) {
+  var d = document, am = d.createElement('script'), h = d.head || d.getElementsByTagName("head")[0], fsr = 'fsReady',
+  aex = { 
+    "src": "//gateway.foresee.com/sites/weather-gov/production/gateway.min.js",
+    "type": "text/javascript", 
+    "async": "true", 
+    "data-vendor": "fs", 
+    "data-role": "gateway" 
+  };
+  for (var attr in aex) { am.setAttribute(attr, aex[attr]); } h.appendChild(am); g[fsr] || (g[fsr] = function () { var aT = '__' + fsr + '_stk__'; g[aT] = g[aT] || []; g[aT].push(arguments); });
+})(window);
+// DO NOT MODIFY ABOVE THIS LINE *****************************************
+</script></head><body>
+        <main class="container">
+                    <header class="row clearfix" id="page-header">
+            <a shape="rect" class="pull-left" id="header-noaa" href="//www.noaa.gov"><img src="/css/images/header_noaa.png" alt="National Oceanic and Atmospheric Administration"></img></a>
+            <a shape="rect" class="pull-left" id="header-nws" href="//www.weather.gov"><img src="/css/images/header_nws.png" alt="National Weather Service"></img></a>
+            <a shape="rect" class="pull-right" id="header-doc" href="//www.commerce.gov"><img src="/css/images/header_doc.png" alt="United States Department of Commerce"></img></a>
+        </header>
+        
+                    <nav class="navbar navbar-default row" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="top-nav">
+                    <ul class="nav navbar-nav"><li><a shape="rect" href="//www.weather.gov">HOME</a></li><li class="dropdown"><a shape="rect" class="dropdown-toggle" href="http://www.weather.gov/forecastmaps" data-toggle="dropdown">FORECAST&#160;<span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a shape="rect" href="http://www.weather.gov">Local</a></li><li><a shape="rect" href="http://digital.weather.gov">Graphical</a></li><li><a shape="rect" href="http://www.aviationweather.gov/">Aviation</a></li><li><a shape="rect" href="http://www.weather.gov/marine">Marine</a></li><li><a shape="rect" href="http://water.weather.gov/ahps/">Rivers and Lakes</a></li><li><a shape="rect" href="http://www.nhc.noaa.gov/">Hurricanes</a></li><li><a shape="rect" href="http://www.spc.noaa.gov/">Severe Weather</a></li><li><a shape="rect" href="http://www.weather.gov/fire/">Fire Weather</a></li><li><a shape="rect" href="https://www.esrl.noaa.gov/gmd/grad/solcalc/sunrise.html">Sun/Moon</a></li><li><a shape="rect" href="http://www.cpc.ncep.noaa.gov/">Long Range Forecasts</a></li><li><a shape="rect" href="http://www.cpc.ncep.noaa.gov">Climate Prediction</a></li><li><a shape="rect" href="https://www.swpc.noaa.gov/">Space Weather</a></li></ul>                            </li><li class="dropdown"><a shape="rect" class="dropdown-toggle" href="https://www.weather.gov/wrh/climate/" data-toggle="dropdown">PAST WEATHER&#160;<span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a shape="rect" href="https://www.weather.gov/wrh/climate/">Past Weather</a></li><li><a shape="rect" href="https://www.weather.gov/wrh/climate/">Heating/Cooling Days</a></li><li><a shape="rect" href="https://www.weather.gov/wrh/climate/">Monthly Temperatures</a></li><li><a shape="rect" href="https://www.weather.gov/wrh/climate/">Records</a></li><li><a shape="rect" href="http://aa.usno.navy.mil/">Astronomical Data</a></li></ul>                            </li><li class="dropdown"><a shape="rect" class="dropdown-toggle" href="http://www.weather.gov/safety" data-toggle="dropdown">SAFETY&#160;<span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a shape="rect" href="https://www.weather.gov/safety/flood">Floods</a></li><li><a shape="rect" href="https://www.weather.gov/safety/tsunami">Tsunamis</a></li><li><a shape="rect" href="https://www.weather.gov/safety/beachhazards">Beach Hazards</a></li><li><a shape="rect" href="https://www.weather.gov/safety/wildfire">Wildfire</a></li><li><a shape="rect" href="https://www.weather.gov/safety/cold">Cold</a></li><li><a shape="rect" href="https://www.weather.gov/safety/tornado">Tornadoes</a></li><li><a shape="rect" href="https://www.weather.gov/safety/airquality">Air Quality</a></li><li><a shape="rect" href="https://www.weather.gov/safety/fog">Fog</a></li><li><a shape="rect" href="https://www.weather.gov/safety/heat">Heat</a></li><li><a shape="rect" href="https://www.weather.gov/safety/hurricane">Hurricanes</a></li><li><a shape="rect" href="https://www.weather.gov/safety/lightning">Lightning</a></li><li><a shape="rect" href="https://www.weather.gov/safety/safeboating">Safe Boating</a></li><li><a shape="rect" href="https://www.weather.gov/safety/ripcurrent">Rip Currents</a></li><li><a shape="rect" href="https://www.weather.gov/safety/thunderstorm">Thunderstorms</a></li><li><a shape="rect" href="https://www.weather.gov/safety/space">Space Weather</a></li><li><a shape="rect" href="https://www.weather.gov/safety/heat-uv">Sun (Ultraviolet Radiation)</a></li><li><a shape="rect" href="http://www.weather.gov/safetycampaign">Safety Campaigns</a></li><li><a shape="rect" href="https://www.weather.gov/safety/wind">Wind</a></li><li><a shape="rect" href="https://www.weather.gov/safety/drought">Drought</a></li><li><a shape="rect" href="https://www.weather.gov/safety/winter">Winter Weather</a></li></ul>                            </li><li class="dropdown"><a shape="rect" class="dropdown-toggle" href="http://www.weather.gov/informationcenter" data-toggle="dropdown">INFORMATION&#160;<span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a shape="rect" href="http://www.weather.gov/wrn/wea">Wireless Emergency Alerts</a></li><li><a shape="rect" href="https://www.weather.gov/owlie/publication_brochures">Brochures</a></li><li><a shape="rect" href="http://www.weather.gov/wrn/">Weather-Ready Nation</a></li><li><a shape="rect" href="https://www.weather.gov/coop/">Cooperative Observers</a></li><li><a shape="rect" href="http://www.weather.gov/briefing/">Daily Briefing</a></li><li><a shape="rect" href="http://www.nws.noaa.gov/om/hazstats.shtml">Damage/Fatality/Injury Statistics</a></li><li><a shape="rect" href="http://mag.ncep.noaa.gov/">Forecast Models</a></li><li><a shape="rect" href="https://www.weather.gov/gis">GIS Data Portal</a></li><li><a shape="rect" href="https://www.weather.gov/nwr/">NOAA Weather Radio</a></li><li><a shape="rect" href="http://weather.gov/publications">Publications</a></li><li><a shape="rect" href="http://www.weather.gov/SKYWARN">SKYWARN Storm Spotters</a></li><li><a shape="rect" href="http://www.weather.gov/StormReady">StormReady</a></li><li><a shape="rect" href="https://www.weather.gov/TsunamiReady/">TsunamiReady</a></li><li><a shape="rect" href="https://www.weather.gov/notification/">Service Change Notices</a></li></ul>                            </li><li class="dropdown"><a shape="rect" class="dropdown-toggle" href="http://www.weather.gov/education" data-toggle="dropdown">EDUCATION&#160;<span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a shape="rect" href="https://www.weather.gov/wrn/force">Be A Force of Nature</a></li><li><a shape="rect" href="http://www.weather.gov/owlie">NWS Education Home</a></li></ul>                            </li><li class="dropdown"><a shape="rect" class="dropdown-toggle" href="http://www.weather.gov/news/" data-toggle="dropdown">NEWS&#160;<span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a shape="rect" href="http://www.weather.gov/news">NWS News</a></li><li><a shape="rect" href="https://www.weather.gov/wrn/calendar">Events</a></li><li><a shape="rect" href="http://www.weather.gov/socialmedia">Social Media</a></li><li><a shape="rect" href="https://www.weather.gov/owlie/publication_brochures">Pubs/Brochures/Booklets </a></li><li><a shape="rect" href="http://www.noaa.gov/NOAA-Communications">NWS Media Contacts</a></li></ul>                            </li><li class="dropdown"><a shape="rect" class="dropdown-toggle" href="http://www.weather.gov/search" data-toggle="dropdown">SEARCH&#160;<span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li>
+                                    <div id="site-search">
+                                        <form enctype="application/x-www-form-urlencoded" method="get" action="//search.usa.gov/search" style="margin-bottom: 0; margin-top: 0;">
+                                            <input type="hidden" name="v:project" value="firstgov"></input>
+                                            <label for="query">Search For</label>
+                                            <input type="text" id="query" name="query" size="12"></input>
+                                            <input type="submit" value="Go"></input>
+                                            <p>
+                                                <input checked="checked" type="radio" id="nws" name="affiliate" value="nws.noaa.gov"></input>
+                                                <label for="nws" class="search-scope">NWS</label>
+                                                <input type="radio" id="noaa" name="affiliate" value="noaa.gov"></input>
+                                                <label for="noaa" class="search-scope">All NOAA</label>
+                                            </p>
+                                        </form>
+                                    </div>
+                                </li></ul>                            </li><li class="dropdown"><a shape="rect" class="dropdown-toggle" href="http://www.weather.gov/about" data-toggle="dropdown">ABOUT&#160;<span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a shape="rect" href="http://www.weather.gov/about">About NWS</a></li><li><a shape="rect" href="http://www.weather.gov/organization">Organization</a></li><li><a shape="rect" href="https://www.weather.gov/media/wrn/NWS-2023-Strategic-Plan.pdf">Strategic Plan</a></li><li><a shape="rect" href="http://www.weather.gov/careers/#diversity">Commitment to Diversity</a></li><li><a shape="rect" href="https://sites.google.com/a/noaa.gov/nws-insider/">For NWS Employees</a></li><li><a shape="rect" href="http://www.weather.gov/insider">International</a></li><li><a shape="rect" href="http://www.weather.gov/organization">National Centers</a></li><li><a shape="rect" href="http://www.weather.gov/careers/">Careers</a></li><li><a shape="rect" href="http://www.weather.gov/contact">Contact Us</a></li><li><a shape="rect" href="https://w1.weather.gov/glossary">Glossary</a></li></ul>                            </li></ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="contentArea">
+            
+    <div class="" id="fcst-search">
+        <form enctype="application/x-www-form-urlencoded" method="get" class="form-inline" id="getForecast" name="getForecast" role="form" action="https://forecast.weather.gov/zipcity.php">
+        <div id="getfcst-body">
+            <input type="text" class="form-control" id="inputstring" name="inputstring" placeholder=""></input>
+            <input type="submit" class="btn btn-default" id="btnSearch" name="btnSearch" value="Go"></input>
+            <div id="txtHelp"><a shape="rect" href="javascript:void(window.open('http://weather.gov/ForecastSearchHelp.html','locsearchhelp','status=0,toolbar=0,location=0,menubar=0,directories=0,resizable=1,scrollbars=1,height=500,width=530').focus());">View Location Examples</a></div>
+        </div>
+        <div id="txtError">
+            <div id="errorNoResults" style="display:none;">Sorry, the location you searched for was not found. Please try another search.</div>
+            <div id="errorMultipleResults" style="display:none">Multiple locations were found. Please select one of the following:</div>
+            <div id="errorChoices" style="display:none"></div>
+            <input type="button" id="btnCloseError" value="Close" style="display:none"></input>
+        </div>
+        <div id="getfcst-head">
+            <p>Your local forecast office is</p>
+            <h3 id="getfcst-headOffice"></h3>
+        </div>
+        </form>
+    </div>
+    
+        
+        <link rel="stylesheet" type="text/css" href="/css/topnews.css"></link>
+<div id="news-items">
+    <div id="topnews">
+    <div class="icon"><img src="/images/news-important.jpg"></img></div>
+    <div class="body">
+        <h1 style="font-size: 11pt;">Enhanced Risk for Severe Thunderstorms and Critical Fire Weather in the Central U.S.</h1>
+        <p>
+            Scattered severe thunderstorms with very large hail 3 inch diameter or larger, a couple of tornadoes, and damaging wind gusts are expected late this afternoon into early tonight from northeast Kansas into southwest Iowa. Dry, gusty winds today and Thursday will bring elevated to critical fire weather across the southern Rockies, south Plains, and central Plains.
+            <a shape="rect" href="http://www.wpc.ncep.noaa.gov/discussions/hpcdiscussions.php?disc=pmdspd" target="_blank">Read More &gt;</a>
+        </p>
+    </div>
+</div>
+
+</div>
+        <script type="text/javascript">(function ($) { var topnews = $("#topnews"); topnews.hide(); $.get("siteNews.php", {a:"hgx"},function(response){ if (response !== "false") topnews.replaceWith($(response)); topnews.show(); }); })(jQuery);</script>
+<script language="javascript">document.title = '7-Day Forecast 29.63N 95.29W';</script><img src="images/track_land_point.png" style="display:none;"></img>
+<div id="quickLinks">
+    <span class="lang-spanish"><a shape="rect" href="//forecast.weather.gov/MapClick.php?lat=29.64&amp;lon=-95.28%0D&amp;lg=sp">En Espa&#241;ol</a></span>
+    <div class="addthis_toolbox addthis_default_style addthis-forecast">
+        <a shape="rect" class="addthis_button_compact" href="//www.addthis.com/bookmark.php?v=250&amp;pubid=ra-5127a6364d551d04">Share</a>
+        <span class="addthis_separator">|</span>
+        <a shape="rect" class="addthis_button_preferred_1"></a>
+        <a shape="rect" class="addthis_button_preferred_2"></a>
+        <a shape="rect" class="addthis_button_preferred_3"></a>
+        <a shape="rect" class="addthis_button_preferred_4"></a>
+        <a shape="rect" class="addthis_button_preferred_5"></a>
+    </div>
+    <script type="text/javascript">
+        var addthis_config = addthis_config || {data_track_addressbar:true, pubid: 'xa-4b05b2d91f18c9cc'};
+        $(document).ready(function(){
+            jQuery.ajax({
+                url: "//s7.addthis.com/js/300/addthis_widget.js#async=1",
+                dataType: "script",
+                cache: false
+            });
+        });
+    </script>
+</div>
+
+
+<div class="panel panel-default" id="current-conditions">
+
+    
+    <div class="panel-heading">
+        <div>
+            <b>Current conditions at</b>
+            <h2 class="panel-title">Houston, Houston Hobby Airport (KHOU)</h2>
+            <span class="smallTxt"><b>Lat:&#160;</b>29.64&#176;N<b>Lon:&#160;</b>95.28&#176;W<b>Elev:&#160;</b>46ft.</span>
+        </div>
+    </div>
+    <div class="panel-body" id="current-conditions-body">
+        
+        <div class="pull-left" id="current_conditions-summary">
+                        <img class="pull-left" src="newimages/large/nsct.png" alt=""></img>
+                        <p class="myforecast-current">Partly Cloudy</p>
+            <p class="myforecast-current-lrg">73&#176;F</p>
+            <p class="myforecast-current-sm">23&#176;C</p>
+        </div>
+        <div class="pull-left" id="current_conditions_detail">
+            <table><tr><td colspan="1" rowspan="1" class="text-right"><b>Humidity</b></td><td colspan="1" rowspan="1">81%</td></tr><tr><td colspan="1" rowspan="1" class="text-right"><b>Wind Speed</b></td><td colspan="1" rowspan="1">SE 12 mph</td></tr><tr><td colspan="1" rowspan="1" class="text-right"><b>Barometer</b></td><td colspan="1" rowspan="1">29.95 in (1014.5 mb)</td></tr><tr><td colspan="1" rowspan="1" class="text-right"><b>Dewpoint</b></td><td colspan="1" rowspan="1">67&#176;F (19&#176;C)</td></tr><tr><td colspan="1" rowspan="1" class="text-right"><b>Visibility</b></td><td colspan="1" rowspan="1">10.00 mi</td></tr><tr><td colspan="1" rowspan="1" class="text-right"><b>Last update</b></td><td colspan="1" rowspan="1">
+                19 Apr 10:53 pm CDT            </td></tr></table>
+        </div>
+        <div id="current_conditions_station">
+            <div class="current-conditions-extra">
+                            
+            <p class="moreInfo"><b>More Information:</b></p><p><a shape="rect" id="localWFO" href="https://www.weather.gov/hgx" title="Houston, TX"><span class="hideText">Local</span> Forecast Office</a><a shape="rect" id="moreWx" href="obslocal.php?warnzone=TXZ213&amp;local_place=Houston Hobby Airport TX&amp;zoneid=CDT&amp;offset=18000">More Local Wx</a><a shape="rect" id="3dayHist" href="//www.weather.gov/data/obhistory/KHOU.html">3 Day History</a><a shape="rect" id="mobileWxLink" href="//mobile.weather.gov/index.php?lat=29.64&amp;lon=-95.28&amp;unit=0&amp;lg=english">Mobile Weather</a><a shape="rect" id="wxGraph" href="MapClick.php?lat=29.64&amp;lon=-95.28&amp;unit=0&amp;lg=english&amp;FcstType=graphical">Hourly <span class="hideText">Weather </span>Forecast</a></p>            </div>
+        
+        </div>
+        
+    </div>
+
+</div>
+
+
+<div class="panel panel-default" id="seven-day-forecast">
+    <div class="panel-heading">
+    <b>Extended Forecast for</b>
+    <h2 class="panel-title">
+                Houston Hobby Airport TX    </h2>
+    </div>
+    <div class="panel-body" id="seven-day-forecast-body">
+            <div id="seven-day-forecast-container"><ul class="list-unstyled" id="seven-day-forecast-list"><li class="forecast-tombstone">
+<div class="tombstone-container">
+<p class="period-name">Tonight<br clear="none"></br><br clear="none"></br></p>
+<p><img class="forecast-icon" src="newimages/medium/nsct.png" alt="Tonight: Partly cloudy, with a low around 70. Southeast wind around 10 mph, with gusts as high as 20 mph. " title="Tonight: Partly cloudy, with a low around 70. Southeast wind around 10 mph, with gusts as high as 20 mph. "></img></p><p class="short-desc">Partly Cloudy</p><p class="temp temp-low">Low: 70 &#176;F</p></div></li><li class="forecast-tombstone">
+<div class="tombstone-container">
+<p class="period-name">Thursday<br clear="none"></br><br clear="none"></br></p>
+<p><img class="forecast-icon" src="DualImage.php?i=bkn&amp;j=tsra&amp;jp=30" alt="Thursday: A 30 percent chance of showers and thunderstorms, mainly after 4pm.  Mostly cloudy, with a high near 81. Southeast wind 10 to 15 mph, with gusts as high as 20 mph. " title="Thursday: A 30 percent chance of showers and thunderstorms, mainly after 4pm.  Mostly cloudy, with a high near 81. Southeast wind 10 to 15 mph, with gusts as high as 20 mph. "></img></p><p class="short-desc">Partly Sunny<br clear="none"></br>then Chance<br clear="none"></br>T-storms</p><p class="temp temp-high">High: 81 &#176;F</p></div></li><li class="forecast-tombstone">
+<div class="tombstone-container">
+<p class="period-name">Thursday<br clear="none"></br>Night</p>
+<p><img class="forecast-icon" src="DualImage.php?i=ntsra&amp;j=ntsra&amp;ip=30&amp;jp=70" alt="Thursday Night: Showers and thunderstorms likely, mainly after 1am. Some of the storms could be severe and produce heavy rainfall.  Mostly cloudy, with a low around 68. Southeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 70%. New rainfall amounts between a half and three quarters of an inch possible. " title="Thursday Night: Showers and thunderstorms likely, mainly after 1am. Some of the storms could be severe and produce heavy rainfall.  Mostly cloudy, with a low around 68. Southeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 70%. New rainfall amounts between a half and three quarters of an inch possible. "></img></p><p class="short-desc">Chance<br clear="none"></br>T-storms then<br clear="none"></br>Severe<br clear="none"></br>Thunderstorms</p><p class="temp temp-low">Low: 68 &#176;F</p></div></li><li class="forecast-tombstone">
+<div class="tombstone-container">
+<p class="period-name">Friday<br clear="none"></br><br clear="none"></br></p>
+<p><img class="forecast-icon" src="newimages/medium/scttsra50.png" alt="Friday: A 50 percent chance of showers and thunderstorms.  Partly sunny, with a high near 86. Southeast wind 5 to 10 mph becoming northwest 10 to 15 mph in the afternoon. Winds could gust as high as 25 mph. " title="Friday: A 50 percent chance of showers and thunderstorms.  Partly sunny, with a high near 86. Southeast wind 5 to 10 mph becoming northwest 10 to 15 mph in the afternoon. Winds could gust as high as 25 mph. "></img></p><p class="short-desc">Chance<br clear="none"></br>T-storms</p><p class="temp temp-high">High: 86 &#176;F</p></div></li><li class="forecast-tombstone">
+<div class="tombstone-container">
+<p class="period-name">Friday<br clear="none"></br>Night</p>
+<p><img class="forecast-icon" src="newimages/medium/nfew.png" alt="Friday Night: Mostly clear, with a low around 61. North wind around 15 mph, with gusts as high as 25 mph. " title="Friday Night: Mostly clear, with a low around 61. North wind around 15 mph, with gusts as high as 25 mph. "></img></p><p class="short-desc">Mostly Clear</p><p class="temp temp-low">Low: 61 &#176;F</p></div></li><li class="forecast-tombstone">
+<div class="tombstone-container">
+<p class="period-name">Saturday<br clear="none"></br><br clear="none"></br></p>
+<p><img class="forecast-icon" src="newimages/medium/few.png" alt="Saturday: Sunny, with a high near 81." title="Saturday: Sunny, with a high near 81."></img></p><p class="short-desc">Sunny</p><p class="temp temp-high">High: 81 &#176;F</p></div></li><li class="forecast-tombstone">
+<div class="tombstone-container">
+<p class="period-name">Saturday<br clear="none"></br>Night</p>
+<p><img class="forecast-icon" src="newimages/medium/nsct.png" alt="Saturday Night: Partly cloudy, with a low around 61." title="Saturday Night: Partly cloudy, with a low around 61."></img></p><p class="short-desc">Partly Cloudy</p><p class="temp temp-low">Low: 61 &#176;F</p></div></li><li class="forecast-tombstone">
+<div class="tombstone-container">
+<p class="period-name">Sunday<br clear="none"></br><br clear="none"></br></p>
+<p><img class="forecast-icon" src="DualImage.php?i=scttsra&amp;j=shra&amp;ip=20&amp;jp=30" alt="Sunday: A 30 percent chance of showers and thunderstorms, mainly after 1pm.  Mostly cloudy, with a high near 75." title="Sunday: A 30 percent chance of showers and thunderstorms, mainly after 1pm.  Mostly cloudy, with a high near 75."></img></p><p class="short-desc">Slight Chance<br clear="none"></br>T-storms then<br clear="none"></br>Chance<br clear="none"></br>Showers</p><p class="temp temp-high">High: 75 &#176;F</p></div></li><li class="forecast-tombstone">
+<div class="tombstone-container">
+<p class="period-name">Sunday<br clear="none"></br>Night</p>
+<p><img class="forecast-icon" src="newimages/medium/nshra30.png" alt="Sunday Night: A 30 percent chance of showers, mainly before 1am.  Mostly cloudy, with a low around 61." title="Sunday Night: A 30 percent chance of showers, mainly before 1am.  Mostly cloudy, with a low around 61."></img></p><p class="short-desc">Chance<br clear="none"></br>Showers</p><p class="temp temp-low">Low: 61 &#176;F</p></div></li></ul></div>
+<script type="text/javascript">
+// equalize forecast heights
+$(function () {
+    var maxh = 0;
+    $(".forecast-tombstone .short-desc").each(function () {
+        var h = $(this).height();
+        if (h &gt; maxh) { maxh = h; }
+    });
+    $(".forecast-tombstone .short-desc").height(maxh);
+});
+</script>    </div>
+</div>
+
+
+<div class="row" id="floatingDivs">
+    
+    <div class="col-md-7 col-lg-8">
+        
+        <div class="panel panel-default" id="detailed-forecast">
+        <div class="panel-heading">
+            <h2 class="panel-title">Detailed Forecast</h2>
+        </div>
+        <div class="panel-body" id="detailed-forecast-body">
+            <div class="row row-odd row-forecast"><div class="col-sm-2 forecast-label"><b>Tonight</b></div><div class="col-sm-10 forecast-text">Partly cloudy, with a low around 70. Southeast wind around 10 mph, with gusts as high as 20 mph. </div></div><div class="row row-even row-forecast"><div class="col-sm-2 forecast-label"><b>Thursday</b></div><div class="col-sm-10 forecast-text">A 30 percent chance of showers and thunderstorms, mainly after 4pm.  Mostly cloudy, with a high near 81. Southeast wind 10 to 15 mph, with gusts as high as 20 mph. </div></div><div class="row row-odd row-forecast"><div class="col-sm-2 forecast-label"><b>Thursday Night</b></div><div class="col-sm-10 forecast-text">Showers and thunderstorms likely, mainly after 1am. Some of the storms could be severe and produce heavy rainfall.  Mostly cloudy, with a low around 68. Southeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 70%. New rainfall amounts between a half and three quarters of an inch possible. </div></div><div class="row row-even row-forecast"><div class="col-sm-2 forecast-label"><b>Friday</b></div><div class="col-sm-10 forecast-text">A 50 percent chance of showers and thunderstorms.  Partly sunny, with a high near 86. Southeast wind 5 to 10 mph becoming northwest 10 to 15 mph in the afternoon. Winds could gust as high as 25 mph. </div></div><div class="row row-odd row-forecast"><div class="col-sm-2 forecast-label"><b>Friday Night</b></div><div class="col-sm-10 forecast-text">Mostly clear, with a low around 61. North wind around 15 mph, with gusts as high as 25 mph. </div></div><div class="row row-even row-forecast"><div class="col-sm-2 forecast-label"><b>Saturday</b></div><div class="col-sm-10 forecast-text">Sunny, with a high near 81.</div></div><div class="row row-odd row-forecast"><div class="col-sm-2 forecast-label"><b>Saturday Night</b></div><div class="col-sm-10 forecast-text">Partly cloudy, with a low around 61.</div></div><div class="row row-even row-forecast"><div class="col-sm-2 forecast-label"><b>Sunday</b></div><div class="col-sm-10 forecast-text">A 30 percent chance of showers and thunderstorms, mainly after 1pm.  Mostly cloudy, with a high near 75.</div></div><div class="row row-odd row-forecast"><div class="col-sm-2 forecast-label"><b>Sunday Night</b></div><div class="col-sm-10 forecast-text">A 30 percent chance of showers, mainly before 1am.  Mostly cloudy, with a low around 61.</div></div><div class="row row-even row-forecast"><div class="col-sm-2 forecast-label"><b>Monday</b></div><div class="col-sm-10 forecast-text">A 30 percent chance of showers and thunderstorms.  Mostly cloudy, with a high near 77.</div></div><div class="row row-odd row-forecast"><div class="col-sm-2 forecast-label"><b>Monday Night</b></div><div class="col-sm-10 forecast-text">A 30 percent chance of showers and thunderstorms.  Mostly cloudy, with a low around 69.</div></div><div class="row row-even row-forecast"><div class="col-sm-2 forecast-label"><b>Tuesday</b></div><div class="col-sm-10 forecast-text">A 40 percent chance of showers and thunderstorms.  Mostly cloudy, with a high near 82.</div></div><div class="row row-odd row-forecast"><div class="col-sm-2 forecast-label"><b>Tuesday Night</b></div><div class="col-sm-10 forecast-text">A 20 percent chance of showers and thunderstorms.  Mostly cloudy, with a low around 71.</div></div><div class="row row-even row-forecast"><div class="col-sm-2 forecast-label"><b>Wednesday</b></div><div class="col-sm-10 forecast-text">A 20 percent chance of showers and thunderstorms.  Partly sunny, with a high near 84.</div></div>        </div>
+    </div>
+    
+
+        
+        
+        <div class="panel panel-default" id="additional_forecasts">
+        <div class="panel-heading">
+        <h2 class="panel-title">Additional Forecasts and Information</h2>
+        </div>
+
+        <div class="panel-body" id="additional-forecasts-body">
+        <p class="myforecast-location"><a shape="rect" href="MapClick.php?zoneid=TXZ213">Zone Area Forecast for Inland Harris, TX</a></p>
+                
+        <div id="linkBlockContainer">
+            <div class="linkBlock">
+                <ul class="list-unstyled"><li><a shape="rect" href="//forecast.weather.gov/product.php?site=HGX&amp;issuedby=HGX&amp;product=AFD&amp;format=CI&amp;version=1&amp;glossary=1">Forecast Discussion</a></li><li><a shape="rect" href="MapClick.php?lat=29.64&amp;lon=-95.28&amp;unit=0&amp;lg=english&amp;FcstType=text&amp;TextType=2">Printable Forecast</a></li><li><a shape="rect" href="MapClick.php?lat=29.64&amp;lon=-95.28&amp;unit=0&amp;lg=english&amp;FcstType=text&amp;TextType=1">Text Only Forecast</a></li></ul>
+            </div>
+            <div class="linkBlock">
+                <ul class="list-unstyled"><li><a shape="rect" href="MapClick.php?lat=29.64&amp;lon=-95.28&amp;unit=0&amp;lg=english&amp;FcstType=graphical">Hourly Weather Forecast</a></li><li><a shape="rect" href="MapClick.php?lat=29.64&amp;lon=-95.28&amp;unit=0&amp;lg=english&amp;FcstType=digital">Tabular Forecast</a></li></ul>
+            </div>
+            <div class="linkBlock">
+                <ul class="list-unstyled"><li><a shape="rect" href="//weather.gov/aq/probe_aq_data.php?latitude=29.64&amp;longitude=-95.28">Air Quality Forecasts</a></li><li><a shape="rect" href="MapClick.php?lat=29.64&amp;lon=-95.28&amp;FcstType=text&amp;unit=1&amp;lg=en">International System of Units</a></li></ul>
+            </div>
+            
+                
+                    <div class="linkBlock"><ul class="list-unstyled"><li><a shape="rect" href="https://www.weather.gov/climate/local_data.php?wfo=hgx" target="_self">Climatology</a></li><li><a shape="rect" href="https://www.weather.gov/srh/tropical?office=hgx" target="_self">Tropical Weather</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/fire" target="_self">Fire Weather</a></li><li><a shape="rect" href="https://www.weather.gov/nwr/" target="_self">NOAA Weather Radio</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/marine" target="_self">Marine Information</a></li><li><a shape="rect" href="https://water.weather.gov/ahps2/index.php?wfo=hgx" target="_self">Rivers &amp; Lakes AHPS</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/models" target="_self">Model Data</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/skywarn/" target="_self">SKYWARN</a></li><li><a shape="rect" href="https://www.timeanddate.com/astronomy/usa/houston" target="_self">Astronomical Data</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/office" target="_self">About Our Office</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/quick_stormdata" target="_self">-Storm Data</a></li></ul></div><div class="linkBlock"><ul class="list-unstyled"><li><a shape="rect" href="https://www.weather.gov/hgx/drought" target="_self">-Drought Information</a></li><li><a shape="rect" href="https://www.weather.gov/epz/wxcalc" target="_self">-Weather Calculator (NWS El Paso)</a></li><li><a shape="rect" href="https://www.weather.gov/safety/hurricane" target="_self">-Hurricane Safety</a></li><li><a shape="rect" href="https://www.weather.gov/safety/flood" target="_self">-Flood Safety</a></li><li><a shape="rect" href="https://www.weather.gov/safety/heat" target="_self">-Heat Safety</a></li><li><a shape="rect" href="https://www.weather.gov/safety/ripcurrent" target="_self">-Rip Current Safety</a></li><li><a shape="rect" href="https://www.weather.gov/safety/lightning" target="_self">-Lightning Safety</a></li><li><a shape="rect" href="https://www.weather.gov/safety/thunderstorm" target="_self">-Severe Thunderstorm Safety</a></li><li><a shape="rect" href="https://www.weather.gov/briefing/" target="_self">-Daily Briefing (NWS)</a></li><li><a shape="rect" href="https://www.txdot.gov/inside-txdot/division/traffic/safety/weather/hurricane.html" target="_self">-Evacuation:  Routes</a></li><li><a shape="rect" href="https://www.weather.gov/images/hgx/hurricanes/ZipZoneMap2022.png" target="_self">-Evacuation:  Zip-Zones</a></li></ul></div><div class="linkBlock"><ul class="list-unstyled"><li><a shape="rect" href="https://www.weather.gov/hgx/quick_preparedness" target="_self">-Preparedness</a></li><li><a shape="rect" href="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOm51bGwsImNlbnRlciI6Wy05NS4wMSwzNy4wMl0sImxvY2F0aW9uIjpudWxsLCJ6b29tIjo0fSwiYW5pbWF0aW5nIjpmYWxzZSwiYmFzZSI6InN0YW5kYXJkIiwiYXJ0Y2MiOmZhbHNlLCJjb3VudHkiOmZhbHNlLCJjd2EiOmZhbHNlLCJyZmMiOmZhbHNlLCJz" target="_self">-Radar</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/quick_satellite" target="_self">-Find It Quick: Satellite</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/cllclimate" target="_self">-Climate info for CLL</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/iahclimate" target="_self">-Climate info for IAH</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/houclimate" target="_self">-Climate info for HOU</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/glsclimate" target="_self">-Climate info for GLS</a></li><li><a shape="rect" href="https://www.weather.gov/hgx/psxclimate" target="_self">-Climate info for PSX</a></li><li><a shape="rect" href="https://w2.weather.gov/climate/xmacis.php?wfo=hgx" target="_self">-Climate Almanac (NOWData)</a></li></ul></div>
+        </div> 
+        </div>
+    </div> 
+    </div> 
+
+    
+    <div class="col-md-5 col-lg-4" id="right-side-data">
+    <div id="mapAndDescriptionArea">
+        
+            <style>
+#custom-search{
+display: block;
+position: relative;
+z-index: 50;
+top: 52px;
+left: 60px;
+}
+#esri-geocoder-search{
+display: block;
+position: relative;
+z-index: 50;
+top: 52px;
+left: 60px;
+}
+#emap{
+margin-top:15px;
+cursor:pointer;
+height:370px;
+width:100%;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+#switch-basemap-container{
+}
+#basemap-selection-form ul{
+list-style: none;
+ margin: 0px;
+}
+#basemap-selection-form li{
+float: left;
+}
+.disclaimer{
+margin-top:350px;
+margin-left: 5px;
+z-index: 100;
+position: absolute;
+text-transform: none;
+}
+.esriAttributionLastItem{
+text-transform: none;
+}
+.esriSimpleSlider div{
+height:22px;
+line-height:20px;
+width:20px;
+}
+#point-forecast-map-label {
+text-align:center;
+font-weight:bold;
+color:black;
+}
+@media (max-width: 767px) {
+#emap{
+margin-top:.5em;
+height:270px;
+}
+.disclaimer{
+margin-top:250px;
+}
+}
+</style>
+
+<div class="point-forecast-map">
+    <div class="point-forecast-map-header text-center">
+        <div id="toolbar">
+        <div id="switch-basemap-container">
+            <div id="basemap-selection-form" title="Choose a Basemap">
+            <div id="basemap-menu">
+                <select id="basemap-selected" name="basemap-selected" autocomplete="off" title="Basemap Dropdown Menu"><option value="none">Select Basemap</option><option selected="selected" value="topo">Topographic</option><option value="streets">Streets</option><option value="satellite">Satellite</option><option value="ocean">Ocean</option></select>
+            </div>
+            </div>
+            <div id="point-forecast-map-label">
+                    Click Map For Forecast
+                </div>
+        </div>
+        <div style="clear:both;"></div>
+        </div>
+    </div>
+
+    <div id="emap">
+        <noscript><center><br clear="none"></br><br clear="none"></br><b>Map function requires Javascript and a compatible browser.</b></center></noscript>
+        <div class="disclaimer"><a shape="rect" href="http://www.weather.gov/disclaimer#esri">Disclaimer</a></div>
+    </div>
+
+    <div class="point-forecast-map-footer">
+        <img src="./images/wtf/maplegend_forecast-area.gif" width="100" height="16" alt="Map Legend"></img>
+    </div>
+
+</div> 
+
+        
+
+        
+        <div id="about_forecast">
+            <div class="fullRow">
+                <div class="left">Point Forecast:</div>
+                <div class="right">Houston Hobby Airport TX<br clear="none"></br>&#160;29.63&#176;N 95.29&#176;W (Elev. 46 ft)</div>
+                    </div>
+            <div class="fullRow">
+                <div class="left"><a shape="rect" target="_blank" href="//www.weather.gov/glossary/index.php?word=Last+update">Last Update</a>: </div>
+                <div class="right">8:46 pm CDT Apr 19, 2023</div>
+            </div>
+            <div class="fullRow">
+                <div class="left"><a shape="rect" target="_blank" href="//www.weather.gov/glossary/index.php?word=forecast+valid+for">Forecast Valid</a>: </div>
+                <div class="right">11pm CDT Apr 19, 2023-6pm CDT Apr 26, 2023</div>
+            </div>
+            <div class="fullRow">
+                <div class="left">&#160;</div>
+                <div class="right"><a shape="rect" href="https://forecast.weather.gov/product.php?site=HGX&amp;issuedby=HGX&amp;product=AFD&amp;format=CI&amp;version=1&amp;glossary=1">Forecast Discussion</a></div>
+            </div>
+            <div class="fullRow">
+                <div class="left">&#160;</div>
+                <div class="right">
+                    <a shape="rect" href="MapClick.php?lat=29.64&amp;lon=-95.28&amp;unit=0&amp;lg=english&amp;FcstType=kml"><img src="/images/wtf/kml_badge.png" width="45" height="17" alt="Get as KML"></img></a>
+                    <a shape="rect" href="MapClick.php?lat=29.64&amp;lon=-95.28&amp;unit=0&amp;lg=english&amp;FcstType=dwml"><img src="/images/wtf/xml_badge.png" width="45" height="17" alt="Get as XML"></img></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+        
+        <div class="panel panel-default" id="additionalForecast">
+            <div class="panel-heading">
+                <h2 class="panel-title">Additional Resources</h2>
+            </div>
+            <div class="panel-body">
+
+                
+                <div class="subItem" id="radar">
+                    <h4>Radar &amp; Satellite Image</h4>
+                    <a shape="rect" href="http://radar.weather.gov/station/khgx/standard"><img class="radar-thumb" src="http://radar.weather.gov/ridge/standard/KHGX_0.gif" alt="Link to Local Radar Data" title="Link to Local Radar Data"></img></a>                    <a shape="rect" href="https://www.star.nesdis.noaa.gov/GOES/GOES16_CONUS.php"><img class="satellite-thumb" src="https://cdn.star.nesdis.noaa.gov/GOES16/ABI/CONUS/GEOCOLOR/625x375.jpg" alt="Link to Satellite Data" title="Link to Satellite Data"></img></a>                </div>
+                
+                
+                <div class="subItem" id="feature">
+                    <h4>Hourly Weather Forecast</h4>
+                    <a shape="rect" href="MapClick.php?lat=29.64&amp;lon=-95.28&amp;unit=0&amp;lg=english&amp;FcstType=graphical"><img class="img-responsive" src="newimages/medium/hourlyweather.png"></img></a>
+                </div>
+                
+                
+                <div class="subItem" id="NDFD">
+                    <h4>National Digital Forecast Database</h4>
+                    <div class="one-sixth-first"><a shape="rect" href="//graphical.weather.gov/sectors/southplains.php?element=MaxT"><img src="//graphical.weather.gov/images/thumbnail/latest_MaxMinT_southplains_thumbnail.png" border="0" alt="National Digital Forecast Database Maximum Temperature Forecast" title="National Digital Forecast Database Maximum Temperature Forecast" width="147" height="150"></img></a>
+                <p><a shape="rect" href="//graphical.weather.gov/sectors/southplains.php?element=MaxT">High Temperature</a></p></div><div class="one-sixth-first"><a shape="rect" href="//graphical.weather.gov/sectors/southplains.php?element=Wx"><img src="//graphical.weather.gov/images/thumbnail/latest_Wx_southplains_thumbnail.png" border="0" alt="National Digital Forecast Database Weather Element Forecast" title="National Digital Forecast Database Weather Element Forecast" width="147" height="150"></img></a>
+                <p><a shape="rect" href="//graphical.weather.gov/sectors/southplains.php?element=Wx">Chance of Precipitation</a></p></div>                </div>
+                
+            </div>
+        </div>
+        
+
+    </div>
+    
+    
+    <script language="javascript">$( document ).ready(function() { load_openlayers_map('', '', '', '{"centroid_lat":"29.64","centroid_lon":"-95.28","lat1":"29.6225","lon1":"-95.3015","lat2":"29.6455","lon2":"-95.3015","lat3":"29.6455","lon3":"-95.275","lat4":"29.6225","lon4":"-95.275"}') });</script></div>
+
+
+
+</div>
+
+
+        
+            <footer>
+                        <div class="sitemap-content row" id="sitemap">
+            <div class="col-xs-12">
+                <div class="sitemap-columns">
+                                                    <div class="sitemap-section">
+                                    <div class="panel-heading">
+                                        <a shape="rect" class="sitemap-section-heading" href="http://alerts.weather.gov">ACTIVE ALERTS</a>
+                                        <button type="button" class="menu-toggle pull-right" data-toggle="collapse" data-target="#sitemap-1">
+                                            <span class="sr-only">Toggle menu</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="sitemap-section-body panel-body collapsable collapse" id="sitemap-1">
+                                        <ul class="list-unstyled"><li><a shape="rect" href=" http://alerts.weather.gov">Warnings By State</a></li><li><a shape="rect" href=" http://www.wpc.ncep.noaa.gov/ww.shtml">Excessive Rainfall and Winter Weather Forecasts</a></li><li><a shape="rect" href="http://water.weather.gov/ahps/?current_color=flood&amp;current_type=all&amp;fcst_type=obs&amp;conus_map=d_map">River Flooding </a></li><li><a shape="rect" href=" http://www.weather.gov">Latest Warnings</a></li><li><a shape="rect" href=" http://www.spc.noaa.gov/products/outlook/">Thunderstorm/Tornado Outlook </a></li><li><a shape="rect" href=" http://www.nhc.noaa.gov/">Hurricanes </a></li><li><a shape="rect" href=" http://www.spc.noaa.gov/products/fire_wx/">Fire Weather Outlooks </a></li><li><a shape="rect" href=" http://www.cpc.ncep.noaa.gov/products/stratosphere/uv_index/uv_alert.shtml">UV Alerts </a></li><li><a shape="rect" href=" http://www.drought.gov/">Drought </a></li><li><a shape="rect" href="http://www.swpc.noaa.gov/products/alerts-watches-and-warnings">Space Weather </a></li><li><a shape="rect" href=" http://www.nws.noaa.gov/nwr/">NOAA Weather Radio </a></li><li><a shape="rect" href=" http://alerts.weather.gov/">NWS CAP Feeds </a></li></ul>
+                                    </div>
+                                </div>
+                                                                <div class="sitemap-section">
+                                    <div class="panel-heading">
+                                        <a shape="rect" class="sitemap-section-heading" href="https://www.weather.gov/wrh/climate">PAST WEATHER</a>
+                                        <button type="button" class="menu-toggle pull-right" data-toggle="collapse" data-target="#sitemap-2">
+                                            <span class="sr-only">Toggle menu</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="sitemap-section-body panel-body collapsable collapse" id="sitemap-2">
+                                        <ul class="list-unstyled"><li><a shape="rect" href=" http://www.cpc.ncep.noaa.gov/products/MD_index.shtml">Climate Monitoring </a></li><li><a shape="rect" href="https://www.weather.gov/wrh/climate">Past Weather </a></li><li><a shape="rect" href="https://www.weather.gov/wrh/climate">Monthly Temps </a></li><li><a shape="rect" href="https://www.weather.gov/wrh/climate">Records </a></li><li><a shape="rect" href="https://www.esrl.noaa.gov/gmd/grad/solcalc/sunrise.html">Astronomical Data </a></li><li><a shape="rect" href="https://www.climate.gov/maps-data/dataset/past-weather-zip-code-data-table">Certified Weather Data </a></li></ul>
+                                    </div>
+                                </div>
+                                                                <div class="sitemap-section">
+                                    <div class="panel-heading">
+                                        <a shape="rect" class="sitemap-section-heading" href="http://www.weather.gov/current">CURRENT CONDITIONS</a>
+                                        <button type="button" class="menu-toggle pull-right" data-toggle="collapse" data-target="#sitemap-3">
+                                            <span class="sr-only">Toggle menu</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="sitemap-section-body panel-body collapsable collapse" id="sitemap-3">
+                                        <ul class="list-unstyled"><li><a shape="rect" href=" https://radar.weather.gov">Radar </a></li><li><a shape="rect" href="http://www.cpc.ncep.noaa.gov/products/monitoring_and_data/">Climate Monitoring </a></li><li><a shape="rect" href=" http://water.weather.gov/ahps/">River Levels </a></li><li><a shape="rect" href=" http://water.weather.gov/precip/">Observed Precipitation </a></li><li><a shape="rect" href="https://www.wpc.ncep.noaa.gov/sfc/sfcobs/sfcobs.shtml">Surface Weather </a></li><li><a shape="rect" href="http://www.spc.noaa.gov/obswx/maps/">Upper Air </a></li><li><a shape="rect" href=" http://www.ndbc.noaa.gov/">Marine and Buoy Reports </a></li><li><a shape="rect" href="http://www.nohrsc.noaa.gov/interactive/html/map.html">Snow Cover </a></li><li><a shape="rect" href=" http://www.weather.gov/satellite">Satellite </a></li><li><a shape="rect" href=" http://www.swpc.noaa.gov/">Space Weather </a></li><li><a shape="rect" href="http://www.weather.gov/pr">International Observations</a></li></ul>
+                                    </div>
+                                </div>
+                                                                <div class="sitemap-section">
+                                    <div class="panel-heading">
+                                        <a shape="rect" class="sitemap-section-heading" href="http://weather.gov/forecastmaps">FORECAST</a>
+                                        <button type="button" class="menu-toggle pull-right" data-toggle="collapse" data-target="#sitemap-4">
+                                            <span class="sr-only">Toggle menu</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="sitemap-section-body panel-body collapsable collapse" id="sitemap-4">
+                                        <ul class="list-unstyled"><li><a shape="rect" href=" http://www.weather.gov/">Local Forecast </a></li><li><a shape="rect" href="http://www.weather.gov/pr">International Forecasts</a></li><li><a shape="rect" href=" http://www.spc.noaa.gov/">Severe Weather </a></li><li><a shape="rect" href=" http://www.wpc.ncep.noaa.gov/">Current Outlook Maps </a></li><li><a shape="rect" href="http://www.cpc.ncep.noaa.gov/products/Drought">Drought </a></li><li><a shape="rect" href="http://www.weather.gov/fire">Fire Weather </a></li><li><a shape="rect" href=" http://www.wpc.ncep.noaa.gov/">Fronts/Precipitation Maps </a></li><li><a shape="rect" href=" http://www.nws.noaa.gov/forecasts/graphical/">Current Graphical Forecast Maps </a></li><li><a shape="rect" href="http://water.weather.gov/ahps/forecasts.php">Rivers </a></li><li><a shape="rect" href="https://www.weather.gov/marine/">Marine </a></li><li><a shape="rect" href="https://ocean.weather.gov/marine_areas.php">Offshore and High Seas</a></li><li><a shape="rect" href=" http://www.nhc.noaa.gov/">Hurricanes </a></li><li><a shape="rect" href=" http://aviationweather.gov">Aviation Weather </a></li><li><a shape="rect" href="http://www.cpc.ncep.noaa.gov/products/OUTLOOKS_index.shtml">Climatic Outlook </a></li></ul>
+                                    </div>
+                                </div>
+                                                                <div class="sitemap-section">
+                                    <div class="panel-heading">
+                                        <a shape="rect" class="sitemap-section-heading" href="http://www.weather.gov/informationcenter">INFORMATION CENTER</a>
+                                        <button type="button" class="menu-toggle pull-right" data-toggle="collapse" data-target="#sitemap-5">
+                                            <span class="sr-only">Toggle menu</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="sitemap-section-body panel-body collapsable collapse" id="sitemap-5">
+                                        <ul class="list-unstyled"><li><a shape="rect" href=" http://www.spaceweather.gov">Space Weather </a></li><li><a shape="rect" href="http://www.weather.gov/briefing/">Daily Briefing </a></li><li><a shape="rect" href=" http://www.nws.noaa.gov/om/marine/home.htm">Marine </a></li><li><a shape="rect" href="https://www.weather.gov/wrh/climate">Climate </a></li><li><a shape="rect" href="http://www.weather.gov/fire">Fire Weather </a></li><li><a shape="rect" href=" http://www.aviationweather.gov/">Aviation </a></li><li><a shape="rect" href="http://mag.ncep.noaa.gov/">Forecast Models </a></li><li><a shape="rect" href="http://water.weather.gov/ahps/">Water </a></li><li><a shape="rect" href="https://www.weather.gov/gis/">GIS</a></li><li><a shape="rect" href=" http://www.nws.noaa.gov/om/coop/">Cooperative Observers </a></li><li><a shape="rect" href="https://www.weather.gov/skywarn/">Storm Spotters </a></li><li><a shape="rect" href="http://www.tsunami.gov">Tsunami Warning System</a></li><li><a shape="rect" href="http://water.noaa.gov/">National Water Center</a></li><li><a shape="rect" href="http://www.weather.gov/pr">International Weather</a></li></ul>
+                                    </div>
+                                </div>
+                                                                <div class="sitemap-section">
+                                    <div class="panel-heading">
+                                        <a shape="rect" class="sitemap-section-heading" href="http://weather.gov/safety">WEATHER SAFETY</a>
+                                        <button type="button" class="menu-toggle pull-right" data-toggle="collapse" data-target="#sitemap-6">
+                                            <span class="sr-only">Toggle menu</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="sitemap-section-body panel-body collapsable collapse" id="sitemap-6">
+                                        <ul class="list-unstyled"><li><a shape="rect" href="http://www.weather.gov/nwr/">NOAA Weather Radio</a></li><li><a shape="rect" href="http://www.weather.gov/stormready/">StormReady</a></li><li><a shape="rect" href="http://www.nws.noaa.gov/om/heat/index.shtml">Heat </a></li><li><a shape="rect" href="https://www.weather.gov/safety/lightning">Lightning </a></li><li><a shape="rect" href=" http://www.nhc.noaa.gov/prepare/">Hurricanes </a></li><li><a shape="rect" href="http://www.nws.noaa.gov/om/thunderstorm/">Thunderstorms </a></li><li><a shape="rect" href="https://www.weather.gov/safety/tornado">Tornadoes </a></li><li><a shape="rect" href="https://www.weather.gov/safety/ripcurrent">Rip Currents </a></li><li><a shape="rect" href="https://www.weather.gov/safety/flood">Floods </a></li><li><a shape="rect" href="https://www.weather.gov/safety/tsunami">Tsunamis</a></li><li><a shape="rect" href="https://www.weather.gov/tsunamiready/">TsunamiReady</a></li><li><a shape="rect" href=" http://www.weather.gov/om/winter/index.shtml">Winter Weather </a></li><li><a shape="rect" href="http://www.nws.noaa.gov/om/heat/uv.shtml">Ultra Violet Radiation </a></li><li><a shape="rect" href=" http://www.weather.gov/airquality/">Air Quality </a></li><li><a shape="rect" href=" http://www.weather.gov/om/hazstats.shtml">Damage/Fatality/Injury Statistics </a></li><li><a shape="rect" href=" http://www.redcross.org/">Red Cross </a></li><li><a shape="rect" href=" http://www.fema.gov/">Federal Emergency Management Agency (FEMA) </a></li><li><a shape="rect" href=" http://www.weather.gov/om/brochures.shtml">Brochures </a></li><li><a shape="rect" href="http://www.nws.noaa.gov/os/marine/safeboating/">Safe Boating</a></li></ul>
+                                    </div>
+                                </div>
+                                                                <div class="sitemap-section">
+                                    <div class="panel-heading">
+                                        <a shape="rect" class="sitemap-section-heading" href="http://weather.gov/news">NEWS</a>
+                                        <button type="button" class="menu-toggle pull-right" data-toggle="collapse" data-target="#sitemap-7">
+                                            <span class="sr-only">Toggle menu</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="sitemap-section-body panel-body collapsable collapse" id="sitemap-7">
+                                        <ul class="list-unstyled"><li><a shape="rect" href=" http://weather.gov/news">Newsroom</a></li><li><a shape="rect" href=" http://weather.gov/socialmedia">Social Media </a></li><li><a shape="rect" href="http://www.nws.noaa.gov/com/weatherreadynation/calendar.html">Events</a></li><li><a shape="rect" href=" http://www.weather.gov/om/brochures.shtml">Pubs/Brochures/Booklets </a></li></ul>
+                                    </div>
+                                </div>
+                                                                <div class="sitemap-section">
+                                    <div class="panel-heading">
+                                        <a shape="rect" class="sitemap-section-heading" href="http://weather.gov/owlie">EDUCATION</a>
+                                        <button type="button" class="menu-toggle pull-right" data-toggle="collapse" data-target="#sitemap-8">
+                                            <span class="sr-only">Toggle menu</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="sitemap-section-body panel-body collapsable collapse" id="sitemap-8">
+                                        <ul class="list-unstyled"><li><a shape="rect" href="http://weather.gov/education">NWS Education Home</a></li><li><a shape="rect" href="http://www.nws.noaa.gov/com/weatherreadynation/force.html">Be A Force of Nature</a></li><li><a shape="rect" href=" http://www.education.noaa.gov/Weather_and_Atmosphere/">NOAA Education Resources </a></li><li><a shape="rect" href=" http://www.weather.gov/glossary/">Glossary </a></li><li><a shape="rect" href="https://www.weather.gov/jetstream/">JetStream </a></li><li><a shape="rect" href=" http://www.weather.gov/training/">NWS Training Portal </a></li><li><a shape="rect" href="https://library.noaa.gov/">NOAA Library </a></li><li><a shape="rect" href="http://weather.gov/owlie">For Students, Parents and Teachers</a></li><li><a shape="rect" href="http://www.weather.gov/owlie/publication_brochures">Brochures </a></li></ul>
+                                    </div>
+                                </div>
+                                                                <div class="sitemap-section">
+                                    <div class="panel-heading">
+                                        <a shape="rect" class="sitemap-section-heading" href="http://weather.gov/about">ABOUT</a>
+                                        <button type="button" class="menu-toggle pull-right" data-toggle="collapse" data-target="#sitemap-9">
+                                            <span class="sr-only">Toggle menu</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="sitemap-section-body panel-body collapsable collapse" id="sitemap-9">
+                                        <ul class="list-unstyled"><li><a shape="rect" href="http://weather.gov/organization">Organization </a></li><li><a shape="rect" href="https://www.weather.gov/media/wrn/NWS_Weather-Ready-Nation_Strategic_Plan_2019-2022.pdf">Strategic Plan </a></li><li><a shape="rect" href="https:/weather.gov/insider">For NWS Employees </a></li><li><a shape="rect" href="https://www.weather.gov/international/">International </a></li><li><a shape="rect" href="http://www.ncep.noaa.gov/">National Centers </a></li><li><a shape="rect" href=" http://www.weather.gov/tg/">Products and Services </a></li><li><a shape="rect" href="http://www.weather.gov/careers/">Careers</a></li><li><a shape="rect" href=" http://www.weather.gov/glossary/">Glossary </a></li><li><a shape="rect" href="http://weather.gov/contact">Contact Us </a></li></ul>
+                                    </div>
+                                </div>
+                                                </div>
+            </div>
+        </div>
+        
+                
+                        <div class="footer-legal">
+            <div class="col-xs-12 col-sm-2 col-md-2" id="footerLogo">
+                <a shape="rect" href="//www.usa.gov"><img src="/css/images/usa_gov.png" alt="usa.gov" width="110" height="30"></img></a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <ul class="list-unstyled footer-legal-content"><li><a shape="rect" href="//www.commerce.gov">US Dept of Commerce</a></li><li><a shape="rect" href="//www.noaa.gov">National Oceanic and Atmospheric Administration</a></li><li><a shape="rect" href="//www.weather.gov">National Weather Service</a></li><li><a shape="rect" href="https://www.weather.gov/hgx">Houston/Galveston, TX</a></li><li><br clear="none"></br><a shape="rect" href="mailto:sr-hgx.webmaster@noaa.gov">Comments? Questions? Please Contact Us.</a></li></ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul class="list-unstyled"><li><a shape="rect" href="https://www.weather.gov/disclaimer">Disclaimer</a></li><li><a shape="rect" href="//www.cio.noaa.gov/services_programs/info_quality.html">Information Quality</a></li><li><a shape="rect" href="https://www.weather.gov/help">Help</a></li><li><a shape="rect" href="//www.weather.gov/glossary">Glossary</a></li></ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <ul class="list-unstyled"><li><a shape="rect" href="https://www.weather.gov/privacy">Privacy Policy</a></li><li><a shape="rect" href="https://www.noaa.gov/foia-freedom-of-information-act">Freedom of Information Act (FOIA)</a></li><li><a shape="rect" href="https://www.weather.gov/about">About Us</a></li><li><a shape="rect" href="https://www.weather.gov/careers">Career Opportunities</a></li></ul>
+            </div>
+        </div>
+        
+            </footer>
+        </main>
+    </body></html>
