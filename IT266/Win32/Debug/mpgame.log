@@ -1,0 +1,96 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(39,5): warning MSB4211: The property "IntermediateOutputPath" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets(30,5): warning MSB4211: The property "DebugType" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (29,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(373,5): warning MSB4211: The property "CleanFile" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(39,5): warning MSB4211: The property "IntermediateOutputPath" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets(30,5): warning MSB4211: The property "DebugType" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (29,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(373,5): warning MSB4211: The property "CleanFile" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (../Win32/Debug\) contains files shared from another project (idLib.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (../Win32/Debug\) contains files shared from another project (MPGame.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Class.cpp
+  SaveGame.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SaveGame.cpp(1086,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(44,11): message : see declaration of 'idExtrapolate<int>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75): message : while compiling class template member function 'void idExtrapolate<int>::Init(const float,const float,const type &,const type &,const type &,const extrapolation_t)'
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SaveGame.cpp(1530): message : see reference to function template instantiation 'void idExtrapolate<int>::Init(const float,const float,const type &,const type &,const type &,const extrapolation_t)' being compiled
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SaveGame.cpp(524): message : see reference to class template instantiation 'idExtrapolate<int>' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(45,11): message : see declaration of 'idExtrapolate<int>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(46,10): message : see declaration of 'idExtrapolate<int>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'baseSpeed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(47,10): message : see declaration of 'idExtrapolate<int>::baseSpeed'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'speed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(48,10): message : see declaration of 'idExtrapolate<int>::speed'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'extrapolationType' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(43,19): message : see declaration of 'idExtrapolate<int>::extrapolationType'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(202,11): message : see declaration of 'idInterpolateAccelDecelLinear<int>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232): message : while compiling class template member function 'void idInterpolateAccelDecelLinear<int>::Init(const float,const float,const float,const float,const type &,const type &)'
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SaveGame.cpp(1603): message : see reference to function template instantiation 'void idInterpolateAccelDecelLinear<int>::Init(const float,const float,const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SaveGame.cpp(569): message : see reference to class template instantiation 'idInterpolateAccelDecelLinear<int>' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'accelTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(203,11): message : see declaration of 'idInterpolateAccelDecelLinear<int>::accelTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'decelTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(205,11): message : see declaration of 'idInterpolateAccelDecelLinear<int>::decelTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(206,10): message : see declaration of 'idInterpolateAccelDecelLinear<int>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(207,10): message : see declaration of 'idInterpolateAccelDecelLinear<int>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<int>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68): message : while compiling class template member function 'void idInterpolate<int>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SaveGame.cpp(1674): message : see reference to function template instantiation 'void idInterpolate<int>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<int>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<int>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<int>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108,91): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<idVec3>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108): message : while compiling class template member function 'type idInterpolate<type>::GetDeltaValue(float,float) const'
+          with
+          [
+              type=idVec3
+          ]
+  SysCmds.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SysCmds.cpp(814,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SysCmds.cpp(1318,19): warning C4456: declaration of 'ent' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SysCmds.cpp(1306,12): message : see declaration of 'ent'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SysCmds.cpp(1690,12): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SysCmds.cpp(1905,22): warning C4456: declaration of 'animator' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SysCmds.cpp(1899,15): message : see declaration of 'animator'
+  SysCvar.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\mpgame\gamesys\SysCvar.cpp(36,26): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  VehicleRigid.cpp
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetPath(C:\Users\socce\OneDrive\Documents\cs-class\IT266\Win32\Debug\MPGame.dll) does not match the Linker's OutputFile property value (C:\Users\socce\OneDrive\Documents\cs-class\IT266\Win32\Debug\MPGamex86.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1365,5): warning MSB8012: TargetName(MPGame) does not match the Linker's OutputFile property value (MPGamex86). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+Actor.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library ..\Win32\Debug\MPGamex86.lib and object ..\Win32\Debug\MPGamex86.exp
+  mpgame.vcxproj -> C:\Users\socce\OneDrive\Documents\cs-class\IT266\Win32\Debug\MPGame.dll

@@ -1,0 +1,29 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(39,5): warning MSB4211: The property "IntermediateOutputPath" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets(30,5): warning MSB4211: The property "DebugType" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (29,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(373,5): warning MSB4211: The property "CleanFile" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (../Win32/Debug\) contains files shared from another project (idLib.vcxproj, MPGame.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Actor.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.cpp(1198,25): warning C4458: declaration of 'animator' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(783,16): message : see declaration of 'idAnimatedEntity::animator'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.cpp(2382,81): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.cpp(3690,75): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.cpp(3756,76): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+  SysCmds.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(814,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(1308,19): warning C4456: declaration of 'ent' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(1296,12): message : see declaration of 'ent'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(1680,12): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(1895,22): warning C4456: declaration of 'animator' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(1889,15): message : see declaration of 'animator'
+  SysCvar.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCvar.cpp(35,26): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  VehicleRigid.cpp
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetPath(C:\Users\socce\OneDrive\Documents\cs-class\IT266\Win32\Debug\Game.dll) does not match the Linker's OutputFile property value (C:\Users\socce\OneDrive\Documents\cs-class\IT266\Win32\Debug\Gamex86.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1365,5): warning MSB8012: TargetName(Game) does not match the Linker's OutputFile property value (Gamex86). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+Actor.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library ..\Win32\Debug\Gamex86.lib and object ..\Win32\Debug\Gamex86.exp
+  game.vcxproj -> C:\Users\socce\OneDrive\Documents\cs-class\IT266\Win32\Debug\Game.dll
