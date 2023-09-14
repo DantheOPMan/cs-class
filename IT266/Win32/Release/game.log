@@ -1,0 +1,1605 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (../Win32/Release\) contains files shared from another project (idLib.vcxproj, MPGame.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  AF.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Lib.h(120,41): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Random.h(35,46): warning C4458: declaration of 'seed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Random.h(28,10): message : see declaration of 'idRandom::seed'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Random.h(97,57): warning C4458: declaration of 'seed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Random.h(87,18): message : see declaration of 'idRandom2::seed'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Complex.h(82,63): warning C4458: declaration of 'r' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Complex.h(15,11): message : see declaration of 'idComplex::r'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Complex.h(82,63): warning C4458: declaration of 'i' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Complex.h(16,11): message : see declaration of 'idComplex::i'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(101,60): warning C4458: declaration of 'x' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(31,10): message : see declaration of 'idVec2::x'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(101,60): warning C4458: declaration of 'y' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(32,10): message : see declaration of 'idVec2::y'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(600,75): warning C4458: declaration of 'x' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(328,10): message : see declaration of 'idVec3::x'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(600,75): warning C4458: declaration of 'y' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(329,10): message : see declaration of 'idVec3::y'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(600,75): warning C4458: declaration of 'z' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(330,10): message : see declaration of 'idVec3::z'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(1220,90): warning C4458: declaration of 'x' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(1140,10): message : see declaration of 'idVec4::x'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(1220,90): warning C4458: declaration of 'y' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(1141,10): message : see declaration of 'idVec4::y'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(1220,90): warning C4458: declaration of 'z' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(1142,10): message : see declaration of 'idVec4::z'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(1220,90): warning C4458: declaration of 'w' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(1143,10): message : see declaration of 'idVec4::w'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(2443,88): warning C4458: declaration of 'radius' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(2418,10): message : see declaration of 'idPolar3::radius'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(2443,88): warning C4458: declaration of 'theta' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(2418,18): message : see declaration of 'idPolar3::theta'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(2443,88): warning C4458: declaration of 'phi' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Vector.h(2418,25): message : see declaration of 'idPolar3::phi'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Angles.h(110,68): warning C4458: declaration of 'pitch' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Angles.h(30,10): message : see declaration of 'idAngles::pitch'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Angles.h(110,68): warning C4458: declaration of 'yaw' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Angles.h(31,10): message : see declaration of 'idAngles::yaw'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Angles.h(110,68): warning C4458: declaration of 'roll' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Angles.h(32,10): message : see declaration of 'idAngles::roll'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(221,66): warning C4458: declaration of 'x' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(23,10): message : see declaration of 'idQuat::x'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(221,66): warning C4458: declaration of 'y' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(24,10): message : see declaration of 'idQuat::y'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(221,66): warning C4458: declaration of 'z' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(25,10): message : see declaration of 'idQuat::z'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(221,66): warning C4458: declaration of 'w' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(26,10): message : see declaration of 'idQuat::w'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(320,58): warning C4458: declaration of 'x' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(282,10): message : see declaration of 'idCQuat::x'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(320,58): warning C4458: declaration of 'y' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(283,10): message : see declaration of 'idCQuat::y'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(320,58): warning C4458: declaration of 'z' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Quat.h(284,10): message : see declaration of 'idCQuat::z'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Radians.h(89,37): warning C4458: declaration of 'pitch' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Radians.h(28,10): message : see declaration of 'rvAngles::pitch'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Radians.h(89,50): warning C4458: declaration of 'yaw' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Radians.h(29,10): message : see declaration of 'rvAngles::yaw'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Radians.h(89,61): warning C4458: declaration of 'roll' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Radians.h(30,10): message : see declaration of 'rvAngles::roll'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(125,61): warning C4458: declaration of 'origin' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(91,11): message : see declaration of 'idFrustum::origin'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(129,57): warning C4458: declaration of 'axis' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(92,11): message : see declaration of 'idFrustum::axis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(133,86): warning C4458: declaration of 'dNear' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(93,10): message : see declaration of 'idFrustum::dNear'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(133,86): warning C4458: declaration of 'dFar' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(94,10): message : see declaration of 'idFrustum::dFar'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(133,86): warning C4458: declaration of 'dLeft' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(95,10): message : see declaration of 'idFrustum::dLeft'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(133,86): warning C4458: declaration of 'dUp' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(96,10): message : see declaration of 'idFrustum::dUp'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(142,65): warning C4458: declaration of 'dNear' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(93,10): message : see declaration of 'idFrustum::dNear'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(142,65): warning C4458: declaration of 'dFar' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(94,10): message : see declaration of 'idFrustum::dFar'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(151,59): warning C4458: declaration of 'dNear' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(93,10): message : see declaration of 'idFrustum::dNear'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(156,57): warning C4458: declaration of 'dFar' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\bv\Frustum.h(94,10): message : see declaration of 'idFrustum::dFar'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\geometry\DrawVert.h(145,52): warning C4458: declaration of 'color' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\geometry\DrawVert.h(16,9): message : see declaration of 'idDrawVert::color'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(406,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(446,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(503,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(501,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(514,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(512,6): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(527,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(605,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(615,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(625,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(634,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(643,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(652,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(946,67): warning C4458: declaration of 'len' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(357,10): message : see declaration of 'idStr::len'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(950,68): warning C4458: declaration of 'len' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(357,10): message : see declaration of 'idStr::len'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(958,46): warning C4458: declaration of 'len' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(357,10): message : see declaration of 'idStr::len'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(962,47): warning C4458: declaration of 'len' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Str.h(357,10): message : see declaration of 'idStr::len'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Lexer.h(457,47): warning C4458: declaration of 'flags' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Lexer.h(273,9): message : see declaration of 'idLexer::flags'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Base64.h(80,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\containers\StrPool.h(74,66): warning C4458: declaration of 'caseSensitive' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\containers\StrPool.h(64,10): message : see declaration of 'idStrPool::caseSensitive'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\BitMsg.h(520,103): warning C4458: declaration of 'base' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\BitMsg.h(501,18): message : see declaration of 'idBitMsgDelta::base'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\BitMsg.h(520,103): warning C4458: declaration of 'newBase' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\BitMsg.h(502,14): message : see declaration of 'idBitMsgDelta::newBase'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\BitMsg.h(528,109): warning C4458: declaration of 'base' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\BitMsg.h(501,18): message : see declaration of 'idBitMsgDelta::base'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\BitMsg.h(528,109): warning C4458: declaration of 'newBase' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\BitMsg.h(502,14): message : see declaration of 'idBitMsgDelta::newBase'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(127,42): warning C4458: declaration of 'value' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(141,17): message : see declaration of 'idCVar::value'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(128,39): warning C4458: declaration of 'value' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(141,17): message : see declaration of 'idCVar::value'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(129,41): warning C4458: declaration of 'value' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(141,17): message : see declaration of 'idCVar::value'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(130,41): warning C4458: declaration of 'value' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(141,17): message : see declaration of 'idCVar::value'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(339,42): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(140,17): message : see declaration of 'idCVar::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(339,60): warning C4458: declaration of 'value' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(141,17): message : see declaration of 'idCVar::value'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(339,71): warning C4458: declaration of 'flags' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(143,11): message : see declaration of 'idCVar::flags'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(339,90): warning C4458: declaration of 'description' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(142,17): message : see declaration of 'idCVar::description'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(340,101): warning C4458: declaration of 'valueMin' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(144,12): message : see declaration of 'idCVar::valueMin'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(340,101): warning C4458: declaration of 'valueMax' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(145,12): message : see declaration of 'idCVar::valueMax'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(340,101): warning C4458: declaration of 'valueStrings' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(146,18): message : see declaration of 'idCVar::valueStrings'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(340,101): warning C4458: declaration of 'valueCompletion' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\CVarSystem.h(147,20): message : see declaration of 'idCVar::valueCompletion'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\Common.h(52,2): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-EDITOR_NONE>' when no variable is declared
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\aas\AASFile.h(95,2): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-RE_WALK>' when no variable is declared
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(7,14): warning C4595: 'operator new': non-member operator new or delete functions may not be declared inline
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(8,13): warning C4595: 'operator delete': non-member operator new or delete functions may not be declared inline
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(9,14): warning C4595: 'operator new[]': non-member operator new or delete functions may not be declared inline
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(10,13): warning C4595: 'operator delete[]': non-member operator new or delete functions may not be declared inline
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\Class.h(466,57): warning C4458: declaration of 'superclass' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\Class.h(430,18): message : see declaration of 'idTypeInfo::superclass'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(465,86): warning C4458: declaration of 'userInfo' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(326,13): message : see declaration of 'idGameLocal::userInfo'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(493,206): warning C4458: declaration of 'numClients' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(325,11): message : see declaration of 'idGameLocal::numClients'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Field.h(44,57): warning C4458: declaration of 'type' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Field.h(64,18): message : see declaration of 'idForce_Field::type'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(353,39): warning C4458: declaration of 'e' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(98,21): message : see declaration of 'idAFConstraint::e'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(517,39): warning C4458: declaration of 'e' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(98,21): message : see declaration of 'idAFConstraint::e'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(549,39): warning C4458: declaration of 'e' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(98,21): message : see declaration of 'idAFConstraint::e'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Interpreter.h(151,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Interpreter.h(153,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108,91): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<idQuat>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108): message : while compiling class template member function 'type idInterpolate<type>::GetDeltaValue(float,float) const'
+          with
+          [
+              type=idQuat
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(128): message : see reference to class template instantiation 'idInterpolate<idQuat>' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1913,103): warning C4458: declaration of 'order' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1807,10): message : see declaration of 'idCurve_BSpline<type>::order'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1913): message : while compiling class template member function 'float idCurve_BSpline<type>::Basis(const int,const int,const float) const'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1846): message : see reference to function template instantiation 'float idCurve_BSpline<type>::Basis(const int,const int,const float) const' being compiled
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1832): message : while compiling class template member function 'type idCurve_BSpline<type>::GetCurrentValue(const float) const'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1971): message : see reference to class template instantiation 'idCurve_BSpline<type>' being compiled
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\framework\declPlayback.h(168): message : see reference to class template instantiation 'idCurve_UniformCubicBSpline<idVec3>' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1943,118): warning C4458: declaration of 'order' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1807,10): message : see declaration of 'idCurve_BSpline<type>::order'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1943): message : while compiling class template member function 'float idCurve_BSpline<type>::BasisFirstDerivative(const int,const int,const float) const'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1873): message : see reference to function template instantiation 'float idCurve_BSpline<type>::BasisFirstDerivative(const int,const int,const float) const' being compiled
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1956,119): warning C4458: declaration of 'order' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1807,10): message : see declaration of 'idCurve_BSpline<type>::order'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1956): message : while compiling class template member function 'float idCurve_BSpline<type>::BasisSecondDerivative(const int,const int,const float) const'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1900): message : see reference to function template instantiation 'float idCurve_BSpline<type>::BasisSecondDerivative(const int,const int,const float) const' being compiled
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AF.cpp(1074,73): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AF.h(74,12): message : see declaration of 'idAF::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AF.cpp(1140,12): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AF.h(74,12): message : see declaration of 'idAF::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AF.cpp(1152,4): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AF.cpp(1172,12): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AF.h(74,12): message : see declaration of 'idAF::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AF.cpp(1282,5): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AF.cpp(1290,5): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AF.cpp(1321,12): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AF.h(74,12): message : see declaration of 'idAF::name'
+  AFEntity.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AFEntity.cpp(122,151): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AFEntity.cpp(1354,90): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AFEntity.cpp(2292,52): warning C4458: declaration of 'steerAngle' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AFEntity.h(370,12): message : see declaration of 'idAFEntity_Vehicle::steerAngle'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AFEntity.cpp(2467,52): warning C4458: declaration of 'steerAngle' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AFEntity.h(370,12): message : see declaration of 'idAFEntity_Vehicle::steerAngle'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AFEntity.cpp(3103,3): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Actor.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.cpp(1198,25): warning C4458: declaration of 'animator' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(783,16): message : see declaration of 'idAnimatedEntity::animator'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.cpp(2382,81): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.cpp(3690,75): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.cpp(3756,76): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+  BrittleFracture.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\BrittleFracture.cpp(331,114): warning C4458: declaration of 'renderEntity' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(526,19): message : see declaration of 'idEntity::renderEntity'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\BrittleFracture.cpp(331,114): warning C4458: declaration of 'renderView' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(132,19): message : see declaration of 'idEntity::renderView'
+  Camera.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(23,1): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<float>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(23): message : while compiling class template member function 'void idInterpolate<float>::SetEndValue(const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Camera.cpp(113): message : see reference to function template instantiation 'void idInterpolate<float>::SetEndValue(const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(22,1): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(22): message : while compiling class template member function 'void idInterpolate<float>::SetStartValue(const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Camera.cpp(111): message : see reference to function template instantiation 'void idInterpolate<float>::SetStartValue(const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(21,1): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<float>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(21): message : while compiling class template member function 'void idInterpolate<float>::SetDuration(float)'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Camera.cpp(107): message : see reference to function template instantiation 'void idInterpolate<float>::SetDuration(float)' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<float>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68): message : while compiling class template member function 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Camera.cpp(73): message : see reference to function template instantiation 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<float>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<float>::endValue'
+  Effect.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Effect.cpp(121,12): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+  Entity.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.cpp(1657,99): warning C4458: declaration of 'renderEntity' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(526,19): message : see declaration of 'idEntity::renderEntity'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.cpp(1657,99): warning C4458: declaration of 'renderView' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(132,19): message : see declaration of 'idEntity::renderView'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.cpp(4091,20): warning C4458: declaration of 'targets' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(135,34): message : see declaration of 'idEntity::targets'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.cpp(4118,23): warning C4456: declaration of 'token3' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.cpp(4078,26): message : see declaration of 'token3'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.cpp(4949,25): warning C4458: declaration of 'bindJoint' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(531,18): message : see declaration of 'idEntity::bindJoint'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.cpp(5622,54): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.cpp(6641,25): warning C4458: declaration of 'animator' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(783,16): message : see declaration of 'idAnimatedEntity::animator'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(2261,126): warning C4458: declaration of 'order' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1807,10): message : see declaration of 'idCurve_BSpline<type>::order'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(2261): message : while compiling class template member function 'void idCurve_NonUniformBSpline<idVec3>::Basis(const int,const int,const float,float *) const'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(2186): message : see reference to function template instantiation 'void idCurve_NonUniformBSpline<idVec3>::Basis(const int,const int,const float,float *) const' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(2163): message : while compiling class template member function 'idCurve_NonUniformBSpline<idVec3>::idCurve_NonUniformBSpline(void)'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.cpp(4633): message : see reference to function template instantiation 'idCurve_NonUniformBSpline<idVec3>::idCurve_NonUniformBSpline(void)' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.cpp(4633): message : see reference to class template instantiation 'idCurve_NonUniformBSpline<idVec3>' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(2286,141): warning C4458: declaration of 'order' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1807,10): message : see declaration of 'idCurve_BSpline<type>::order'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(2286): message : while compiling class template member function 'void idCurve_NonUniformBSpline<idVec3>::BasisFirstDerivative(const int,const int,const float,float *) const'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(2215): message : see reference to function template instantiation 'void idCurve_NonUniformBSpline<idVec3>::BasisFirstDerivative(const int,const int,const float,float *) const' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(2306,142): warning C4458: declaration of 'order' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(1807,10): message : see declaration of 'idCurve_BSpline<type>::order'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(2306): message : while compiling class template member function 'void idCurve_NonUniformBSpline<idVec3>::BasisSecondDerivative(const int,const int,const float,float *) const'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(2244): message : see reference to function template instantiation 'void idCurve_NonUniformBSpline<idVec3>::BasisSecondDerivative(const int,const int,const float,float *) const' being compiled
+  FreeView.cpp
+  GameEdit.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\GameEdit.cpp(314,24): warning C4458: declaration of 'bodyName' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\GameEdit.h(57,12): message : see declaration of 'idDragEntity::bodyName'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\GameEdit.cpp(336,8): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Game_Debug.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_Debug.cpp(337,44): warning C4458: declaration of 'jumpIndex' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_Debug.h(75,12): message : see declaration of 'rvGameDebug::jumpIndex'
+  Game_Log.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_Log.cpp(146,18): warning C4456: declaration of 'out' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_Log.cpp(90,14): message : see declaration of 'out'
+  Game_local.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(1157,96): warning C4458: declaration of 'userInfo' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(326,13): message : see declaration of 'idGameLocal::userInfo'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(1157,96): warning C4458: declaration of 'isClient' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(405,11): message : see declaration of 'idGameLocal::isClient'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(1508,3): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(1498,6): message : see declaration of 'i'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(1576,17): warning C4458: declaration of 'newInfo' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(996,13): message : see declaration of 'idGameLocal::newInfo'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(1679,19): warning C4458: declaration of 'newInfo' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(996,13): message : see declaration of 'idGameLocal::newInfo'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(1897,129): warning C4458: declaration of 'isServer' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(404,11): message : see declaration of 'idGameLocal::isServer'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(1897,129): warning C4458: declaration of 'isClient' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(405,11): message : see declaration of 'idGameLocal::isClient'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(3566,20): warning C4456: declaration of 'player' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(3465,12): message : see declaration of 'player'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(3718,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(4857,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(4989,59): warning C4458: declaration of 'spawnArgs' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(958,13): message : see declaration of 'idGameLocal::spawnArgs'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(5690,31): warning C4458: declaration of 'push' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(362,13): message : see declaration of 'idGameLocal::push'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(5817,183): warning C4458: declaration of 'push' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(362,13): message : see declaration of 'idGameLocal::push'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(5916,132): warning C4458: declaration of 'push' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(362,13): message : see declaration of 'idGameLocal::push'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(6168,24): warning C4456: declaration of 'client' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(6085,12): message : see declaration of 'client'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(6248,52): warning C4458: declaration of 'time' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(390,11): message : see declaration of 'idGameLocal::time'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(6711,20): warning C4458: declaration of 'mapFileName' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(925,12): message : see declaration of 'idGameLocal::mapFileName'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(6756,20): warning C4458: declaration of 'mapFileName' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(925,12): message : see declaration of 'idGameLocal::mapFileName'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(7274,17): warning C4458: declaration of 'newInfo' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(996,13): message : see declaration of 'idGameLocal::newInfo'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(8306,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.cpp(8321,2): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Game_network.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_network.cpp(92,195): warning C4458: declaration of 'numClients' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_local.h(325,11): message : see declaration of 'idGameLocal::numClients'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_network.cpp(888,20): warning C4457: declaration of 'clientNum' hides function parameter
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_network.cpp(784,53): message : see declaration of 'clientNum'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_network.cpp(1343,2): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_network.cpp(1009,11): message : see declaration of 'i'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_network.cpp(1862,20): warning C4457: declaration of 'clientNum' hides function parameter
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_network.cpp(1737,53): message : see declaration of 'clientNum'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_network.cpp(1878,20): warning C4457: declaration of 'clientNum' hides function parameter
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_network.cpp(1737,53): message : see declaration of 'clientNum'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_network.cpp(2028,5): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game_network.cpp(2286,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Healing_Station.cpp
+  IK.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.cpp(97,80): warning C4458: declaration of 'self' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.h(35,16): message : see declaration of 'idIK::self'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.cpp(97,80): warning C4458: declaration of 'modelOffset' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.h(38,13): message : see declaration of 'idIK::modelOffset'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.cpp(368,85): warning C4458: declaration of 'self' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.h(35,16): message : see declaration of 'idIK::self'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.cpp(368,85): warning C4458: declaration of 'modelOffset' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.h(38,13): message : see declaration of 'idIK::modelOffset'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.cpp(886,86): warning C4458: declaration of 'self' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.h(35,16): message : see declaration of 'idIK::self'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.cpp(886,86): warning C4458: declaration of 'modelOffset' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\IK.h(38,13): message : see declaration of 'idIK::modelOffset'
+  Icon.cpp
+  IconManager.cpp
+  Instance.cpp
+  Item.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Item.cpp(159,103): warning C4458: declaration of 'renderEntity' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(526,19): message : see declaration of 'idEntity::renderEntity'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Item.cpp(159,103): warning C4458: declaration of 'renderView' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(132,19): message : see declaration of 'idEntity::renderView'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Item.cpp(1631,5): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Item.cpp(2314,51): warning C4458: declaration of 'powerup' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Item.h(182,11): message : see declaration of 'riDeadZonePowerup::powerup'
+  Light.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Light.cpp(478,22): warning C4458: declaration of 'lightGUI' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Light.h(93,24): message : see declaration of 'idLight::lightGUI'
+  LipSync.cpp
+  Generating Code...
+  Compiling...
+  Misc.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.cpp(102,18): warning C4458: declaration of 'entityNumber' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(114,11): message : see declaration of 'idEntity::entityNumber'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.cpp(2073,10): warning C4458: declaration of 'anim' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.h(349,11): message : see declaration of 'idAnimated::anim'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.cpp(2095,10): warning C4458: declaration of 'anim' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.h(349,11): message : see declaration of 'idAnimated::anim'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.cpp(2972,66): warning C4458: declaration of 'area' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.h(637,11): message : see declaration of 'rvGravityArea::area'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.cpp(2982,67): warning C4458: declaration of 'area' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.h(637,11): message : see declaration of 'rvGravityArea::area'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.cpp(2991,67): warning C4458: declaration of 'area' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.h(637,11): message : see declaration of 'rvGravityArea::area'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.cpp(3000,67): warning C4458: declaration of 'area' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.h(637,11): message : see declaration of 'rvGravityArea::area'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.cpp(3009,67): warning C4458: declaration of 'area' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.h(637,11): message : see declaration of 'rvGravityArea::area'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Misc.cpp(3101,88): warning C4458: declaration of 'physics' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(534,17): message : see declaration of 'idEntity::physics'
+  Moveable.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Moveable.cpp(352,113): warning C4458: declaration of 'damage' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Moveable.h(51,12): message : see declaration of 'idMoveable::damage'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Moveable.cpp(1055,63): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Moveable.cpp(1090,65): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Moveable.cpp(1152,120): warning C4458: declaration of 'damage' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Moveable.h(51,12): message : see declaration of 'idMoveable::damage'
+  Mover.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Mover.cpp(566,110): warning C4458: declaration of 'damage' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Mover.h(140,12): message : see declaration of 'idMover::damage'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Mover.cpp(2670,49): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Mover.cpp(4397,68): warning C4458: declaration of 'trigger' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Mover.h(507,18): message : see declaration of 'idDoor::trigger'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Mover.cpp(5198,68): warning C4458: declaration of 'trigger' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Mover.h(568,18): message : see declaration of 'idPlat::trigger'
+  MultiplayerGame.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(827,73): warning C4458: declaration of 'scoreBoard' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.h(702,19): message : see declaration of 'idMultiplayerGame::scoreBoard'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(846,75): warning C4458: declaration of 'scoreBoard' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.h(702,19): message : see declaration of 'idMultiplayerGame::scoreBoard'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(1064,77): warning C4458: declaration of 'scoreBoard' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.h(702,19): message : see declaration of 'idMultiplayerGame::scoreBoard'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(1288,75): warning C4458: declaration of 'scoreBoard' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.h(702,19): message : see declaration of 'idMultiplayerGame::scoreBoard'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(1384,11): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(1372,13): message : see declaration of 'i'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(1431,78): warning C4458: declaration of 'scoreBoard' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.h(702,19): message : see declaration of 'idMultiplayerGame::scoreBoard'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(1552,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(1764,11): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(1737,6): message : see declaration of 'i'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(1900,72): warning C4458: declaration of 'vote' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.h(675,15): message : see declaration of 'idMultiplayerGame::vote'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(2163,28): warning C4458: declaration of 'voteString' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.h(681,10): message : see declaration of 'idMultiplayerGame::voteString'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(2960,23): warning C4456: declaration of 'player' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(2781,12): message : see declaration of 'player'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(3345,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(3597,3): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(3531,6): message : see declaration of 'i'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(4363,28): warning C4456: declaration of 'mapName' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(4326,16): message : see declaration of 'mapName'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(4513,28): warning C4456: declaration of 'mapName' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(4462,16): message : see declaration of 'mapName'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(4700,19): warning C4459: declaration of 'si_map' hides global declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCvar.h(385,15): message : see declaration of 'si_map'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(5027,23): warning C4456: declaration of 'player' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(4950,12): message : see declaration of 'player'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(5102,27): warning C4456: declaration of 'localPlayer' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(5063,12): message : see declaration of 'localPlayer'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(6481,89): warning C4458: declaration of 'voteValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.h(680,10): message : see declaration of 'idMultiplayerGame::voteValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(6619,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(6622,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(6625,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(6628,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(6631,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\MultiplayerGame.cpp(6637,6): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Playback.cpp
+  Player.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(2075,2): warning C5205: delete of an abstract class 'rvAASTacticalSensor' that has a non-virtual destructor results in undefined behavior
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AAS_tactical.h(23): message : see declaration of 'rvAASTacticalSensor'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(2722,12): warning C4458: declaration of 'skin' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(861,22): message : see declaration of 'idPlayer::skin'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(3456,26): warning C4458: declaration of 'hud' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(341,22): message : see declaration of 'idPlayer::hud'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(3457,28): warning C4458: declaration of 'mphud' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(342,21): message : see declaration of 'idPlayer::mphud'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(3458,29): warning C4458: declaration of 'cursor' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(922,21): message : see declaration of 'idPlayer::cursor'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(3620,29): warning C4458: declaration of 'cursor' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(922,21): message : see declaration of 'idPlayer::cursor'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(3931,62): warning C4458: declaration of 'weaponDef' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(338,27): message : see declaration of 'idPlayer::weaponDef'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(4249,17): warning C4458: declaration of 'weapon' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(335,17): message : see declaration of 'idPlayer::weapon'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(4627,64): warning C4458: declaration of 'team' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(120,11): message : see declaration of 'idActor::team'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(4822,25): warning C4458: declaration of 'hud' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(341,22): message : see declaration of 'idPlayer::hud'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(4935,3): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(4818,6): message : see declaration of 'i'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(5078,55): warning C4458: declaration of 'weapon' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(335,17): message : see declaration of 'idPlayer::weapon'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(5291,57): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(5308,56): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(6686,17): warning C4456: declaration of 'end' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(6632,12): message : see declaration of 'end'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(9670,31): warning C4458: declaration of 'weapon' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(335,17): message : see declaration of 'idPlayer::weapon'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(9962,82): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(9962,82): warning C4458: declaration of 'health' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(137,11): message : see declaration of 'idEntity::health'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(10062,76): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(10205,24): warning C4457: declaration of 'attacker' hides function parameter
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(10061,55): message : see declaration of 'attacker'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(10471,31): warning C4458: declaration of 'weapon' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(335,17): message : see declaration of 'idPlayer::weapon'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(10604,27): warning C4458: declaration of 'viewAxis' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(123,13): message : see declaration of 'idActor::viewAxis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(11116,18): warning C4458: declaration of 'viewAxis' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(123,13): message : see declaration of 'idActor::viewAxis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(11234,29): warning C4458: declaration of 'cursor' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(922,21): message : see declaration of 'idPlayer::cursor'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(11601,31): warning C4458: declaration of 'weapon' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(335,17): message : see declaration of 'idPlayer::weapon'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(11654,31): warning C4458: declaration of 'weapon' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(335,17): message : see declaration of 'idPlayer::weapon'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(12407,28): warning C4458: declaration of 'arena' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(962,11): message : see declaration of 'idPlayer::arena'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(12698,17): warning C4458: declaration of 'team' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(120,11): message : see declaration of 'idActor::team'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(12995,14): warning C4458: declaration of 'weapon' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.h(335,17): message : see declaration of 'idPlayer::weapon'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(13018,21): warning C4458: declaration of 'types' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\Class.h(409,30): message : see declaration of 'idClass::types'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<float>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68): message : while compiling class template member function 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(1203): message : see reference to function template instantiation 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<float>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<float>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108,91): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<idVec3>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108): message : while compiling class template member function 'type idInterpolate<type>::GetDeltaValue(float,float) const'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Player.cpp(2234): message : see reference to class template instantiation 'idInterpolate<idVec3>' being compiled
+  PlayerView.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\PlayerView.cpp(496,98): warning C4458: declaration of 'view' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\PlayerView.h(138,16): message : see declaration of 'idPlayerView::view'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\PlayerView.cpp(597,95): warning C4458: declaration of 'view' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\PlayerView.h(138,16): message : see declaration of 'idPlayerView::view'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\PlayerView.cpp(712,86): warning C4458: declaration of 'view' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\PlayerView.h(138,16): message : see declaration of 'idPlayerView::view'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\PlayerView.cpp(746,29): warning C4458: declaration of 'view' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\PlayerView.h(138,16): message : see declaration of 'idPlayerView::view'
+  Player_Cheats.cpp
+  Player_States.cpp
+  Projectile.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(556,16): warning C4458: declaration of 'speed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.h(96,23): message : see declaration of 'idProjectile::speed'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(833,19): warning C4456: declaration of 'dir' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(634,11): message : see declaration of 'dir'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(875,17): warning C4456: declaration of 'dir' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(634,11): message : see declaration of 'dir'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(23,1): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<float>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(23): message : while compiling class template member function 'void idInterpolate<float>::SetEndValue(const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(194): message : see reference to function template instantiation 'void idInterpolate<float>::SetEndValue(const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(22,1): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(22): message : while compiling class template member function 'void idInterpolate<float>::SetStartValue(const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(192): message : see reference to function template instantiation 'void idInterpolate<float>::SetStartValue(const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(21,1): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<float>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(21): message : while compiling class template member function 'void idInterpolate<float>::SetDuration(float)'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(190): message : see reference to function template instantiation 'void idInterpolate<float>::SetDuration(float)' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<idQuat>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68): message : while compiling class template member function 'void idInterpolate<idQuat>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=idQuat
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(62): message : see reference to function template instantiation 'void idInterpolate<idQuat>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=idQuat
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<idQuat>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<idQuat>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<idQuat>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(202,11): message : see declaration of 'idInterpolateAccelDecelLinear<float>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232): message : while compiling class template member function 'void idInterpolateAccelDecelLinear<float>::Init(const float,const float,const float,const float,const type &,const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(1886): message : see reference to function template instantiation 'void idInterpolateAccelDecelLinear<float>::Init(const float,const float,const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'accelTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(203,11): message : see declaration of 'idInterpolateAccelDecelLinear<float>::accelTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'decelTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(205,11): message : see declaration of 'idInterpolateAccelDecelLinear<float>::decelTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(206,10): message : see declaration of 'idInterpolateAccelDecelLinear<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(207,10): message : see declaration of 'idInterpolateAccelDecelLinear<float>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108,91): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<idVec3>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108): message : while compiling class template member function 'type idInterpolate<type>::GetDeltaValue(float,float) const'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(1841): message : see reference to class template instantiation 'idInterpolate<idVec3>' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(44,11): message : see declaration of 'idExtrapolate<float>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75): message : while compiling class template member function 'void idExtrapolate<float>::Init(const float,const float,const type &,const type &,const type &,const extrapolation_t)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(253): message : see reference to function template instantiation 'void idExtrapolate<float>::Init(const float,const float,const type &,const type &,const type &,const extrapolation_t)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(220): message : while compiling class template member function 'idInterpolateAccelDecelLinear<float>::idInterpolateAccelDecelLinear(void)'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Projectile.cpp(1816): message : see reference to function template instantiation 'idInterpolateAccelDecelLinear<float>::idInterpolateAccelDecelLinear(void)' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(45,11): message : see declaration of 'idExtrapolate<float>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(46,10): message : see declaration of 'idExtrapolate<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'baseSpeed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(47,10): message : see declaration of 'idExtrapolate<float>::baseSpeed'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'speed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(48,10): message : see declaration of 'idExtrapolate<float>::speed'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'extrapolationType' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(43,19): message : see declaration of 'idExtrapolate<float>::extrapolationType'
+  Pvs.cpp
+  SecurityCamera.cpp
+  Sound.cpp
+  SplineMover.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\SplineMover.cpp(280,68): warning C4458: declaration of 'spline' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\SplineMover.h(150,26): message : see declaration of 'rvPhysics_Spline::spline'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\SplineMover.cpp(308,64): warning C4458: declaration of 'spline' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\SplineMover.h(150,26): message : see declaration of 'rvPhysics_Spline::spline'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\SplineMover.cpp(1663,3): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\SplineMover.cpp(1844,85): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\SplineMover.cpp(2571,50): warning C4458: declaration of 'health' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(137,11): message : see declaration of 'idEntity::health'
+  Target.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Target.cpp(659,30): warning C4456: declaration of 'kv' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Target.cpp(640,21): message : see declaration of 'kv'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(23,1): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<int>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(23): message : while compiling class template member function 'void idInterpolate<int>::SetEndValue(const type &)'
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Target.cpp(1401): message : see reference to function template instantiation 'void idInterpolate<int>::SetEndValue(const type &)' being compiled
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(22,1): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<int>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(22): message : while compiling class template member function 'void idInterpolate<int>::SetStartValue(const type &)'
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Target.cpp(1399): message : see reference to function template instantiation 'void idInterpolate<int>::SetStartValue(const type &)' being compiled
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(21,1): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<int>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(21): message : while compiling class template member function 'void idInterpolate<int>::SetDuration(float)'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Target.cpp(1397): message : see reference to function template instantiation 'void idInterpolate<int>::SetDuration(float)' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<int>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68): message : while compiling class template member function 'void idInterpolate<int>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Target.cpp(1416): message : see reference to function template instantiation 'void idInterpolate<int>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<int>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<int>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<int>::endValue'
+  TramGate.cpp
+  Trigger.cpp
+  Weapon.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(207,55): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2329,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2505,103): warning C4458: declaration of 'spread' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.h(336,14): message : see declaration of 'rvWeapon::spread'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2506,21): warning C4458: declaration of 'muzzleOrigin' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.h(328,15): message : see declaration of 'rvWeapon::muzzleOrigin'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2507,19): warning C4458: declaration of 'muzzleAxis' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.h(329,15): message : see declaration of 'rvWeapon::muzzleAxis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2612,171): warning C4458: declaration of 'muzzleOrigin' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.h(328,15): message : see declaration of 'rvWeapon::muzzleOrigin'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2612,171): warning C4458: declaration of 'muzzleAxis' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.h(329,15): message : see declaration of 'rvWeapon::muzzleAxis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2612,171): warning C4458: declaration of 'spread' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.h(336,14): message : see declaration of 'rvWeapon::spread'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2641,14): warning C4456: declaration of 'dir' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2617,11): message : see declaration of 'dir'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2740,145): warning C4458: declaration of 'muzzleOrigin' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.h(328,15): message : see declaration of 'rvWeapon::muzzleOrigin'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2740,145): warning C4458: declaration of 'muzzleAxis' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.h(329,15): message : see declaration of 'rvWeapon::muzzleAxis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.cpp(2740,145): warning C4458: declaration of 'spread' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.h(336,14): message : see declaration of 'rvWeapon::spread'
+  WorldSpawn.cpp
+  AAS.cpp
+  Generating Code...
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(225): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(225): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(326): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Mover.cpp(2142): warning C4750: 'float __thiscall idCurve<class idVec3>::GetTimeForLength(float,float)const ': function with _alloca() inlined into a loop
+  Compiling...
+  AAS_Find.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AAS_Find.cpp(58,41): warning C4458: declaration of 'PVSAreas' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AAS_Find.h(33,10): message : see declaration of 'rvAASFindGoalForHide::PVSAreas'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AAS_Find.cpp(152,41): warning C4458: declaration of 'PVSAreas' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AAS_Find.h(83,12): message : see declaration of 'rvAASFindGoalForAttack::PVSAreas'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AAS_Find.cpp(194,23): warning C4456: declaration of 'localPoint' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AAS_Find.cpp(176,9): message : see declaration of 'localPoint'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AAS_Find.cpp(195,17): warning C4456: declaration of 'bestZ' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AAS_Find.cpp(177,8): message : see declaration of 'bestZ'
+  AAS_debug.cpp
+  AAS_pathing.cpp
+  AAS_routing.cpp
+  AAS_tactical.cpp
+  AI.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI.cpp(154,2): warning C5205: delete of an abstract class 'rvAASTacticalSensor' that has a non-virtual destructor results in undefined behavior
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AAS_tactical.h(23): message : see declaration of 'rvAASTacticalSensor'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI.cpp(2692,33): warning C4456: declaration of 'shader' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI.cpp(2684,23): message : see declaration of 'shader'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI.cpp(2713,22): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI.cpp(2840,22): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI.cpp(3358,17): warning C4456: declaration of 'axis' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI.cpp(3145,10): message : see declaration of 'axis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI.cpp(4585,13): warning C4456: declaration of 'tr' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI.cpp(4549,11): message : see declaration of 'tr'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI.cpp(5069,77): warning C4458: declaration of 'animPrefix' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(293,12): message : see declaration of 'idActor::animPrefix'
+  AI_Actions.cpp
+  AI_Announcements.cpp
+  AI_Debug.cpp
+  AI_Manager.cpp
+  AI_Medic.cpp
+  AI_Move.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI_Move.cpp(923,48): warning C4458: declaration of 'tether' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI.h(867,26): message : see declaration of 'idAI::tether'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI_Move.cpp(1750,17): warning C4456: declaration of 'end' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI_Move.cpp(1725,9): message : see declaration of 'end'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI_Move.cpp(3400,1): warning C4456: declaration of 'area' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI_Move.cpp(3315,23): message : see declaration of 'area'
+  AI_States.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI_States.cpp(792,19): warning C4458: declaration of 'head' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(309,30): message : see declaration of 'idActor::head'
+  AI_Tactical.cpp
+  AI_Util.cpp
+  AI_events.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\AI_events.cpp(599,17): warning C4458: declaration of 'af' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\AFEntity.h(227,11): message : see declaration of 'idAFEntity_Base::af'
+  AI_pathing.cpp
+  Monster_Berserker.cpp
+  Monster_BossBuddy.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_BossBuddy.cpp(370,48): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+  Monster_BossMakron.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_BossMakron.cpp(974,82): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+  Generating Code...
+  Compiling...
+  Monster_ConvoyGround.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_ConvoyGround.cpp(244,137): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+  Monster_ConvoyHover.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_ConvoyHover.cpp(252,22): warning C4458: declaration of 'maxHeight' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_ConvoyHover.cpp(47,12): message : see declaration of 'rvMonsterConvoyHover::maxHeight'
+  Monster_FailedTransfer.cpp
+  Monster_Fatty.cpp
+  Monster_Gladiator.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_Gladiator.cpp(486,47): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+  Monster_Grunt.cpp
+  Monster_Gunner.cpp
+  Monster_Harvester.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_Harvester.cpp(503,84): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+  Monster_HarvesterDispersal.cpp
+  Monster_HeavyHoverTank.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_HeavyHoverTank.cpp(197,139): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+  Monster_IronMaiden.cpp
+  Monster_LightTank.cpp
+  Monster_NetworkGuardian.cpp
+  Monster_RepairBot.cpp
+  Monster_Scientist.cpp
+  Monster_Sentry.cpp
+  Monster_SlimyTransfer.cpp
+  Monster_StreamProtector.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_StreamProtector.cpp(230,84): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+  Monster_StroggFlyer.cpp
+  Monster_StroggHover.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_StroggHover.cpp(723,84): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_StroggHover.cpp(1076,19): warning C4456: declaration of 'vel' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\ai\Monster_StroggHover.cpp(1062,9): message : see declaration of 'vel'
+  Generating Code...
+  Compiling...
+  Monster_StroggMarine.cpp
+  Monster_TeleportDropper.cpp
+  Monster_Turret.cpp
+  Monster_TurretFlying.cpp
+  VehicleAI.cpp
+  Anim.cpp
+  Anim_Blend.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(121,161): warning C4458: declaration of 'modelDef' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(317,30): message : see declaration of 'idAnim::modelDef'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(299,131): warning C4458: declaration of 'modelDef' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(317,30): message : see declaration of 'idAnim::modelDef'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(824,14): warning C4458: declaration of 'flags' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(324,18): message : see declaration of 'idAnim::flags'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(1255,86): warning C4458: declaration of 'modelDef' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(480,30): message : see declaration of 'idAnimBlend::modelDef'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(1455,110): warning C4458: declaration of 'modelDef' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(480,30): message : see declaration of 'idAnimBlend::modelDef'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(1498,122): warning C4458: declaration of 'modelDef' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(480,30): message : see declaration of 'idAnimBlend::modelDef'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(1549,121): warning C4458: declaration of 'modelDef' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(480,30): message : see declaration of 'idAnimBlend::modelDef'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(4532,19): warning C4458: declaration of 'numJoints' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(726,12): message : see declaration of 'idAnimator::numJoints'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(4574,23): warning C4458: declaration of 'joints' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(727,18): message : see declaration of 'idAnimator::joints'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(4814,19): warning C4458: declaration of 'numJoints' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(726,12): message : see declaration of 'idAnimator::numJoints'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(5251,70): warning C4458: declaration of 'numJoints' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(726,12): message : see declaration of 'idAnimator::numJoints'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(5411,18): warning C4458: declaration of 'numJoints' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(726,12): message : see declaration of 'idAnimator::numJoints'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(5412,23): warning C4458: declaration of 'joints' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(727,18): message : see declaration of 'idAnimator::joints'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(202,11): message : see declaration of 'idInterpolateAccelDecelLinear<idAngles>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232): message : while compiling class template member function 'void idInterpolateAccelDecelLinear<idAngles>::Init(const float,const float,const float,const float,const type &,const type &)'
+          with
+          [
+              type=idAngles
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Blend.cpp(3997): message : see reference to function template instantiation 'void idInterpolateAccelDecelLinear<idAngles>::Init(const float,const float,const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=idAngles
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'accelTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(203,11): message : see declaration of 'idInterpolateAccelDecelLinear<idAngles>::accelTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'decelTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(205,11): message : see declaration of 'idInterpolateAccelDecelLinear<idAngles>::decelTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(206,10): message : see declaration of 'idInterpolateAccelDecelLinear<idAngles>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(207,10): message : see declaration of 'idInterpolateAccelDecelLinear<idAngles>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(44,11): message : see declaration of 'idExtrapolate<type>::startTime'
+          with
+          [
+              type=idAngles
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75): message : while compiling class template member function 'void idExtrapolate<type>::Init(const float,const float,const type &,const type &,const type &,const extrapolation_t)'
+          with
+          [
+              type=idAngles
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(253): message : see reference to function template instantiation 'void idExtrapolate<type>::Init(const float,const float,const type &,const type &,const type &,const extrapolation_t)' being compiled
+          with
+          [
+              type=idAngles
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(220): message : while compiling class template member function 'idInterpolateAccelDecelLinear<idAngles>::idInterpolateAccelDecelLinear(void)'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim.h(86): message : see reference to function template instantiation 'idInterpolateAccelDecelLinear<idAngles>::idInterpolateAccelDecelLinear(void)' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(45,11): message : see declaration of 'idExtrapolate<type>::duration'
+          with
+          [
+              type=idAngles
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(46,10): message : see declaration of 'idExtrapolate<type>::startValue'
+          with
+          [
+              type=idAngles
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'baseSpeed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(47,10): message : see declaration of 'idExtrapolate<type>::baseSpeed'
+          with
+          [
+              type=idAngles
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'speed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(48,10): message : see declaration of 'idExtrapolate<type>::speed'
+          with
+          [
+              type=idAngles
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'extrapolationType' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(43,19): message : see declaration of 'idExtrapolate<type>::extrapolationType'
+          with
+          [
+              type=idAngles
+          ]
+  Anim_Import.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Import.cpp(321,21): warning C4459: declaration of 'game' hides global declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Game.h(373,21): message : see declaration of 'game'
+  Anim_Testmodel.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Testmodel.cpp(380,15): warning C4456: declaration of 'axis' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Testmodel.cpp(248,9): message : see declaration of 'axis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\anim\Anim_Testmodel.cpp(540,14): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(124,12): message : see declaration of 'idEntity::name'
+  ClientAFEntity.cpp
+  ClientEffect.cpp
+  ClientEntity.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\client\ClientEntity.cpp(362,23): warning C4458: declaration of 'physics' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\client\ClientEntity.h(76,17): message : see declaration of 'rvClientEntity::physics'
+  ClientModel.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\client\ClientModel.cpp(245,104): warning C4458: declaration of 'renderEntity' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\client\ClientModel.h(54,20): message : see declaration of 'rvClientModel::renderEntity'
+  ClientMoveable.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<float>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68): message : while compiling class template member function 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\client\ClientMoveable.cpp(40): message : see reference to function template instantiation 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<float>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<float>::endValue'
+  Class.cpp
+  DebugGraph.cpp
+  Event.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\Event.cpp(55,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\Event.cpp(97,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\Event.cpp(114,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\Event.cpp(121,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\Event.cpp(135,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\Event.cpp(409,74): warning C4458: declaration of 'time' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\Event.h(65,12): message : see declaration of 'idEvent::time'
+  SaveGame.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SaveGame.cpp(1087,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(44,11): message : see declaration of 'idExtrapolate<int>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75): message : while compiling class template member function 'void idExtrapolate<int>::Init(const float,const float,const type &,const type &,const type &,const extrapolation_t)'
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SaveGame.cpp(1531): message : see reference to function template instantiation 'void idExtrapolate<int>::Init(const float,const float,const type &,const type &,const type &,const extrapolation_t)' being compiled
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SaveGame.cpp(524): message : see reference to class template instantiation 'idExtrapolate<int>' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(45,11): message : see declaration of 'idExtrapolate<int>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(46,10): message : see declaration of 'idExtrapolate<int>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'baseSpeed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(47,10): message : see declaration of 'idExtrapolate<int>::baseSpeed'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'speed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(48,10): message : see declaration of 'idExtrapolate<int>::speed'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'extrapolationType' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(43,19): message : see declaration of 'idExtrapolate<int>::extrapolationType'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(202,11): message : see declaration of 'idInterpolateAccelDecelLinear<int>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232): message : while compiling class template member function 'void idInterpolateAccelDecelLinear<int>::Init(const float,const float,const float,const float,const type &,const type &)'
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SaveGame.cpp(1604): message : see reference to function template instantiation 'void idInterpolateAccelDecelLinear<int>::Init(const float,const float,const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SaveGame.cpp(569): message : see reference to class template instantiation 'idInterpolateAccelDecelLinear<int>' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'accelTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(203,11): message : see declaration of 'idInterpolateAccelDecelLinear<int>::accelTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'decelTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(205,11): message : see declaration of 'idInterpolateAccelDecelLinear<int>::decelTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(206,10): message : see declaration of 'idInterpolateAccelDecelLinear<int>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(207,10): message : see declaration of 'idInterpolateAccelDecelLinear<int>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<int>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68): message : while compiling class template member function 'void idInterpolate<int>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SaveGame.cpp(1675): message : see reference to function template instantiation 'void idInterpolate<int>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<int>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<int>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<int>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108,91): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<idVec3>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108): message : while compiling class template member function 'type idInterpolate<type>::GetDeltaValue(float,float) const'
+          with
+          [
+              type=idVec3
+          ]
+  State.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\State.cpp(98,100): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\State.h(133,13): message : see declaration of 'rvStateThread::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\State.cpp(133,99): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\State.h(133,13): message : see declaration of 'rvStateThread::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\State.cpp(143,105): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\State.h(133,13): message : see declaration of 'rvStateThread::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\State.cpp(165,62): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\State.h(133,13): message : see declaration of 'rvStateThread::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\State.cpp(392,72): warning C4458: declaration of 'owner' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\State.h(134,15): message : see declaration of 'rvStateThread::owner'
+  SysCmds.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(814,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(1308,19): warning C4456: declaration of 'ent' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(1296,12): message : see declaration of 'ent'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(1680,12): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(1895,22): warning C4456: declaration of 'animator' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCmds.cpp(1889,15): message : see declaration of 'animator'
+  Generating Code...
+  Compiling...
+  SysCvar.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\SysCvar.cpp(35,26): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Buying.cpp
+  CTF.cpp
+  GameState.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(459,5): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(402,8): message : see declaration of 'i'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(483,5): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(402,8): message : see declaration of 'i'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(617,5): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(402,8): message : see declaration of 'i'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(641,5): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(402,8): message : see declaration of 'i'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(2617,60): warning C4458: declaration of 'round' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.h(333,11): message : see declaration of 'rvTourneyGameState::round'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(2716,56): warning C4458: declaration of 'type' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.h(91,25): message : see declaration of 'rvGameState::type'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(2720,58): warning C4458: declaration of 'type' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.h(121,25): message : see declaration of 'rvDMGameState::type'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(2724,62): warning C4458: declaration of 'type' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.h(143,25): message : see declaration of 'rvTeamDMGameState::type'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(2728,59): warning C4458: declaration of 'type' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.h(215,25): message : see declaration of 'rvCTFGameState::type'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.cpp(2732,63): warning C4458: declaration of 'type' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\GameState.h(351,25): message : see declaration of 'rvTourneyGameState::type'
+  Tourney.cpp
+  VoiceComms.cpp
+  StatEvent.cpp
+  StatManager.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\stats\StatManager.cpp(914,13): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\stats\StatManager.cpp(915,73): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\stats\StatManager.cpp(1097,31): warning C4458: declaration of 'playerStats' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\stats\StatManager.h(315,18): message : see declaration of 'rvStatManager::playerStats'
+  StatWindow.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\stats\StatWindow.cpp(58,23): warning C4456: declaration of 'player' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\mp\stats\StatWindow.cpp(32,12): message : see declaration of 'player'
+  Clip.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Clip.cpp(405,60): warning C4458: declaration of 'renderModelHandle' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Clip.h(107,11): message : see declaration of 'idClipModel::renderModelHandle'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Clip.cpp(749,123): warning C4458: declaration of 'renderModelHandle' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Clip.h(107,11): message : see declaration of 'idClipModel::renderModelHandle'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Clip.cpp(1102,28): warning C4456: declaration of 'bounds' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Clip.cpp(1091,11): message : see declaration of 'bounds'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Clip.cpp(1779,31): warning C4458: declaration of 'numContacts' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Clip.h(349,11): message : see declaration of 'idClip::numContacts'
+  Force.cpp
+  Force_Constant.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Constant.cpp(59,87): warning C4458: declaration of 'physics' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Constant.h(39,16): message : see declaration of 'idForce_Constant::physics'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Constant.cpp(59,87): warning C4458: declaration of 'id' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Constant.h(40,10): message : see declaration of 'idForce_Constant::id'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Constant.cpp(59,87): warning C4458: declaration of 'point' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Constant.h(41,12): message : see declaration of 'idForce_Constant::point'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Constant.cpp(70,56): warning C4458: declaration of 'force' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Constant.h(38,12): message : see declaration of 'idForce_Constant::force'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Constant.cpp(79,57): warning C4458: declaration of 'physics' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Constant.h(39,16): message : see declaration of 'idForce_Constant::physics'
+  Force_Drag.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Drag.cpp(37,42): warning C4458: declaration of 'damping' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Drag.h(38,11): message : see declaration of 'idForce_Drag::damping'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Drag.cpp(48,75): warning C4458: declaration of 'id' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Drag.h(42,10): message : see declaration of 'idForce_Drag::id'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Drag.cpp(48,75): warning C4458: declaration of 'p' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Drag.h(43,12): message : see declaration of 'idForce_Drag::p'
+  Force_Field.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Field.cpp(84,60): warning C4458: declaration of 'clipModel' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Field.h(71,17): message : see declaration of 'idForce_Field::clipModel'
+  Force_Spring.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.cpp(41,101): warning C4458: declaration of 'Kstretch' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.h(36,11): message : see declaration of 'idForce_Spring::Kstretch'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.cpp(41,101): warning C4458: declaration of 'Kcompress' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.h(37,11): message : see declaration of 'idForce_Spring::Kcompress'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.cpp(41,101): warning C4458: declaration of 'damping' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.h(38,11): message : see declaration of 'idForce_Spring::damping'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.cpp(41,101): warning C4458: declaration of 'restLength' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.h(39,11): message : see declaration of 'idForce_Spring::restLength'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.cpp(53,132): warning C4458: declaration of 'physics1' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.h(42,16): message : see declaration of 'idForce_Spring::physics1'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.cpp(53,132): warning C4458: declaration of 'id1' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.h(43,10): message : see declaration of 'idForce_Spring::id1'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.cpp(53,132): warning C4458: declaration of 'p1' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.h(44,12): message : see declaration of 'idForce_Spring::p1'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.cpp(53,132): warning C4458: declaration of 'physics2' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.h(45,16): message : see declaration of 'idForce_Spring::physics2'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.cpp(53,132): warning C4458: declaration of 'id2' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.h(46,10): message : see declaration of 'idForce_Spring::id2'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.cpp(53,132): warning C4458: declaration of 'p2' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Force_Spring.h(47,12): message : see declaration of 'idForce_Spring::p2'
+  Physics.cpp
+  Physics_AF.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(600,74): warning C4458: declaration of 'e' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(98,21): message : see declaration of 'idAFConstraint::e'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(1153,70): warning C4458: declaration of 'e' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(98,21): message : see declaration of 'idAFConstraint::e'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(1820,61): warning C4458: declaration of 'e' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(98,21): message : see declaration of 'idAFConstraint::e'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(2854,129): warning C4458: declaration of 'damping' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(457,12): message : see declaration of 'idAFConstraint_Spring::damping'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(2854,129): warning C4458: declaration of 'restLength' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(458,12): message : see declaration of 'idAFConstraint_Spring::restLength'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(2867,86): warning C4458: declaration of 'minLength' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(459,12): message : see declaration of 'idAFConstraint_Spring::minLength'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(2867,86): warning C4458: declaration of 'maxLength' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(460,12): message : see declaration of 'idAFConstraint_Spring::maxLength'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(3306,74): warning C4458: declaration of 'cc' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(501,26): message : see declaration of 'idAFConstraint_ContactFriction::cc'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(3500,166): warning C4458: declaration of 'coneAnchor' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(526,13): message : see declaration of 'idAFConstraint_ConeLimit::coneAnchor'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(3500,166): warning C4458: declaration of 'coneAxis' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(527,13): message : see declaration of 'idAFConstraint_ConeLimit::coneAxis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(3500,166): warning C4458: declaration of 'body1Axis' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(528,13): message : see declaration of 'idAFConstraint_ConeLimit::body1Axis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(3518,70): warning C4458: declaration of 'coneAnchor' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(526,13): message : see declaration of 'idAFConstraint_ConeLimit::coneAnchor'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(3527,72): warning C4458: declaration of 'body1Axis' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(528,13): message : see declaration of 'idAFConstraint_ConeLimit::body1Axis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(3745,84): warning C4458: declaration of 'pyramidAnchor' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(558,13): message : see declaration of 'idAFConstraint_PyramidLimit::pyramidAnchor'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(3747,89): warning C4458: declaration of 'body1Axis' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(560,13): message : see declaration of 'idAFConstraint_PyramidLimit::body1Axis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(3775,76): warning C4458: declaration of 'pyramidAnchor' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(558,13): message : see declaration of 'idAFConstraint_PyramidLimit::pyramidAnchor'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(3784,75): warning C4458: declaration of 'body1Axis' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(560,13): message : see declaration of 'idAFConstraint_PyramidLimit::body1Axis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(4119,55): warning C4458: declaration of 'clipModel' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(643,18): message : see declaration of 'idAFBody::clipModel'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(5840,125): warning C4458: declaration of 'noMoveTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(918,12): message : see declaration of 'idPhysics_AF::noMoveTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(5840,125): warning C4458: declaration of 'noMoveTranslation' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(919,12): message : see declaration of 'idPhysics_AF::noMoveTranslation'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(5840,125): warning C4458: declaration of 'noMoveRotation' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.h(920,12): message : see declaration of 'idPhysics_AF::noMoveRotation'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_AF.cpp(7406,120): warning C4458: declaration of 'contacts' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_Base.h(144,24): message : see declaration of 'idPhysics_Base::contacts'
+  Physics_Actor.cpp
+  Physics_Base.cpp
+  Physics_Monster.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_Monster.cpp(66,106): warning C4458: declaration of 'delta' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_Monster.h(111,13): message : see declaration of 'idPhysics_Monster::delta'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_Monster.cpp(108,105): warning C4458: declaration of 'delta' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_Monster.h(111,13): message : see declaration of 'idPhysics_Monster::delta'
+  Generating Code...
+  Compiling...
+  Physics_Parametric.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(186,1): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(206,10): message : see declaration of 'idInterpolateAccelDecelLinear<idVec3>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(186): message : while compiling class template member function 'void idInterpolateAccelDecelLinear<idVec3>::SetStartValue(const type &)'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_Parametric.cpp(744): message : see reference to function template instantiation 'void idInterpolateAccelDecelLinear<idVec3>::SetStartValue(const type &)' being compiled
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_Parametric.h(28): message : see reference to class template instantiation 'idInterpolateAccelDecelLinear<idVec3>' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(44,11): message : see declaration of 'idExtrapolate<idVec3>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75): message : while compiling class template member function 'void idExtrapolate<idVec3>::Init(const float,const float,const type &,const type &,const type &,const extrapolation_t)'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_Parametric.cpp(84): message : see reference to function template instantiation 'void idExtrapolate<idVec3>::Init(const float,const float,const type &,const type &,const type &,const extrapolation_t)' being compiled
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(45,11): message : see declaration of 'idExtrapolate<idVec3>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(46,10): message : see declaration of 'idExtrapolate<idVec3>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'baseSpeed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(47,10): message : see declaration of 'idExtrapolate<idVec3>::baseSpeed'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'speed' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(48,10): message : see declaration of 'idExtrapolate<idVec3>::speed'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(75,196): warning C4458: declaration of 'extrapolationType' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Extrapolate.h(43,19): message : see declaration of 'idExtrapolate<idVec3>::extrapolationType'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(202,11): message : see declaration of 'idInterpolateAccelDecelLinear<float>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232): message : while compiling class template member function 'void idInterpolateAccelDecelLinear<float>::Init(const float,const float,const float,const float,const type &,const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_Parametric.cpp(89): message : see reference to function template instantiation 'void idInterpolateAccelDecelLinear<float>::Init(const float,const float,const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'accelTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(203,11): message : see declaration of 'idInterpolateAccelDecelLinear<float>::accelTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'decelTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(205,11): message : see declaration of 'idInterpolateAccelDecelLinear<float>::decelTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(206,10): message : see declaration of 'idInterpolateAccelDecelLinear<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(232,197): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(207,10): message : see declaration of 'idInterpolateAccelDecelLinear<float>::endValue'
+  Physics_Particle.cpp
+  Physics_Player.cpp
+  Physics_RigidBody.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_RigidBody.cpp(695,57): warning C4458: declaration of 'mass' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\physics\Physics_RigidBody.h(144,12): message : see declaration of 'idPhysics_RigidBody::mass'
+  Physics_Static.cpp
+  Physics_StaticMulti.cpp
+  Physics_VehicleMonster.cpp
+  Push.cpp
+  ScriptFuncUtility.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\ScriptFuncUtility.cpp(223,65): warning C4458: declaration of 'func' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\ScriptFuncUtility.h(66,21): message : see declaration of 'rvScriptFuncUtility::func'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\ScriptFuncUtility.cpp(232,66): warning C4458: declaration of 'parms' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\ScriptFuncUtility.h(67,18): message : see declaration of 'rvScriptFuncUtility::parms'
+  Script_Compiler.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Compiler.cpp(226,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Compiler.cpp(244,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Compiler.cpp(2623,14): warning C4456: declaration of 'error' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Compiler.cpp(2570,7): message : see declaration of 'error'
+  Script_Interpreter.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Interpreter.cpp(447,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Interpreter.cpp(472,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Script_Program.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.cpp(76,46): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.h(39,12): message : see declaration of 'function_t::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.cpp(273,74): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.h(72,14): message : see declaration of 'idTypeDef::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.cpp(290,68): warning C4458: declaration of 'name' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.h(72,14): message : see declaration of 'idTypeDef::name'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.cpp(543,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.cpp(587,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.cpp(631,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.cpp(759,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.cpp(1523,22): warning C4457: declaration of 'type' hides function parameter
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.cpp(1495,43): message : see declaration of 'type'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.cpp(2169,53): warning C4458: declaration of 'filename' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Program.h(547,18): message : see declaration of 'idProgram::filename'
+  Script_Thread.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Thread.cpp(919,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Thread.cpp(935,2): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Thread.cpp(2211,3): warning C4091: 'typedef ': ignored on left of 'idThread::Event_SendNamedEvent::<unnamed-enum-SNE_PLAYERHUD>' when no variable is declared
+  spawner.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\spawner.cpp(291,41): warning C4458: declaration of 'types' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\gamesys\Class.h(409,30): message : see declaration of 'idClass::types'
+  Vehicle.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\Vehicle.cpp(860,153): warning C4458: declaration of 'damageScale' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Actor.h(277,18): message : see declaration of 'idActor::damageScale'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\Vehicle.cpp(1577,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\Vehicle.cpp(1606,50): warning C4458: declaration of 'health' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Entity.h(137,11): message : see declaration of 'idEntity::health'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<int>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68): message : while compiling class template member function 'void idInterpolate<int>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\Vehicle.cpp(108): message : see reference to function template instantiation 'void idInterpolate<int>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=int
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<int>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<int>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<int>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108,91): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<idVec3>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108): message : while compiling class template member function 'type idInterpolate<type>::GetDeltaValue(float,float) const'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\Vehicle.cpp(186): message : see reference to class template instantiation 'idInterpolate<idVec3>' being compiled
+  VehicleAnimated.cpp
+  VehicleController.cpp
+  VehicleDriver.cpp
+  VehicleMonster.cpp
+  VehicleParts.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.cpp(1601,19): warning C4458: declaration of 'angles' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.h(385,12): message : see declaration of 'rvVehicleTurret::angles'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.cpp(1647,26): warning C4456: declaration of 'oldAngles' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.cpp(1573,11): message : see declaration of 'oldAngles'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.cpp(1964,14): warning C4456: declaration of 'axis' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.cpp(1884,9): message : see declaration of 'axis'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.cpp(2300,38): warning C4458: declaration of 'position' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.h(68,22): message : see declaration of 'rvVehiclePart::position'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.cpp(2354,37): warning C4838: conversion from 'const float' to 'int' requires a narrowing conversion
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.cpp(2354,56): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<float>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68): message : while compiling class template member function 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.cpp(295): message : see reference to function template instantiation 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<float>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<float>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108,91): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<idVec3>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108): message : while compiling class template member function 'type idInterpolate<type>::GetDeltaValue(float,float) const'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehicleParts.cpp(322): message : see reference to class template instantiation 'idInterpolate<idVec3>' being compiled
+  Generating Code...
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Compiler.cpp(347): warning C4702: unreachable code
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Compiler.cpp(1008): warning C4702: unreachable code
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Compiler.cpp(1302): warning C4702: unreachable code
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Compiler.cpp(1336): warning C4702: unreachable code
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Compiler.cpp(1347): warning C4702: unreachable code
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\script\Script_Compiler.cpp(1379): warning C4702: unreachable code
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(225): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+  Compiling...
+  VehiclePosition.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehiclePosition.cpp(534,9): warning C4456: declaration of 'i' hides previous local declaration
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\vehicle\VehiclePosition.cpp(507,6): message : see declaration of 'i'
+  VehicleRigid.cpp
+  VehicleSpline.cpp
+  VehicleStatic.cpp
+  Vehicle_DropPod.cpp
+  Vehicle_Walker.cpp
+  WeaponBlaster.cpp
+  WeaponDarkMatterGun.cpp
+  WeaponGauntlet.cpp
+  WeaponGrenadeLauncher.cpp
+  WeaponHyperblaster.cpp
+  WeaponLightningGun.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(23,1): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<float>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(23): message : while compiling class template member function 'void idInterpolate<float>::SetEndValue(const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\weapon\WeaponLightningGun.cpp(224): message : see reference to function template instantiation 'void idInterpolate<float>::SetEndValue(const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(22,1): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(22): message : while compiling class template member function 'void idInterpolate<float>::SetStartValue(const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\weapon\WeaponLightningGun.cpp(222): message : see reference to function template instantiation 'void idInterpolate<float>::SetStartValue(const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(21,1): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<float>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(21): message : while compiling class template member function 'void idInterpolate<float>::SetDuration(float)'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\weapon\WeaponLightningGun.cpp(220): message : see reference to function template instantiation 'void idInterpolate<float>::SetDuration(float)' being compiled
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<float>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68): message : while compiling class template member function 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\weapon\WeaponLightningGun.cpp(148): message : see reference to function template instantiation 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<float>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<float>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108,91): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<idVec3>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108): message : while compiling class template member function 'type idInterpolate<type>::GetDeltaValue(float,float) const'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\weapon\WeaponLightningGun.cpp(180): message : see reference to class template instantiation 'idInterpolate<idVec3>' being compiled
+  WeaponMachinegun.cpp
+  WeaponNailgun.cpp
+  WeaponNapalmGun.cpp
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\weapon\WeaponNapalmGun.cpp(157,19): warning C4458: declaration of 'clipSize' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\Weapon.h(367,13): message : see declaration of 'rvWeapon::clipSize'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<float>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68): message : while compiling class template member function 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\weapon\WeaponNapalmGun.cpp(101): message : see reference to function template instantiation 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'duration' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(43,11): message : see declaration of 'idInterpolate<float>::duration'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'startValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(44,10): message : see declaration of 'idInterpolate<float>::startValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(68,135): warning C4458: declaration of 'endValue' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(45,10): message : see declaration of 'idInterpolate<float>::endValue'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108,91): warning C4458: declaration of 'startTime' hides class member
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(42,11): message : see declaration of 'idInterpolate<idVec3>::startTime'
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Interpolate.h(108): message : while compiling class template member function 'type idInterpolate<type>::GetDeltaValue(float,float) const'
+          with
+          [
+              type=idVec3
+          ]
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\game\weapon\WeaponNapalmGun.cpp(204): message : see reference to class template instantiation 'idInterpolate<idVec3>' being compiled
+  WeaponRailgun.cpp
+  WeaponRocketLauncher.cpp
+  WeaponShotgun.cpp
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetPath(C:\Users\socce\OneDrive\Documents\cs-class\IT266\Win32\Release\Game.dll) does not match the Linker's OutputFile property value (C:\Users\socce\OneDrive\Documents\cs-class\IT266\Win32\Release\Gamex86.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1365,5): warning MSB8012: TargetName(Game) does not match the Linker's OutputFile property value (Gamex86). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library ..\Win32\Release\Gamex86.lib and object ..\Win32\Release\Gamex86.exp
+  game.vcxproj -> C:\Users\socce\OneDrive\Documents\cs-class\IT266\Win32\Release\Game.dll
