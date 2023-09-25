@@ -1,8 +1,11 @@
 package com.example.wishlist
 
-class Item (
-    val name: String,
-    val price: String,
-    val url: String) {
+import android.text.Editable
+
+class Item(
+    val name: Editable,
+    val price: Editable,
+    val url: Editable
+) {
 
 }
