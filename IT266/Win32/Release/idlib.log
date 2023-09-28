@@ -1,7 +1,4 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(39,5): warning MSB4211: The property "IntermediateOutputPath" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets(30,5): warning MSB4211: The property "DebugType" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (29,5)".
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(373,5): warning MSB4211: The property "CleanFile" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (../Win32/Release\) contains files shared from another project (Game.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (../Win32/Release\) contains files shared from another project (Game.vcxproj, MPGame.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Lib.cpp
 C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\Lib.h(120,41): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Random.h(35,46): warning C4458: declaration of 'seed' hides class member
@@ -654,8 +651,8 @@ C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\TimingCollect
   Generating Code...
 C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Simd_SSE.cpp(2737): warning C4740: flow in or out of inline asm code suppresses global optimization
 C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Simd_SSE.cpp(2748): warning C4740: flow in or out of inline asm code suppresses global optimization
-C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Simd_SSE.cpp(2759): warning C4740: flow in or out of inline asm code suppresses global optimization
 C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Simd_SSE.cpp(2770): warning C4740: flow in or out of inline asm code suppresses global optimization
+C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Simd_SSE.cpp(2759): warning C4740: flow in or out of inline asm code suppresses global optimization
 C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Simd_SSE.cpp(2781): warning C4740: flow in or out of inline asm code suppresses global optimization
 C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Simd_SSE.cpp(2792): warning C4740: flow in or out of inline asm code suppresses global optimization
 C:\Users\socce\OneDrive\Documents\cs-class\IT266\Game-Mod-Q4\idlib\math\Simd_SSE.cpp(2803): warning C4740: flow in or out of inline asm code suppresses global optimization
