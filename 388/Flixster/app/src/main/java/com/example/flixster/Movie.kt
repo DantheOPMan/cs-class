@@ -3,6 +3,7 @@ package com.example.flixster
 import com.google.gson.annotations.SerializedName
 
 class Movie {
+
     @SerializedName("original_title")
     var title: String? = null
 
