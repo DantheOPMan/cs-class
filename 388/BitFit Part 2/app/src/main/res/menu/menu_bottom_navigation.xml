@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/logView"
+        android:enabled="true"
+        android:icon="@drawable/baseline_format_list_bulleted_24"
+        android:title="Log"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/dashboardView"
+        android:enabled="true"
+        android:icon="@drawable/baseline_timeline_24"
+        android:title="Dashboard"
+        app:showAsAction="ifRoom" />
+</menu>
