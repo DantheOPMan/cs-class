@@ -13,6 +13,7 @@ import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import kotlinx.serialization.json.Json
 import okhttp3.Headers
 import org.json.JSONException
+import org.json.JSONObject
 
 
 fun createJson() = Json {
@@ -55,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 Log.e(TAG, "Failed to fetch articles: $statusCode")
             }
 
-            override fun onSuccess(statusCode: Int, headers: Headers, json: JSON) {
+            override fun onSuccess(statusCode: Int, headers: Headers, json: JSONObject) {
                 Log.i(TAG, "Successfully fetched articles: $json")
                 try {
                     val parsedJson = createJson().decodeFromString(
